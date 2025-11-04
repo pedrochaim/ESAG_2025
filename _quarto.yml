@@ -11,8 +11,6 @@ website:
         text: Estatística
       - href: questoes_matematica_financeira.qmd
         text: Matemática Financeira
-      - href: questoes_macroeconomia.qmd
-        text: Macroeconomia
 
 format:
   html:

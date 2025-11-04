@@ -79,10 +79,6 @@ E. II, III e IV.
 
 ::: {.callout-caution title="Resolução" collapse="true" appearance="minimal"}
 
-## Gabarito comentado — Multiplicador monetário (revisão expressa)
-
-### Conceitos-chave (bem rápido)
-
 * **Reservas bancárias.** Parte dos depósitos mantida pelos bancos como **encaixe**:
   • **Compulsórias** (exigidas pelo BC) + **excedentes** (voluntárias, por prudência).
   Indicador: $e=\dfrac{E_T}{DV_{BC}}$ (encaixe total sobre depósitos à vista).
