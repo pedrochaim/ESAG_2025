@@ -387,7 +387,7 @@ Agora calculamos o valor esperado da taxa de inflação no próximo período.
 
 > União e intersecção de eventos em um espaço amostral.
 
-**Dados três eventos aleatórios** $A=\{\text{o preço da gasolina subir}\}$, $B=\{\text{o real desvalorizar}\}$ e $C=\{\text{a taxa Selic subir}\}$, a interpretação da igualdade entre tais elementos é:
+Dados três eventos aleatórios $A=\{\text{o preço da gasolina subir}\}$, $B=\{\text{o real desvalorizar}\}$ e $C=\{\text{a taxa Selic subir}\}$, a interpretação da igualdade entre tais elementos é:
 
 (A) $A \cup B \cup C = A \cap B \cap C$ estabelece que a ocorrência de qualquer um desses eventos implica a ocorrência dos demais.
 (B) $A \cup B \cup C = A \cup B$ estabelece que o preço da gasolina não sobe quando a taxa Selic sobe.
