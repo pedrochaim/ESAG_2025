@@ -2,7 +2,7 @@
 title: "Exercícios Resolvidos: Estatística"
 format: html
 lang: pt
-date: 10/01/2025
+date: 11/01/2025
 date-format: "MMM, YYYY"
 author:
   - name: Pedro Chaim
@@ -375,6 +375,70 @@ Agora calculamos o valor esperado da taxa de inflação no próximo período.
 \end{align}
 
 **Resposta**: B. 7,00%.
+:::
+
+:::
+
+## ENADE 2009
+
+### Questão 22 (ENADE 2009 – Economia)
+
+::: {#exr-anpec-2025-estatistica-Q01}
+
+> União e intersecção de eventos em um espaço amostral.
+
+**Dados três eventos aleatórios** $A=\{\text{o preço da gasolina subir}\}$, $B=\{\text{o real desvalorizar}\}$ e $C=\{\text{a taxa Selic subir}\}$, a interpretação da igualdade entre tais elementos é:
+
+(A) $A \cup B \cup C = A \cap B \cap C$ estabelece que a ocorrência de qualquer um desses eventos implica a ocorrência dos demais.
+(B) $A \cup B \cup C = A \cup B$ estabelece que o preço da gasolina não sobe quando a taxa Selic sobe.
+(C) $A \cap B \cap C = A$ estabelece que o preço da gasolina não sobe quando o real desvaloriza e a taxa Selic sobe.
+(D) $A \cup B \cup C = A$ estabelece que o preço da gasolina nunca sobe quando ocorre uma desvalorização do real ou uma alta da taxa Selic.
+(E) $A \cap B \cap C = \emptyset$ estabelece que uma subida no preço da gasolina e uma desvalorização do real não podem ocorrer conjuntamente.
+
+<label for="resposta">Sua resposta:</label>
+<select name="resposta" id="altenativa">
+  <option value=""></option>
+  <option value="A">A</option>
+  <option value="B">B</option>
+  <option value="C">C</option>
+  <option value="D">D</option>
+  <option value="E">E</option>
+</select>
+
+::: {.callout-caution title="Resolução" collapse="true" appearance="minimal"}
+
+Apenas uma das afirmativas acima é correta. Vamos julgar cada uma.
+
+---
+
+> *A. $A \cup B \cup C = A \cap B \cap C$ estabelece que a ocorrência de qualquer um desses eventos implica a ocorrência dos demais.*
+
+Essa afirmação é verdadeira. 
+
+---
+
+> *B. $A \cup B \cup C = A \cup B$ estabelece que o preço da gasolina não sobe quando a taxa Selic sobe.*
+
+Dizer que $A \cup B \cup C = A \cup B$ implica que $C\subseteq (A\cup B)$, ou seja, $C$ é contido na união entre $A\cup B$. Em termos do problema: Se acontecer pelo menos um entre $A$ e $B$, então é possível (mas não garantido) que $C$ também aconteça.
+
+---
+
+> *C. $A \cap B \cap C = A$ estabelece que o preço da gasolina não sobe quando o real desvaloriza e a taxa Selic sobe.*
+
+É exatamente o contrário: se $B$ e $C$ ocorrem simultaneamente, então garantimos que $A$ ocorre.
+
+---
+
+> *D. $A \cup B \cup C = A$ estabelece que o preço da gasolina nunca sobe quando ocorre uma desvalorização do real ou uma alta da taxa Selic.*
+
+Dizer $A \cup B \cup C = A$ implica que $(B\cup C)\subset A$. Ou seja, sempre que ou acontece $B$ ou acontece $C$, ou ambos, também acontece $A$. 
+
+---
+
+*E. $A \cap B \cap C = \emptyset$ estabelece que uma subida no preço da gasolina e uma desvalorização do real não podem ocorrer conjuntamente.*
+
+Falso. $A \cap B \cap C = \emptyset$ proíbe o acontecimento conjunto de $A$, $B$, e $C$, mas não de cada um dos pares de eventos.
+
 :::
 
 :::
