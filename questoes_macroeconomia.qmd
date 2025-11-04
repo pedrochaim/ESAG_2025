@@ -2,7 +2,7 @@
 title: "Exercícios Resolvidos: Macroeconomia"
 format: html
 lang: pt
-date: 10/01/2025
+date: 11/01/2025
 date-format: "MMM, YYYY"
 author:
   - name: Pedro Chaim

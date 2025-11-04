@@ -1,11 +1,16 @@
 ---
-title: "ESAG_2025"
+title: "Questões Resolvidas Udesc-Esag"
+format: html
+lang: pt
+date: 11/01/2025
+date-format: "MMM, YYYY"
+author:
+  - name: Pedro Chaim
+    id: pc
+    email: pedro.chaim@ufsc.br
+    affiliation: 
+      - name: CNM/UFSC
+        city: Florianópolis
+        state: Santa Catarina
+        url: https://cnm.ufsc.br/
 ---
-
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-
-```{r}
-1 + 1
-```

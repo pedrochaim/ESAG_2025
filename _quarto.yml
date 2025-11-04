@@ -7,7 +7,12 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href: questoes_estatistica.qmd
+        text: Estatística
+      - href: questoes_matematica_financeira.qmd
+        text: Matemática Financeira
+      - href: questoes_macroeconomia.qmd
+        text: Macroeconomia
 
 format:
   html:
