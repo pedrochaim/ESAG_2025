@@ -1,0 +1,1517 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt" xml:lang="pt"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.23">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Pedro Chaim">
+
+<title>Exercícios Resolvidos: Macroeconomia – ESAG_2025</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-1fe81d0376b2c50856e68e651e390326.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-e31584831b205ffbb2d98406f31c2a5b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Nenhum resultado",
+    "search-matching-documents-text": "documentos correspondentes",
+    "search-copy-link-title": "Copiar link para a busca",
+    "search-hide-matches-text": "Esconder correspondências adicionais",
+    "search-more-match-text": "mais correspondência neste documento",
+    "search-more-matches-text": "mais correspondências neste documento",
+    "search-clear-button-title": "Limpar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Procurar"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    </a>
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">ESAG_2025</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Procurar"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Alternar de navegação" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Nesta página</h2>
+   
+  <ul>
+  <li><a href="#enade-2022" id="toc-enade-2022" class="nav-link active" data-scroll-target="#enade-2022">ENADE 2022</a>
+  <ul class="collapse">
+  <li><a href="#questão-13-enade-2022-economia" id="toc-questão-13-enade-2022-economia" class="nav-link" data-scroll-target="#questão-13-enade-2022-economia">Questão 13 (ENADE 2022 – Economia)</a></li>
+  <li><a href="#questão-16-enade-2022-economia" id="toc-questão-16-enade-2022-economia" class="nav-link" data-scroll-target="#questão-16-enade-2022-economia">Questão 16 (ENADE 2022 – Economia)</a></li>
+  <li><a href="#questão-20-enade-2022-economia" id="toc-questão-20-enade-2022-economia" class="nav-link" data-scroll-target="#questão-20-enade-2022-economia">Questão 20 (ENADE 2022 – Economia)</a></li>
+  <li><a href="#questão-26-enade-2022-economia" id="toc-questão-26-enade-2022-economia" class="nav-link" data-scroll-target="#questão-26-enade-2022-economia">Questão 26 (ENADE 2022 – Economia)</a></li>
+  <li><a href="#questão-27-enade-2022-economia" id="toc-questão-27-enade-2022-economia" class="nav-link" data-scroll-target="#questão-27-enade-2022-economia">Questão 27 (ENADE 2022 – Economia)</a></li>
+  <li><a href="#questão-35-enade-2022-economia" id="toc-questão-35-enade-2022-economia" class="nav-link" data-scroll-target="#questão-35-enade-2022-economia">Questão 35 (ENADE 2022 – Economia)</a></li>
+  </ul></li>
+  <li><a href="#enade-2018" id="toc-enade-2018" class="nav-link" data-scroll-target="#enade-2018">ENADE 2018</a>
+  <ul class="collapse">
+  <li><a href="#questão-09-enade-2018-economia" id="toc-questão-09-enade-2018-economia" class="nav-link" data-scroll-target="#questão-09-enade-2018-economia">Questão 09 (ENADE 2018 – Economia)</a></li>
+  <li><a href="#questão-10-enade-2018-economia" id="toc-questão-10-enade-2018-economia" class="nav-link" data-scroll-target="#questão-10-enade-2018-economia">Questão 10 (ENADE 2018 – Economia)</a></li>
+  <li><a href="#questão-20-enade-2018-economia" id="toc-questão-20-enade-2018-economia" class="nav-link" data-scroll-target="#questão-20-enade-2018-economia">Questão 20 (ENADE 2018 – Economia)</a></li>
+  <li><a href="#questão-21-enade-2018-economia" id="toc-questão-21-enade-2018-economia" class="nav-link" data-scroll-target="#questão-21-enade-2018-economia">Questão 21 (ENADE 2018 – Economia)</a></li>
+  </ul></li>
+  <li><a href="#enade-2015" id="toc-enade-2015" class="nav-link" data-scroll-target="#enade-2015">ENADE 2015</a>
+  <ul class="collapse">
+  <li><a href="#questão-16-enade-2015-economia" id="toc-questão-16-enade-2015-economia" class="nav-link" data-scroll-target="#questão-16-enade-2015-economia">Questão 16 (ENADE 2015 – Economia)</a></li>
+  <li><a href="#questão-23-enade-2015-economia" id="toc-questão-23-enade-2015-economia" class="nav-link" data-scroll-target="#questão-23-enade-2015-economia">Questão 23 (ENADE 2015 – Economia)</a></li>
+  <li><a href="#questão-31-enade-2015-economia" id="toc-questão-31-enade-2015-economia" class="nav-link" data-scroll-target="#questão-31-enade-2015-economia">Questão 31 (ENADE 2015 – Economia)</a></li>
+  </ul></li>
+  <li><a href="#exame-anpec" id="toc-exame-anpec" class="nav-link" data-scroll-target="#exame-anpec">Exame ANPEC</a>
+  <ul class="collapse">
+  <li><a href="#questão-07-anpec-2025-macroeconomia" id="toc-questão-07-anpec-2025-macroeconomia" class="nav-link" data-scroll-target="#questão-07-anpec-2025-macroeconomia">Questão 07 (ANPEC 2025 – Macroeconomia)</a></li>
+  </ul></li>
+  <li><a href="#concursos-públicos" id="toc-concursos-públicos" class="nav-link" data-scroll-target="#concursos-públicos">Concursos Públicos</a>
+  <ul class="collapse">
+  <li><a href="#questões-51-a-53-banco-central-2024-cargo-analista---economia-e-finanças" id="toc-questões-51-a-53-banco-central-2024-cargo-analista---economia-e-finanças" class="nav-link" data-scroll-target="#questões-51-a-53-banco-central-2024-cargo-analista---economia-e-finanças">Questões 51 a 53 (Banco Central 2024, Cargo: Analista - Economia e Finanças)</a></li>
+  <li><a href="#questões-54-a-59-banco-central-2024-cargo-analista---economia-e-finanças" id="toc-questões-54-a-59-banco-central-2024-cargo-analista---economia-e-finanças" class="nav-link" data-scroll-target="#questões-54-a-59-banco-central-2024-cargo-analista---economia-e-finanças">Questões 54 a 59 (Banco Central 2024, Cargo: Analista - Economia e Finanças)</a></li>
+  <li><a href="#questões-60-a-64-banco-central-2024-cargo-analista---economia-e-finanças" id="toc-questões-60-a-64-banco-central-2024-cargo-analista---economia-e-finanças" class="nav-link" data-scroll-target="#questões-60-a-64-banco-central-2024-cargo-analista---economia-e-finanças">Questões 60 a 64 (Banco Central 2024, Cargo: Analista - Economia e Finanças)</a></li>
+  <li><a href="#questões-65-e-66-banco-central-2024-cargo-analista---economia-e-finanças" id="toc-questões-65-e-66-banco-central-2024-cargo-analista---economia-e-finanças" class="nav-link" data-scroll-target="#questões-65-e-66-banco-central-2024-cargo-analista---economia-e-finanças">Questões 65 e 66 (Banco Central 2024, Cargo: Analista - Economia e Finanças)</a></li>
+  <li><a href="#questões-67-e-68-banco-central-2024-cargo-analista---economia-e-finanças" id="toc-questões-67-e-68-banco-central-2024-cargo-analista---economia-e-finanças" class="nav-link" data-scroll-target="#questões-67-e-68-banco-central-2024-cargo-analista---economia-e-finanças">Questões 67 e 68 (Banco Central 2024, Cargo: Analista - Economia e Finanças)</a></li>
+  <li><a href="#questão-27-cnu-2024---setores-econômicos-e-regulação-bloco-6---tarde" id="toc-questão-27-cnu-2024---setores-econômicos-e-regulação-bloco-6---tarde" class="nav-link" data-scroll-target="#questão-27-cnu-2024---setores-econômicos-e-regulação-bloco-6---tarde">Questão 27 (CNU 2024 - Setores Econômicos e Regulação, Bloco 6 - Tarde)</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Exercícios Resolvidos: Macroeconomia</h1>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Autor</div>
+  <div class="quarto-title-meta-heading">Afiliação</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Pedro Chaim <a href="mailto:pedro.chaim@ufsc.br" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            <a href="https://cnm.ufsc.br/">
+            CNM/UFSC
+            </a>
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Data de Publicação</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">out, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Resoluções comentadas de exercícios selecionados sobre Macroeconomia em provas padronizadas e concursos públicos diversos.</p>
+<p>Contato: <a href="mailto:pedro.chaim@ufsc.br">pedro.chaim@ufsc.br</a>.</p>
+<section id="enade-2022" class="level2">
+<h2 class="anchored" data-anchor-id="enade-2022">ENADE 2022</h2>
+<ul>
+<li><a href="https://download.inep.gov.br/enade/provas_e_gabaritos/2022_PV_ciencias_economicas.pdf">Link para a prova.</a></li>
+<li><a href="https://download.inep.gov.br/enade/provas_e_gabaritos/2022_GB_ciencias_economicas.pdf">Link para o gabarito oficial.</a></li>
+</ul>
+<hr>
+<section id="questão-13-enade-2022-economia" class="level3">
+<h3 class="anchored">Questão 13 (ENADE 2022 – Economia)</h3>
+<div id="exr-enade-2022-Q13" class="theorem exercise">
+<p><span class="theorem-title"><strong>Exercício 1</strong></span> &nbsp;</p>
+<blockquote class="blockquote">
+<p>Tema: Multiplicador monetário e política monetária.</p>
+</blockquote>
+<p>A equação <span class="math inline">\(a = \frac{1}{1 − d(1 − e)}\)</span> representa o multiplicador do sistema monetário, em que <span class="math inline">\(a = \frac{MP}{B}\)</span>, <span class="math inline">\(d = \frac{DV_{BC}}{MP}\)</span>, <span class="math inline">\(e = \frac{E_T}{DV_{BC}}\)</span>, sendo <span class="math inline">\(MP\)</span> os meios de pagamento, <span class="math inline">\(B\)</span> a base monetária, <span class="math inline">\(DV_{BC}\)</span> o depósito à vista dos bancos comerciais e <span class="math inline">\(E_T\)</span> o encaixe dos bancos.</p>
+<p>DE CARVALHO, F. J. C. et al.&nbsp;Economia Monetária e Financeira: Teoria e Política. 3. ed.&nbsp;São Paulo: GEN Atlas, 2015 (adaptado).</p>
+<p>Considerando as relações entre as variáveis financeiras expressas nessa equação, avalie as afirmações a seguir.</p>
+<ul>
+<li><ol type="I">
+<li>O Banco Central, ao alterar as taxas de juros das operações de redesconto e empréstimos aos bancos comerciais, está interferindo diretamente na razão <span class="math inline">\(d\)</span>. <select name="vf" id="vf"> <option value=""></option> <option value="Verdadeiro">Verdadeiro</option> <option value="Falso">Falso</option> </select></li>
+</ol></li>
+<li><ol start="2" type="I">
+<li>O multiplicador monetário, ao ser ajustado por meio do aumento das reservas dos bancos, constitui estratégia dos bancos centrais para enfrentar as crises de liquidez. <select name="vf" id="vf"> <option value=""></option> <option value="Verdadeiro">Verdadeiro</option> <option value="Falso">Falso</option> </select></li>
+</ol></li>
+<li><ol start="3" type="I">
+<li>O aumento da aversão ao risco dos bancos comerciais contrai os meios de pagamento, em momentos de crises financeiras, como no caso do estouro da bolha do subprime. <select name="vf" id="vf"> <option value=""></option> <option value="Verdadeiro">Verdadeiro</option> <option value="Falso">Falso</option> </select></li>
+</ol></li>
+<li><ol start="4" type="I">
+<li>A razão <span class="math inline">\(e\)</span> representa o percentual fixado legalmente dos depósitos à vista — que devem ser recolhidos ao Banco Central —, além de refletir a aversão dos bancos comerciais a recorrer a auxílios do Banco Central. <select name="vf" id="vf"> <option value=""></option> <option value="Verdadeiro">Verdadeiro</option> <option value="Falso">Falso</option> </select></li>
+</ol></li>
+</ul>
+<p>É correto apenas o que se afirma em</p>
+<p>A. I e II.<br>
+B. I e III.<br>
+C. III e IV.<br>
+D. I, II e IV.<br>
+E. II, III e IV.</p>
+<p><label for="resposta">Sua resposta:</label> <select name="resposta" id="altenativa"> <option value=""></option> <option value="A">A</option> <option value="B">B</option> <option value="C">C</option> <option value="D">D</option> <option value="E">E</option> </select></p>
+<div class="callout callout-style-simple callout-caution no-icon callout-titled" title="Resolução">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Cuidado</span>Resolução
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<section id="gabarito-comentado-multiplicador-monetário-revisão-expressa" class="level2 callout-body-container callout-body">
+<h2 class="anchored" data-anchor-id="gabarito-comentado-multiplicador-monetário-revisão-expressa">Gabarito comentado — Multiplicador monetário (revisão expressa)</h2>
+<section id="conceitos-chave-bem-rápido" class="level3">
+<h3 class="anchored" data-anchor-id="conceitos-chave-bem-rápido">Conceitos-chave (bem rápido)</h3>
+<ul>
+<li><strong>Reservas bancárias.</strong> Parte dos depósitos mantida pelos bancos como <strong>encaixe</strong>: • <strong>Compulsórias</strong> (exigidas pelo BC) + <strong>excedentes</strong> (voluntárias, por prudência). Indicador: <span class="math inline">\(e=\dfrac{E_T}{DV_{BC}}\)</span> (encaixe total sobre depósitos à vista).</li>
+<li><strong>Redesconto.</strong> Empréstimo do <strong>Banco Central para bancos</strong> (última instância), a taxas de curtíssimo prazo, contra colateral. <strong>Aumentar/diminuir a taxa de redesconto</strong> altera o <strong>custo da liquidez</strong> e incentiva/desincentiva manter <strong>reservas</strong>, mas <strong>não muda diretamente</strong> a preferência do público por manter <strong>depósitos vs.&nbsp;papel-moeda</strong>.</li>
+<li><strong>Multiplicador monetário.</strong> <span class="math display">\[\begin{align}
+a = \frac{1}{1 - d(1 - e)}, \qquad d=\frac{DV_{BC}}{MP}, \qquad MP = a,B.
+\end{align}\]</span> Intuição: <strong><span class="math inline">\(e\uparrow \Rightarrow a\downarrow\)</span></strong> (mais reservas, menos multiplicação); <strong><span class="math inline">\(d\uparrow \Rightarrow a\uparrow\)</span></strong> (mais depósitos na composição do dinheiro).</li>
+</ul>
+<hr>
+</section>
+<section id="julgamento-das-assertivas" class="level3">
+<h3 class="anchored" data-anchor-id="julgamento-das-assertivas">Julgamento das assertivas</h3>
+<p><strong>I. Falsa.</strong> Mudar a <strong>taxa de redesconto</strong> afeta <strong>reservas e custo de liquidez</strong> (logo, <span class="math inline">\(e\)</span> e a base via uso da janela), <strong>não</strong> “diretamente” <span class="math inline">\(d=\dfrac{DV_{BC}}{MP}\)</span>, que reflete a <strong>composição</strong> do meio de pagamento determinada pela preferência do público (depósitos vs.&nbsp;papel-moeda).</p>
+<p><strong>II. Falsa.</strong> “Ajustar o multiplicador <strong>aumentando reservas</strong>” eleva <span class="math inline">\(e\)</span> e <strong>reduz <span class="math inline">\(a\)</span></strong>: <span class="math display">\[\begin{align}
+e\uparrow ;\Rightarrow; a\downarrow ;\Rightarrow; MP=aB \text{ cai se } B \text{ fixo.}
+\end{align}\]</span> Em crises, a prática é <strong>elevar <span class="math inline">\(B\)</span></strong> e/ou <strong>baixar compulsórios</strong> (diminuir <span class="math inline">\(e\)</span>) para <strong>sustentar</strong> <span class="math inline">\(MP\)</span>, não o contrário.</p>
+<p><strong>III. Verdadeira.</strong> <strong>Aversão ao risco ↑</strong> → bancos guardam <strong>mais reservas</strong> (excedentes) → <strong><span class="math inline">\(e\uparrow\)</span></strong>, <strong><span class="math inline">\(a\downarrow\)</span></strong> → <strong>contração de <span class="math inline">\(MP\)</span></strong> (com <span class="math inline">\(B\)</span> dado). É o mecanismo típico em estresse financeiro.</p>
+<p><strong>IV. Verdadeira.</strong> <span class="math inline">\(e=\dfrac{E_T}{DV_{BC}}\)</span> <strong>combina</strong> o <strong>percentual legal</strong> (compulsório) <strong>e</strong> as <strong>reservas voluntárias</strong>, que refletem a prudência/relutância em recorrer ao BC.</p>
+</section>
+</section>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="questão-16-enade-2022-economia" class="level3">
+<h3 class="anchored" data-anchor-id="questão-16-enade-2022-economia">Questão 16 (ENADE 2022 – Economia)</h3>
+<div id="exr-enade-2022-Q16" class="theorem exercise">
+<p><span class="theorem-title"><strong>Exercício 2</strong></span> &nbsp;</p>
+<blockquote class="blockquote">
+<p>Tema: Regime de Metas de Inflação (RMI) e choques de oferta/demanda.</p>
+</blockquote>
+<p>A partir de 1999, a política monetária brasileira, a exemplo do que ocorre em vários países emergentes e desenvolvidos, passou a ser realizada no contexto do Regime de Metas de Inflação (RMI). A ideia por trás desse arcabouço é que o Banco Central (Bacen) se compromete a alcançar determinada meta anual de inflação. Nesse sentido, essa passa a ser uma regra a ser seguida pela autoridade monetária, aumentando-se a credibilidade da política monetária, o que serve para reduzir ou “ancorar” as expectativas de inflação dos agentes privados. O principal instrumento utilizado é a taxa básica de juros, definida como a taxa de juros da Selic para títulos públicos federais. A meta de inflação, determinada com dois anos de antecedência pelo Conselho Monetário Nacional (CMN), é balizada pelo Índice Nacional de Preços ao Consumidor Amplo (IPCA), que constitui o índice oficial. Existe uma margem de tolerância que permite que a variação anual do índice esteja 2% abaixo ou acima da meta estipulada. Outra característica do RMI é sua transparência. No caso brasileiro, após a reunião do Comitê de Política Monetária (Copom), o Bacen publica, em seu portal, a Ata do Copom, que apresenta todos os indicadores econômicos analisados por seus integrantes.</p>
+<p>VASCONCELLOS, M. S.; GAMBOA, U. M. de; TUROLLA, A. <em>Macroeconomia para gestão empresarial</em>. 1. ed.&nbsp;São Paulo: Saraiva, 2016 (adaptado).</p>
+<p>Considerando as informações apresentadas, ao que se refere ao RMI, avalie as afirmações a seguir.</p>
+<ul>
+<li><ol type="I">
+<li>O RMI foi implementado no Brasil em 1999, com a autonomia operacional do Bacen, que foi transformada em independência, de fato, após a crise financeira internacional de 2008. <select name="vf" id="vf"> <option value=""></option> <option value="Verdadeiro">Verdadeiro</option> <option value="Falso">Falso</option> </select></li>
+</ol></li>
+<li><ol start="2" type="I">
+<li>A discricionariedade constitui princípio básico de funcionamento da política monetária do RMI, pois permite mudanças na taxa de juros para o alcance da meta, conforme a perspectiva keynesiana de funcionamento adequado da política monetária. <select name="vf" id="vf"> <option value=""></option> <option value="Verdadeiro">Verdadeiro</option> <option value="Falso">Falso</option> </select></li>
+</ol></li>
+<li><ol start="3" type="I">
+<li>O RMI vem-se mostrando, no Brasil e em outros países em que foi implementado, uma estratégia de política de combate à inflação alternativa ao que se praticava no passado, como, por exemplo, o cumprimento das metas de agregados monetários e(ou) a ancoragem cambial. <select name="vf" id="vf"> <option value=""></option> <option value="Verdadeiro">Verdadeiro</option> <option value="Falso">Falso</option> </select></li>
+</ol></li>
+</ul>
+<p>É correto o que se afirma em</p>
+<ol type="A">
+<li>II, apenas.</li>
+<li>III, apenas.</li>
+<li>I e II, apenas.</li>
+<li>I e III, apenas.</li>
+<li>I, II e III.</li>
+</ol>
+<p><label for="resposta">Sua resposta:</label> <select name="resposta" id="altenativa"> <option value=""></option> <option value="A">A</option> <option value="B">B</option> <option value="C">C</option> <option value="D">D</option> <option value="E">E</option> </select></p>
+<div class="callout callout-style-default callout-caution callout-titled" title="Resolução">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Cuidado</span>Resolução
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Regime de Metas de Inflação</strong></p>
+<p>Segundo <a href="https://www.federalreserve.gov/econres/feds/files/2025025pap.pdf">Kiley e Mishkin (2025)</a>, <strong>meta de inflação</strong> é uma estratégia de política monetária que possui cinco elementos centrais:</p>
+<ul>
+<li><strong>Anúncio público</strong> pelo banco central de metas numéricas de médio prazo para a inflação — por exemplo, 2% — a fim de <strong>ancorar as expectativas</strong> de inflação.</li>
+<li><strong>Compromisso institucional</strong> com a <strong>estabilidade de preços</strong> como objetivo primário da política monetária, ao qual os demais objetivos ficam subordinados.</li>
+<li><strong>Estratégia prospectiva e informacionalmente abrangente</strong>, na qual <strong>muitas variáveis</strong> — e não apenas agregados monetários ou a taxa de câmbio — são usadas para decidir a configuração dos instrumentos de política.</li>
+<li><strong>Maior transparência</strong> da estratégia de política monetária, por meio da <strong>comunicação com o público e os mercados</strong> sobre planos, objetivos e decisões das autoridades monetárias.</li>
+<li><strong>Maior responsabilização</strong> do banco central pelo <strong>cumprimento de seus objetivos de inflação</strong>.</li>
+</ul>
+<p><strong>O Regime de Metas de Inflação Brasileiro</strong></p>
+<ul>
+<li><strong>Quem define a meta:</strong> <strong>CMN</strong> fixa <strong>ponto e banda</strong> (tipicamente com <strong>antecedência de 2 anos</strong>).</li>
+<li><strong>Índice oficial:</strong> a meta é <strong>balizada pelo IPCA</strong> (IBGE), <strong>índice oficial de inflação</strong>.</li>
+<li><strong>Quem executa:</strong> o <strong>BCB/Copom</strong> persegue a meta ajustando a <strong>Selic</strong> e usando instrumentos secundários (operações de mercado aberto, compulsórios, linhas de liquidez, <em>swaps</em> cambiais).</li>
+<li><strong>Transparência/Accountability:</strong> <strong>Comunicados e Ata do Copom</strong>, <strong>Relatório Trimestral de Inflação</strong>; <strong>se o IPCA sai da banda</strong>, o BC envia <strong>carta aberta</strong> explicando causas e estratégia de retorno.</li>
+<li><strong>Cronologia:</strong> RMI <strong>desde 1999</strong>; <strong>autonomia legal</strong> do BCB veio <strong>com a LC 179/2021</strong>.</li>
+</ul>
+<p><strong>Julgamento das assertivas</strong></p>
+<ul>
+<li><strong>I. Falsa.</strong> O início em <strong>1999</strong> está correto, mas <strong>não houve “independência” pós-2008</strong>; a <strong>autonomia legal</strong> do BCB é <strong>de 2021</strong>.</li>
+<li><strong>II. Falsa.</strong> O princípio do RMI é a <strong>meta explícita (regra)</strong>; a discrição é <strong>instrumental e condicionada</strong> pela meta, transparência e prestação de contas — não “discricionariedade como princípio básico”.</li>
+<li><strong>III. Verdadeira.</strong> O RMI se consolidou como <strong>alternativa</strong> a regimes anteriores (metas de <strong>agregados monetários</strong> e/ou <strong>âncoras cambiais</strong>), com foco em <strong>ancorar expectativas</strong> e <strong>combater a inflação</strong>.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="questão-20-enade-2022-economia" class="level3">
+<h3 class="anchored">Questão 20 (ENADE 2022 – Economia)</h3>
+<div id="exr-enade-2022-Q20" class="theorem exercise">
+<p><span class="theorem-title"><strong>Exercício 3</strong></span> &nbsp;</p>
+<blockquote class="blockquote">
+<p>Tema: Modelos de crescimento (Harrod-Domar, Solow, Romer, Lucas).</p>
+</blockquote>
+<p>Uma das formas de analisar o processo de crescimento econômico de um país é pela elaboração de modelos formais de crescimento. (i) O primeiro modelo específico de crescimento surgiu na década de 1930; neste primeiro modelo, de tradição keynesiana, tem-se o investimento líquido como a chave para o crescimento econômico, porém não se define como obtê-lo. (ii) Posteriormente, foi formulado um modelo que trouxe mudanças para a análise do crescimento, permitindo a substituição de capital por trabalho e introduzindo a contabilidade do crescimento e a análise de produtividade total dos fatores; neste modelo, no entanto, há uma limitação: o motor do crescimento é exógeno. Na década de 1980, dois novos modelos vencem esta limitação, ao considerarem, respectivamente, (iii) os gastos em pesquisa e desenvolvimento e (iv) os gastos com capital humano como fatores-chave para o crescimento econômico.</p>
+<p>As descrições apresentadas em (i), (ii), (iii) e (iv) no texto referem-se, respectivamente, aos modelos teóricos de</p>
+<ol type="A">
+<li>Harrod-Domar; Solow; Romer; e Lucas.</li>
+<li>Lucas; Harrod-Domar; Solow; e Romer.</li>
+<li>Romer; Solow; Lucas; e Harrod-Domar.</li>
+<li>Solow; Harrod-Domar; Romer; e Lucas.</li>
+<li>Harrod-Domar; Solow; Lucas; e Romer.</li>
+</ol>
+<p><label for="resposta">Sua resposta:</label> <select name="resposta" id="altenativa"> <option value="A">A</option> <option value="B">B</option> <option value="C">C</option> <option value="D">D</option> <option value="E">E</option> </select></p>
+<div class="callout callout-style-default callout-caution callout-titled" title="Resolução">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Cuidado</span>Resolução
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<section id="modelos-de-crescimento-até-3-equações-por-modelo-50-palavras-cada" class="level2 callout-body-container callout-body">
+<h2 class="anchored" data-anchor-id="modelos-de-crescimento-até-3-equações-por-modelo-50-palavras-cada">Modelos de crescimento — até 3 equações por modelo (≈50 palavras cada)</h2>
+<section id="i-harroddomar" class="level3">
+<h3 class="anchored" data-anchor-id="i-harroddomar">(i) Harrod–Domar</h3>
+<p>Modelo keynesiano com <strong>coeficientes fixos</strong> (sem substituição). O <strong>investimento líquido</strong> determina a variação do produto; a <strong>poupança</strong> o financia. O <strong>ICOR</strong> (v) liga capital e produto. A taxa “garantida” depende de (s) e (v); desvios do crescimento “natural” geram <strong>instabilidade</strong>. Políticas que elevam (s) ou reduzem (v) aumentam (g). <span class="math display">\[\begin{align}
+I = sY \
+\Delta Y = \frac{1}{v} I \
+g = \frac{\Delta Y}{Y} = \frac{s}{v}
+\end{align}\frac{1}{v}\]</span> I<br>
+g = = \end{align}</p>
+</section>
+<section id="ii-solow" class="level3">
+<h3 class="anchored" data-anchor-id="ii-solow">(ii) Solow</h3>
+<p>Neoclássico com <strong>substituição K–L</strong> e <strong>retornos decrescentes</strong>; progresso tecnológico <strong>exógeno</strong> (g). A dinâmica do capital por trabalho efetivo iguala <strong>poupança</strong> menos <strong>depreciação ampliada</strong>; o estado estacionário resolve investimento efetivo = depreciação. <strong>Aumentos em (s)</strong> elevam o <strong>nível</strong> de renda, não a <strong>taxa</strong> per capita, que é dada por (g). <span class="math display">\[\begin{align}
+\dot{k} = s f(k) - (n + g + \delta) k \
+s f(k^*) = (n + g + \delta) k^* \
+g_y = g
+\end{align}\]</span>(n + g + ) k^*<br>
+g_y = g \end{align}</p>
+</section>
+<section id="iii-romer-pd" class="level3">
+<h3 class="anchored" data-anchor-id="iii-romer-pd">(iii) Romer (P&amp;D)</h3>
+<p>Crescimento <strong>endógeno</strong> via <strong>ideias</strong>: P&amp;D expande o conhecimento (A), gerando <strong>externalidades</strong> e retornos agregados não decrescentes. A <strong>alocação de trabalho em P&amp;D</strong> determina a taxa de crescimento; incentivos, escala e patentes elevam (g) <strong>permanentemente</strong>. O setor final usa (A) para produzir com produtividade crescente. <span class="math display">\[\begin{align}
+\dot{A} = \phi L_A A \
+Y = K^{\alpha} (A L_Y)^{1-\alpha} \
+g = \frac{\dot{A}}{A} = \phi L_A
+\end{align}\]</span>ha} (A L_Y)^{1-}<br>
+g = = L_A \end{align}</p>
+</section>
+<section id="iv-lucas-capital-humano" class="level3">
+<h3 class="anchored" data-anchor-id="iv-lucas-capital-humano">(iv) Lucas (capital humano)</h3>
+<p>Crescimento <strong>endógeno</strong> via <strong>capital humano</strong> (h). Agentes dedicam fração (u) do tempo ao <strong>aprendizado</strong>, acumulando (h); <strong>externalidades</strong> do capital humano sustentam crescimento sem tecnologia exógena. Políticas educacionais e incentivos a (u) elevam (g); diferenças em (u) e na eficiência de aprendizado explicam heterogeneidade internacional. <span class="math display">\[\begin{align}
+\dot{h} = \phi u h \
+Y = K^{\alpha} \big((1-u) h L\big)^{1-\alpha} \
+g_y = \frac{\dot{h}}{h} = \phi u
+\end{align}\]</span>ha} ((1-u) h L)^{1-}<br>
+g_y = = u \end{align}</p>
+<blockquote class="blockquote">
+<p>Mapeamento do enunciado: <strong>Harrod–Domar; Solow; Romer; Lucas</strong> → alternativa <strong>A</strong>.</p>
+</blockquote>
+</section>
+</section>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="questão-26-enade-2022-economia" class="level3">
+<h3 class="anchored" data-anchor-id="questão-26-enade-2022-economia">Questão 26 (ENADE 2022 – Economia)</h3>
+<div id="exr-enade-2022-Q26" class="theorem exercise">
+<p><span class="theorem-title"><strong>Exercício 4</strong></span> &nbsp;</p>
+<blockquote class="blockquote">
+<p>Tema: Efeitos de política fiscal/monetária no IS-LM.</p>
+</blockquote>
+<p>Considere o gráfico seguinte, em que Y* é o produto de equilíbrio e i* consiste na taxa de juros de equilíbrio.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="ENADE_2022_Q26.png" title="Title" class="img-fluid figure-img"></p>
+<figcaption>Figura</figcaption>
+</figure>
+</div>
+<p>Com base no gráfico apresentado, avalie as afirmações a seguir.</p>
+<ul>
+<li><ol type="I">
+<li>Uma diminuição da carga tributária deslocaria a curva IS para cima (direita) e provocaria um aumento da taxa de juros de equilíbrio e da renda. <input type="checkbox" unchecked=""></li>
+</ol></li>
+<li><ol start="2" type="I">
+<li>Uma compra de títulos, por parte da autoridade monetária, deslocaria a curva LM para cima (esquerda), o que provocaria um aumento da taxa de juros de equilíbrio e uma redução da renda da economia. <input type="checkbox" unchecked=""></li>
+</ol></li>
+<li><ol start="3" type="I">
+<li>Um aumento dos gastos autônomos deslocaria a curva de equilíbrio de bens e serviços para cima, o que, consequentemente, aumentaria a taxa de juros e a renda de equilíbrio. <input type="checkbox" unchecked=""></li>
+</ol></li>
+<li><ol start="4" type="I">
+<li>Uma política monetária restritiva provocaria, no equilíbrio IS-LM, um deslocamento da curva LM para baixo (direita) e uma redução das taxas de juros, o que, por sua vez, incentivaria um aumento dos investimentos e da renda. <input type="checkbox" unchecked=""></li>
+</ol></li>
+</ul>
+<p>É correto apenas o que se afirma em</p>
+<ol type="A">
+<li>I e III.<br>
+</li>
+<li>II e IV.<br>
+</li>
+<li>III e IV.<br>
+</li>
+<li>I, II e III.<br>
+</li>
+<li>I, II e IV.</li>
+</ol>
+<p><label for="resposta">Sua resposta:</label> <select name="resposta" id="altenativa"> <option value="A">A</option> <option value="B">B</option> <option value="C">C</option> <option value="D">D</option> <option value="E">E</option> </select></p>
+<div class="callout callout-style-default callout-caution callout-titled" title="Resolução">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Cuidado</span>Resolução
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Modelo IS-LM de equilíbrio conjunto no mercado de bens e mercado financeiro</p>
+<p><span class="math display">\[\begin{align*}
+  Y &amp;= \frac{1}{1-c_1}\left[ c_0 - c_1T + G + I(\stackrel{-}{i},\stackrel{-}{+})\right] \tag{IS} \\
+  M/P &amp;= L(\stackrel{-}{i}, \stackrel{+}{Y}) \tag{LM}
+\end{align*}\]</span></p>
+<p><strong>Julgamento das Assertivas:</strong></p>
+<ol type="I">
+<li>Correta. “Diminuição da carga tributária” eleva a demanda agregada (mais renda disponível), deslocando a IS para a direita (para cima). No novo equilíbrio com LM dada, a economia opera com renda (<span class="math inline">\(Y\)</span>) e taxa de juros (<span class="math inline">\(i\)</span>) maiores.</li>
+<li>Falsa. “Compra de títulos” pelo Banco Central expande a base/quantidade de moeda, o que desloca a LM para a direita (para baixo), reduz <span class="math inline">\(i\)</span> e aumenta <span class="math inline">\(Y\)</span>. A assertiva afirma o oposto (LM para cima/esquerda, <span class="math inline">\(i\uparrow\)</span>, <span class="math inline">\(Y\downarrow\)</span>).</li>
+<li>Correta. “Aumento dos gastos autônomos” é choque de demanda que desloca a IS para a direita (para cima). Com LM fixa, o novo equilíbrio tem <span class="math inline">\(i\)</span> e <span class="math inline">\(Y\)</span> maiores.</li>
+<li>Falsa. “Política monetária restritiva” reduz a oferta real de moeda, deslocando a LM para a esquerda (para cima). Isso eleva <span class="math inline">\(i\)</span> e reduz <span class="math inline">\(Y\)</span> — exatamente o contrário do que a assertiva descreve (ela fala em LM para baixo/direita, queda de <span class="math inline">\(i\)</span> e aumento de <span class="math inline">\(Y\)</span>).</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="questão-27-enade-2022-economia" class="level3">
+<h3 class="anchored" data-anchor-id="questão-27-enade-2022-economia">Questão 27 (ENADE 2022 – Economia)</h3>
+<div id="exr-enade-2022-Q27" class="theorem exercise">
+<p><span class="theorem-title"><strong>Exercício 5</strong></span> &nbsp;</p>
+<blockquote class="blockquote">
+<p>Tema: IS-LM-BP, mobilidade de capitais e regime cambial.</p>
+</blockquote>
+<p>O chamado “Consenso de Washington” predominou como receituário de política econômica durante a década de 1990. Entre suas propostas, incluía-se a liberalização comercial e financeira. Nesse mesmo período, observou-se uma predominância, para um conjunto grande de países, de medidas de maior flexibilidade para o fluxo de capitais estrangeiros.</p>
+<p>Considerando as implicações da adoção do aumento do grau de mobilidade de capitais em determinado país e o referencial teórico do modelo IS-LM-BP para uma pequena economia aberta, avalie as afirmações a seguir.</p>
+<ul>
+<li><ol type="I">
+<li>O aumento do grau de mobilidade de capitais, preconizado pelo Consenso de Washington, sob o regime de taxas de câmbio flutuantes, aumenta o poder da política fiscal de amortizar choques exógenos sobre a demanda agregada. <input type="checkbox" unchecked=""></li>
+</ol></li>
+<li><ol start="2" type="I">
+<li>A adoção de perfeita mobilidade de capitais resultará em uma política fiscal sem efeito sobre o produto no novo equilíbrio, se o regime cambial for o de taxa de câmbio fixa. <input type="checkbox" unchecked=""></li>
+</ol></li>
+<li><ol start="3" type="I">
+<li>A política monetária expansionista, supondo-se o regime de taxa de câmbio flutuante e a adoção de perfeita mobilidade de capitais, é capaz de aumentar o produto no novo equilíbrio. <input type="checkbox" unchecked=""></li>
+</ol></li>
+</ul>
+<p>É correto o que se afirma em</p>
+<ol type="A">
+<li>I, apenas.</li>
+<li>III, apenas.</li>
+<li>I e II, apenas.</li>
+<li>II e III, apenas.</li>
+<li>I, II e III.</li>
+</ol>
+<p><label for="resposta">Sua resposta:</label> <select name="resposta" id="altenativa"> <option value="A">A</option> <option value="B">B</option> <option value="C">C</option> <option value="D">D</option> <option value="E">E</option> </select></p>
+</div>
+</section>
+<section id="questão-35-enade-2022-economia" class="level3">
+<h3 class="anchored" data-anchor-id="questão-35-enade-2022-economia">Questão 35 (ENADE 2022 – Economia)</h3>
+<div id="exr-enade-2022-Q35" class="theorem exercise">
+<p><span class="theorem-title"><strong>Exercício 6</strong></span> &nbsp;</p>
+<blockquote class="blockquote">
+<p>Tema: Curva de Phillips (inflação esperada, desemprego cíclico, choques).</p>
+</blockquote>
+<p>A curva de Phillips, em sua forma moderna, enuncia que a taxa de inflação depende de três forças: inflação esperada; desvio do desemprego em relação à taxa natural, também chamada de desemprego cíclico; e choques de oferta. Essas três forças estão expressas na equação <span class="math display">\[\begin{align}
+p = p^{e} - b(u - u^{n}) + v
+\end{align}\]</span> em que <span class="math inline">\(p\)</span> é a inflação, <span class="math inline">\(p^{e}\)</span> a inflação esperada, <span class="math inline">\((u - u^{n})\)</span> corresponde ao desemprego cíclico, <span class="math inline">\(b\)</span> mede a relação entre inflação e desemprego, e <span class="math inline">\(v\)</span> mede o choque de oferta.</p>
+<p>MANKIW, N. G. Macroeconomia. São Paulo: Editora Atlas, 2021 (adaptado).</p>
+<p>Quanto à curva de Phillips, avalie as afirmações a seguir.</p>
+<ul>
+<li><ol type="I">
+<li>A relação entre inflação e desemprego é negativa e expressa pelo valor de <span class="math inline">\(b\)</span>. <input type="checkbox" unchecked=""></li>
+</ol></li>
+<li><ol start="2" type="I">
+<li>A curva de Phillips é usada para as seguintes finalidades: descrever o lado da demanda da economia em modelos macroeconômicos; medir o impacto do desvio do produto em relação ao seu nível potencial na taxa de inflação; medir a inércia inflacionária; e realizar previsões. <input type="checkbox" unchecked=""></li>
+</ol></li>
+<li><ol start="3" type="I">
+<li>Os modelos de curva de Phillips têm como objetivo medir a expectativa de inflação, a partir das variáveis da equação relacionadas à inflação e ao desemprego. <input type="checkbox" unchecked=""></li>
+</ol></li>
+<li><ol start="4" type="I">
+<li>As expectativas das famílias e empresas, no Regime de Metas de Inflação, repercutem nas decisões de política monetária. <input type="checkbox" unchecked=""></li>
+</ol></li>
+</ul>
+<p>É correto apenas o que se afirma em</p>
+<ol type="A">
+<li>I e IV.<br>
+</li>
+<li>II e III.<br>
+</li>
+<li>III e IV.<br>
+</li>
+<li>I, II e III.<br>
+</li>
+<li>I, II e IV.</li>
+</ol>
+<p><label for="resposta">Sua resposta:</label> <select name="resposta" id="altenativa"> <option value=""></option> <option value="A">A</option> <option value="B">B</option> <option value="C">C</option> <option value="D">D</option> <option value="E">E</option> </select></p>
+<div class="callout callout-style-default callout-caution callout-titled" title="Resolução">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Cuidado</span>Resolução
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Gabarito: A (I e IV).</strong></p>
+<ul>
+<li><strong>I. Verdadeira.</strong> Pela equação (p = p^{e} - b(u-u^{n}) + v), com (b&gt;0), o coeficiente do desemprego cíclico é (-b): maior desemprego reduz a inflação.</li>
+<li><strong>II. Falsa.</strong> A curva de Phillips é relação de <strong>oferta agregada</strong> (dinâmica da inflação), não do lado da demanda. Ela serve para estudar inércia, efeito do hiato (ou desemprego cíclico) sobre a inflação e para previsão, mas a frase “descrever o lado da demanda” torna o item incorreto.</li>
+<li><strong>III. Falsa.</strong> O objetivo dos modelos de Phillips não é “medir a expectativa de inflação” a partir de inflação e desemprego; usualmente (p^{e}) é tomado de pesquisas/mercado ou modelado separadamente.</li>
+<li><strong>IV. Verdadeira.</strong> Em regimes de metas de inflação, expectativas de famílias e empresas afetam decisões do BC (pois (p^{e}) entra na dinâmica da inflação e a autoridade busca ancorá-las).</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<hr>
+</section>
+</section>
+<section id="enade-2018" class="level2">
+<h2 class="anchored" data-anchor-id="enade-2018">ENADE 2018</h2>
+<ul>
+<li><a href="https://download.inep.gov.br/educacao_superior/enade/provas/2018/ciencias_economicas.pdf">Link para a prova.</a></li>
+<li><a href="https://download.inep.gov.br/educacao_superior/enade/gabaritos/2018/ciencias_economicas.pdf">Link para o gabarito oficial.</a></li>
+</ul>
+<hr>
+<section id="questão-09-enade-2018-economia" class="level3">
+<h3 class="anchored" data-anchor-id="questão-09-enade-2018-economia">Questão 09 (ENADE 2018 – Economia)</h3>
+<div id="exr-enade-2018-Q09" class="theorem exercise">
+<p><span class="theorem-title"><strong>Exercício 7</strong></span> &nbsp;</p>
+<blockquote class="blockquote">
+<p>Tema: Câmbio e swap cambial em regime de câmbio flutuante</p>
+</blockquote>
+<p>Se a saída de dólares for superior ao ingresso de recursos no País por vários meses seguidos, a retirada consecutiva de divisas afetará o preço do dólar. Caso o Banco Central decida evitar a flutuação no preço da moeda estrangeira, poderia realizar operações de swap cambial, que funcionam como uma venda futura de dólares, ou mesmo operar no mercado à vista com leilões de moeda estrangeira.</p>
+<p>Disponível em: <a href="http://www.g1.globo.com" class="uri">http://www.g1.globo.com</a>. Acesso em: 15 ago. 2018 (adaptado).</p>
+<p>Considerando a tendência à equalização das taxas de juros, um regime de taxa de câmbio flutuante, com livre mobilidade de capitais e expectativas racionais, avalie as asserções a seguir e a relação proposta entre elas.</p>
+<ul>
+<li><ol type="I">
+<li>Se o diferencial de juros e os riscos mantêm-se inalterados, um anúncio da autoridade monetária de não realizar o programa de oferta diária de swaps afeta a cotação do dólar no período presente, caracterizando uma relação positiva entre a cotação futura e a cotação presente da moeda norte-americana.</li>
+</ol></li>
+</ul>
+<center>
+<strong>PORQUE</strong>
+</center>
+<ul>
+<li><ol start="2" type="I">
+<li>A expectativa de menor rentabilidade em dólares no futuro resulta em retirada de divisas da economia brasileira, com prejuízo para as exportações do País.</li>
+</ol></li>
+</ul>
+<p>A respeito dessas asserções, assinale a opção correta.</p>
+<ol type="A">
+<li>As asserções I e II são proposições verdadeiras, e a II é uma justificativa correta da I.</li>
+<li>As asserções I e II são proposições verdadeiras, mas a II não é uma justificativa correta da I.</li>
+<li>A asserção I é uma proposição verdadeira, e a II é uma proposição falsa.</li>
+<li>A asserção I é uma proposição falsa, e a II é uma proposição verdadeira.</li>
+<li>As asserções I e II são proposições falsas.</li>
+</ol>
+<p><label for="resposta">Sua resposta:</label> <select name="resposta" id="altenativa"> <option value="A">A</option> <option value="B">B</option> <option value="C">C</option> <option value="D">D</option> <option value="E">E</option> </select></p>
+</div>
+</section>
+<section id="questão-10-enade-2018-economia" class="level3">
+<h3 class="anchored" data-anchor-id="questão-10-enade-2018-economia">Questão 10 (ENADE 2018 – Economia)</h3>
+<div id="exr-enade-2018-Q10" class="theorem exercise">
+<p><span class="theorem-title"><strong>Exercício 8</strong></span> &nbsp;</p>
+<blockquote class="blockquote">
+<p>Tema: IS-LM-BP em pequena economia aberta, política monetária expansionista.</p>
+</blockquote>
+<p>A seguinte notícia foi veiculada em 8 de abril de 2018. Em apontamentos realizados no Fundo Monetário Internacional (FMI) em Washington, o presidente do Banco Central do Brasil destacou que, no início da sua gestão, foi dada alta prioridade para ancorar expectativas de inflação antes do início do ciclo de redução de juros, o que baixou a Selic de 14,25% para os atuais 6,5%.</p>
+<p>Disponível em: <a href="http://www.jb.com.br" class="uri">http://www.jb.com.br</a>. Acesso em: 26 jun. 2018 (adaptado).</p>
+<p>O gráfico a seguir apresenta uma pequena economia aberta do modelo IS-LM-BP, com mobilidade imperfeita de capitais, caracterizada pela curva BP menos inclinada que a curva LM, e expectativas econômicas ancoradas que operam em regime de câmbio flexível. O ponto A indica o equilíbrio interno e externo inicial.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="ENADE_2018_Q10.png" title="Title" class="img-fluid figure-img"></p>
+<figcaption>Figura</figcaption>
+</figure>
+</div>
+<p>Considere que foi adotada uma política monetária expansionista, levando a economia para um novo equilíbrio interno e externo.</p>
+<p>Nesse contexto, é correto afirmar que</p>
+<ol type="A">
+<li>a taxa de câmbio será valorizada em relação à moeda estrangeira.<br>
+</li>
+<li>a renda inicial permanecerá igual ao observado no equilíbrio interno e externo inicial.<br>
+</li>
+<li>a curva BP será deslocada para a esquerda no processo de ajuste do setor externo.<br>
+</li>
+<li>as curvas IS e BP serão deslocadas para a direita no processo de ajuste do setor externo.<br>
+</li>
+<li>a curva LM será deslocada para a esquerda no processo de ajuste do setor externo.</li>
+</ol>
+<p><label for="resposta">Sua resposta:</label> <select name="resposta" id="altenativa"> <option value="A">A</option> <option value="B">B</option> <option value="C">C</option> <option value="D">D</option> <option value="E">E</option> </select></p>
+</div>
+<hr>
+</section>
+<section id="questão-20-enade-2018-economia" class="level3">
+<h3 class="anchored" data-anchor-id="questão-20-enade-2018-economia">Questão 20 (ENADE 2018 – Economia)</h3>
+<div id="exr-enade-2018-Q20" class="theorem exercise">
+<p><span class="theorem-title"><strong>Exercício 9</strong></span> &nbsp;</p>
+<blockquote class="blockquote">
+<p>Tema: Modelo de crescimento de Solow.</p>
+</blockquote>
+<p>Entre os objetivos macroeconômicos, inclui-se o crescimento econômico. A forma de se obter este resultado varia de país para país, bem como de acordo com o próprio estágio de desenvolvimento econômico que determinado país alcançou. Entre os modelos de crescimento, destaca-se o modelo de Solow, que toma como base a seguinte função de produção: <span class="math display">\[\begin{align}
+Y = f(K, L)
+\end{align}\]</span> em que <span class="math inline">\(Y =\)</span> produto; <span class="math inline">\(K =\)</span> estoque de capital; <span class="math inline">\(L =\)</span> quantidade de trabalho.</p>
+<p>Sobre os resultados do modelo de Solow, avalie as afirmações a seguir.</p>
+<ul>
+<li><ol type="I">
+<li>Quanto maior a taxa de poupança, maior será a taxa de crescimento do produto por trabalhador no estado estacionário. <input type="checkbox" unchecked=""></li>
+</ol></li>
+<li><ol start="2" type="I">
+<li>Quanto maior a relação capital-trabalho, menor será a taxa de crescimento econômico do produto por trabalhador. <input type="checkbox" unchecked=""></li>
+</ol></li>
+<li><ol start="3" type="I">
+<li>Quanto maior o crescimento populacional, maior será a taxa de crescimento do produto por trabalhador no estado estacionário. <input type="checkbox" unchecked=""></li>
+</ol></li>
+</ul>
+<p>É correto o que se afirma em</p>
+<ol type="A">
+<li>II, apenas.<br>
+</li>
+<li>III, apenas.<br>
+</li>
+<li>I e II, apenas.<br>
+</li>
+<li>I e III, apenas.<br>
+</li>
+<li>I, II e III.</li>
+</ol>
+<p><label for="resposta">Sua resposta:</label> <select name="resposta" id="altenativa"> <option value="A">A</option> <option value="B">B</option> <option value="C">C</option> <option value="D">D</option> <option value="E">E</option> </select></p>
+</div>
+<hr>
+</section>
+<section id="questão-21-enade-2018-economia" class="level3">
+<h3 class="anchored" data-anchor-id="questão-21-enade-2018-economia">Questão 21 (ENADE 2018 – Economia)</h3>
+<div id="exr-enade-2018-Q21" class="theorem exercise">
+<p><span class="theorem-title"><strong>Exercício 10</strong></span> &nbsp;</p>
+<blockquote class="blockquote">
+<p>Tema: IS-LM, efeitos de políticas no equilíbrio entre mercados de bens e monetário.</p>
+</blockquote>
+<p>Uma forma útil e muito conhecida de deduzir o padrão da demanda agregada e de verificar os efeitos de políticas macroeconômicas é o modelo IS-LM, uma representação gráfica desenvolvida em 1937 pelo economista britânico, laureado prêmio Nobel, John Hicks.</p>
+<p>SACHS; J. D.; LARRAIN, F. Macroeconomia em uma Economia Global. Ed. revisada e atualizada. São Paulo: Makron Books, 1997 (adaptado).</p>
+<p>Considere o modelo IS-LM, em uma economia fechada, com governo e em situação de equilíbrio entre o mercado de bens e serviços e o mercado monetário.</p>
+<p>A partir dessas informações, avalie as afirmações a seguir.</p>
+<ul>
+<li><ol type="I">
+<li>A contração monetária aumenta a taxa de juros, ocasionando uma redução nos investimentos privados. <input type="checkbox" unchecked=""></li>
+</ol></li>
+<li><ol start="2" type="I">
+<li>A expansão monetária reduz a taxa de juros e sua eficácia está diretamente relacionada à propensão marginal a poupar. <input type="checkbox" unchecked=""></li>
+</ol></li>
+<li><ol start="3" type="I">
+<li>A expansão dos gastos governamentais aumenta a taxa de juros, ocasionando uma redução nos investimentos privados. <input type="checkbox" unchecked=""></li>
+</ol></li>
+</ul>
+<p>É correto o que se afirma em</p>
+<ol type="A">
+<li>I, apenas.<br>
+</li>
+<li>II, apenas.<br>
+</li>
+<li>I e III, apenas.<br>
+</li>
+<li>II e III, apenas.<br>
+</li>
+<li>I, II e III.</li>
+</ol>
+<p><label for="resposta">Sua resposta:</label> <select name="resposta" id="altenativa"> <option value=""></option> <option value="A">A</option> <option value="B">B</option> <option value="C">C</option> <option value="D">D</option> <option value="E">E</option> </select></p>
+</div>
+<hr>
+</section>
+</section>
+<section id="enade-2015" class="level2">
+<h2 class="anchored" data-anchor-id="enade-2015">ENADE 2015</h2>
+<ul>
+<li><a href="https://download.inep.gov.br/educacao_superior/enade/provas/2015/04_ciencias_economicas.pdf">Link para a prova.</a></li>
+<li><a href="https://download.inep.gov.br/educacao_superior/enade/gabaritos/2015/04_gab_ciencias_economicas.pdf">Link para o gabarito oficial.</a></li>
+</ul>
+<section id="questão-16-enade-2015-economia" class="level3">
+<h3 class="anchored" data-anchor-id="questão-16-enade-2015-economia">Questão 16 (ENADE 2015 – Economia)</h3>
+<div id="exr-enade-2015-Q16" class="theorem exercise">
+<p><span class="theorem-title"><strong>Exercício 11</strong></span> &nbsp;</p>
+<blockquote class="blockquote">
+<p>Tema: Curva de Phillips (inflação x desemprego).</p>
+</blockquote>
+<p>A decisão do Comitê de Política Monetária (Copom) do Banco Central do Brasil, divulgada em 29/07/2015, de elevar a taxa de juros básica da economia em 0,5%, para o nível de 14,25% ao ano, corresponde a uma contração monetária e implica menor nível de atividade econômica nos próximos períodos. A relação entre o nível de atividade econômica, medido pela taxa de desemprego, e a taxa de inflação é estudada por meio da versão moderna da Curva de Phillips. Os dados mensais no período de novembro de 2012 a abril de 2015 (30 observações) para essas duas variáveis foram obtidos na página do Instituto de Pesquisa Econômica Aplicada (IPEA). A componente cíclica do desemprego foi obtida utilizando-se o filtro Hodrick-Prescott.</p>
+<p>A Curva de Phillips aumentada pelas expectativas pode ser especificada como:</p>
+<p><span class="math display">\[\begin{align}
+  \pi_t = \pi_t^{e} - \varepsilon(u_t - u_n).
+\end{align}\]</span></p>
+<p>em que se presume que as expectativas de inflação são a própria inflação passada <span class="math inline">\(\pi_t^{e} = \pi_{t-1}\)</span>, o que resulta em</p>
+<p><span class="math display">\[\begin{align}
+  \Delta \pi_t = -\varepsilon(u_t - u_n),
+\end{align}\]</span></p>
+<p>em que <span class="math inline">\(\Delta\pi_t = \pi_t-\pi_{t-1}\)</span> é a variação da inflação, <span class="math inline">\(u_t\)</span> é o nível de desemprego, <span class="math inline">\(u_n\)</span> é a taxa natural de desemprego e <span class="math inline">\(\varepsilon\)</span> é a resposta da inflação aos desvios do desemprego em relação à taxa natural de desemprego. Utilizando-se um modelo de regressão simples entre a variação da inflação e o ciclo de desemprego, o coeficiente <span class="math inline">\(\varepsilon\)</span> foi estimado em <span class="math inline">\(-0{,}7\)</span>, com uma probabilidade exata do teste (<span class="math inline">\(p\)</span>-valor ou nível empírico de significância) associada de <span class="math inline">\(0{,}0865\)</span>.</p>
+<p>Nas figuras abaixo, estão dispostos a evolução da variação da inflação (em azul) e do ciclo de desemprego (em vermelho) e também o diagrama de dispersão para essas duas variáveis, com a reta de regressão ajustada (em preto) para os dados da economia brasileira.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="ENADE_2015_Q16.png" title="Title" class="img-fluid figure-img"></p>
+<figcaption>Figura</figcaption>
+</figure>
+</div>
+<p>Considerando a teoria da Curva de Phillips e os resultados obtidos para a economia brasileira, avalie as afirmações a seguir.</p>
+<ul>
+<li><ol type="I">
+<li>Se a decisão de contração monetária do Banco Central do Brasil for crível, a Curva de Phillips será deslocada paralelamente para baixo. <input type="checkbox" unchecked=""></li>
+</ol></li>
+<li><ol start="2" type="I">
+<li>Para um nível de significância de 0,05, é possível inferir que há evidência de relação entre inflação e desemprego no Brasil. <input type="checkbox" unchecked=""></li>
+</ol></li>
+<li><ol start="3" type="I">
+<li>Se a taxa natural de desemprego for de 4,5% ao mês, espera-se que a inflação seja 1,75% menor, se o nível de desemprego atingir 7% ao mês. <input type="checkbox" unchecked=""></li>
+</ol></li>
+<li><ol start="4" type="I">
+<li>Se o Banco Central desejar manter a taxa de inflação constante (sem variação), para uma taxa natural de desemprego de 4,5%, o nível de desemprego deve ser de 6,5%. <input type="checkbox" unchecked=""></li>
+</ol></li>
+</ul>
+<p>É correto apenas o que se afirma em</p>
+<ol type="A">
+<li>I, apenas.</li>
+<li>II, apenas.</li>
+<li>I e III.</li>
+<li>II e IV.</li>
+<li>III e IV.</li>
+</ol>
+<p><label for="resposta">Sua resposta:</label> <select name="resposta" id="altenativa"> <option value=""></option> <option value="A">A</option> <option value="B">B</option> <option value="C">C</option> <option value="D">D</option> <option value="E">E</option> </select></p>
+<div class="callout callout-style-default callout-caution callout-empty-content callout-titled" title="Resolução">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Cuidado</span>Resolução
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="questão-23-enade-2015-economia" class="level3">
+<h3 class="anchored" data-anchor-id="questão-23-enade-2015-economia">Questão 23 (ENADE 2015 – Economia)</h3>
+<div id="exr-enade-2015-Q23" class="theorem exercise">
+<p><span class="theorem-title"><strong>Exercício 12</strong></span> &nbsp;</p>
+<blockquote class="blockquote">
+<p>Tema: Liquidez/Meios de pagamento (fechamento dos bancos na Grécia).</p>
+</blockquote>
+<p>A situação da Grécia ficou ainda mais difícil no meio de 2015 porque o Banco Central Europeu decidiu não aumentar o repasse de fundos emergenciais. Diante disso, o governo grego fechou os bancos durante uma semana (às vésperas de um plebiscito) e limitou o saque diário nos caixas automáticos, o que causou longas filas. Os bancos gregos dependem da assistência do BCE, que tem enviado fundos emergenciais ao Banco Central grego diariamente. O teto desse fundo é de 89 bilhões de euros. Acredita-se que todo esse dinheiro já tenha sido gasto.</p>
+<p>Disponível em: <a href="http://www.bbc.com/">http://www.bbc.com/</a>. Acesso em: 20 jul. 2015 (adaptado).</p>
+<p>Considerando a situação exposta, avalie as afirmações a seguir.</p>
+<ul>
+<li><ol type="I">
+<li>O governo grego visava ampliar a razão papel-moeda em poder do público sobre os meios de pagamento, estimulando, com isso, o aumento do multiplicador monetário. <input type="checkbox" unchecked=""></li>
+</ol></li>
+<li><ol start="2" type="I">
+<li>O governo grego pretendia reduzir o acesso do público aos meios de pagamento e, com isso, diminuir o nível geral de preços. <input type="checkbox" unchecked=""></li>
+</ol></li>
+<li><ol start="3" type="I">
+<li>O governo grego objetivava manter o fluxo de liquidez do mercado interbancário, restabelecendo, com isso, os níveis de reservas bancárias. <input type="checkbox" unchecked=""></li>
+</ol></li>
+<li><ol start="4" type="I">
+<li>O governo grego procurava evitar o colapso do multiplicador monetário, ao estabilizar a razão depósitos à vista dos bancos comerciais sobre os meios de pagamento. <input type="checkbox" unchecked=""></li>
+</ol></li>
+</ul>
+<p>É correto apenas o que se afirma em</p>
+<ol type="A">
+<li>I e II.</li>
+<li>II e III.</li>
+<li>III e IV.</li>
+<li>I, II e IV.</li>
+<li>I, III e IV.</li>
+</ol>
+<p><label for="resposta">Sua resposta:</label> <select name="resposta" id="altenativa"> <option value="A">A</option> <option value="B">B</option> <option value="C">C</option> <option value="D">D</option> <option value="E">E</option> </select></p>
+</div>
+<hr>
+</section>
+<section id="questão-31-enade-2015-economia" class="level3">
+<h3 class="anchored" data-anchor-id="questão-31-enade-2015-economia">Questão 31 (ENADE 2015 – Economia)</h3>
+<div id="exr-enade-2015-Q31" class="theorem exercise">
+<p><span class="theorem-title"><strong>Exercício 13</strong></span> &nbsp;</p>
+<blockquote class="blockquote">
+<p>Tema: Modelos de crescimento (Solow/endógeno, convergência).</p>
+</blockquote>
+<p>Do ponto de vista empírico, o mundo assistiu ao longo do século XX a um aumento da disparidade entre a renda per capita dos países mais ricos e a renda per capita dos países mais pobres, mesmo quando considerados alguns poucos processos de convergência.</p>
+<p>Considerando esse contexto, avalie as afirmações a seguir.</p>
+<ul>
+<li><ol type="I">
+<li>De acordo com o modelo de crescimento de Solow, países mais pobres deveriam crescer a uma taxa superior à taxa de crescimento de países mais ricos. <input type="checkbox" unchecked=""></li>
+</ol></li>
+<li><ol start="2" type="I">
+<li>De acordo com o modelo de crescimento de Solow, uma explicação para o diferencial de nível de renda per capita, no longo prazo, seria a diferença nas taxas de poupança dos países. <input type="checkbox" unchecked=""></li>
+</ol></li>
+<li><ol start="3" type="I">
+<li>De acordo com o modelo de crescimento de Solow, uma explicação para a diferença nas taxas de crescimento da renda per capita, no longo prazo, seria a diferença nas taxas de poupança dos países. <input type="checkbox" unchecked=""></li>
+</ol></li>
+<li><ol start="4" type="I">
+<li>De acordo com o modelo de crescimento de Solow, o crescimento contínuo do volume de investimento por trabalhador contribui para a determinação da taxa de crescimento da renda per capita. <input type="checkbox" unchecked=""></li>
+</ol></li>
+<li><ol start="22" type="A">
+<li>De acordo com os modelos de crescimento endógeno, algumas explicações para o diferencial de renda per capita podem ser encontradas em variáveis como capital humano e investimento em pesquisa e desenvolvimento. <input type="checkbox" unchecked=""></li>
+</ol></li>
+</ul>
+<p>É correto o que se afirma em:</p>
+<ol type="A">
+<li>I, II e V.</li>
+<li>I, III e IV.</li>
+<li>I, III e V.</li>
+<li>II, III e IV.</li>
+<li>II, IV e V.</li>
+</ol>
+<p><label for="resposta">Sua resposta:</label> <select name="resposta" id="altenativa"> <option value="A">A</option> <option value="B">B</option> <option value="C">C</option> <option value="D">D</option> <option value="E">E</option> </select></p>
+</div>
+<hr>
+</section>
+</section>
+<section id="exame-anpec" class="level2">
+<h2 class="anchored" data-anchor-id="exame-anpec">Exame ANPEC</h2>
+<ul>
+<li><a href="https://exame.anpec.org.br/index.php?r=site/provasAnteriores">Link para provas antigas e gabaritos.</a></li>
+</ul>
+<hr>
+<section id="questão-07-anpec-2025-macroeconomia" class="level3">
+<h3 class="anchored" data-anchor-id="questão-07-anpec-2025-macroeconomia">Questão 07 (ANPEC 2025 – Macroeconomia)</h3>
+<div id="exr-anpec-2025-macro-Q07" class="theorem exercise">
+<p><span class="theorem-title"><strong>Exercício 14</strong></span> &nbsp;</p>
+<blockquote class="blockquote">
+<p>Tema: IS-LM-BP.</p>
+</blockquote>
+<p>Considere uma economia aberta e pequena descrita pelas seguintes relações:</p>
+<p><span class="math display">\[\begin{align}
+C &amp;= c_0 + c_1(Y - T)\\
+I &amp;= d_0 + d_1\theta\\
+G &amp;= \bar G\\
+T &amp;= \bar T = \frac{\bar G}{c_1}\\
+EL &amp;= \bar X + b\theta - mY
+\end{align}\]</span></p>
+<p>em que <span class="math inline">\(C, Y, T, I, G\)</span> e <span class="math inline">\(EL\)</span> denotam, respectivamente, o consumo, o produto, a receita tributária, o investimento, o gasto público e as exportações líquidas. No caso destas últimas, <span class="math inline">\(\bar X\)</span> é o montante (exógeno) de exportações, <span class="math inline">\(0&lt;m&lt;1\)</span> é a propensão marginal a importar e <span class="math inline">\(\theta\)</span> é o nível (exógeno) da taxa de câmbio real, definida como a razão entre os preços da produção externa e da produção local, ambos em moeda local. Por sua vez, <span class="math inline">\(c_0\)</span> e <span class="math inline">\(d_0\)</span> são componentes de gasto autônomo estritamente positivos, enquanto <span class="math inline">\(b\)</span>, <span class="math inline">\(c_1\)</span> e <span class="math inline">\(d_1\)</span> são parâmetros estritamente positivos, com <span class="math inline">\(0&lt;d_1&lt;b&lt;c_1&lt;1\)</span>.</p>
+<p>Assinale como verdadeiras ou falsas as afirmativas abaixo:</p>
+<ol start="0" type="1">
+<li>O multiplicador dos gastos autônomos será tanto maior quanto maior for a propensão marginal a importar. <input type="checkbox" unchecked=""></li>
+<li>O multiplicador dos gastos autônomos será tanto maior quanto maior for a propensão marginal a consumir. <input type="checkbox" unchecked=""></li>
+<li>O multiplicador dos gastos autônomos será tanto maior quanto mais alta for a taxa de câmbio real. <input type="checkbox" unchecked=""></li>
+<li>A especificação das exportações líquidas supõe que a condição de Marshall–Lerner não é satisfeita. <input type="checkbox" unchecked=""></li>
+<li>O aumento do produto de equilíbrio que resulta de um pequeno aumento do componente autônomo do consumo é o mesmo que resulta de um aumento de igual magnitude do componente autônomo do investimento. <input type="checkbox" unchecked=""></li>
+</ol>
+</div>
+<hr>
+</section>
+</section>
+<section id="concursos-públicos" class="level2">
+<h2 class="anchored" data-anchor-id="concursos-públicos">Concursos Públicos</h2>
+<ul>
+<li>Concurso Banco Central 2024, Cargo: Analista - Economia e Finanças.
+<ul>
+<li><a href="https://arq.pciconcursos.com.br/provas/33165042/5cc924e9beef/analista_Economia_e_financas.pdf">Link para a prova.</a></li>
+<li><a href="https://arq.pciconcursos.com.br/provas/33165042/68c6775a2364/gabarito.pdf">Link para o gabarito oficial.</a></li>
+</ul></li>
+<li>Concurso Público Nacional Unificado (CNU) 2024, Setores Econômicos e Regulação, Bloco 6 - Tarde.
+<ul>
+<li><a href="https://www.gov.br/gestao/pt-br/concursonacional/caderno-de-provas/tarde/prova-14-gabarito-1-setores-economicos-e-regulacao-tarde.pdf">Link para a prova.</a></li>
+<li><a href="https://www.gov.br/gestao/pt-br/concursonacional/gabaritos-finais/cpnu2024_gabaritosoficiais_todos-os-blocos-tarde.pdf">Link para o gabarito oficial.</a></li>
+</ul></li>
+</ul>
+<hr>
+<section id="questões-51-a-53-banco-central-2024-cargo-analista---economia-e-finanças" class="level3">
+<h3 class="anchored" data-anchor-id="questões-51-a-53-banco-central-2024-cargo-analista---economia-e-finanças">Questões 51 a 53 (Banco Central 2024, Cargo: Analista - Economia e Finanças)</h3>
+<div id="exr-bc-2024-Q51a53" class="theorem exercise">
+<p><span class="theorem-title"><strong>Exercício 15</strong></span> &nbsp;</p>
+<blockquote class="blockquote">
+<p>Tema: Diversos.</p>
+</blockquote>
+<p>No que diz respeito aos principais modelos macroeconômicos, julgue os itens a seguir.</p>
+<ol start="51" type="1">
+<li><p>De acordo com o modelo keynesiano, o aumento do salário mínimo acarreta aumento da renda de equilíbrio.</p></li>
+<li><p>Segundo o modelo de crescimento proposto por Solow, o crescimento populacional reduz o produto de equilíbrio da economia.</p></li>
+<li><p>Em uma economia aberta com câmbio flutuante, se o produto de equilíbrio for determinado pelas condições do mercado de trabalho, haverá relação causal entre moeda e preços, como estabelece a teoria quantitativa da moeda.</p></li>
+</ol>
+</div>
+</section>
+<section id="questões-54-a-59-banco-central-2024-cargo-analista---economia-e-finanças" class="level3">
+<h3 class="anchored" data-anchor-id="questões-54-a-59-banco-central-2024-cargo-analista---economia-e-finanças">Questões 54 a 59 (Banco Central 2024, Cargo: Analista - Economia e Finanças)</h3>
+<div id="exr-bc-2024-Q54a59" class="theorem exercise">
+<p><span class="theorem-title"><strong>Exercício 16</strong></span> &nbsp;</p>
+<blockquote class="blockquote">
+<p>Tema: Política monetária, fiscal, e cambial.</p>
+</blockquote>
+<p>Considerando a operacionalização da política monetária executada pelo Banco Central do Brasil (BCB) e as principais medidas macroprudenciais, julgue os itens subsequentes.</p>
+<ol start="54" type="1">
+<li><p>A exigência de capital dos bancos para fazer frente ao risco operacional é majoritariamente calculada com base nas perdas incorridas pelas instituições.</p></li>
+<li><p>Se o câmbio é fixo e há plena mobilidade de capitais, então a política monetária é passiva.</p></li>
+<li><p>Quando o BCB define a taxa SELIC, choques no multiplicador monetário não afetam a economia.</p></li>
+<li><p>Se o governo realiza uma política fiscal ativa, evidencia-se redução das exportações líquidas na mesma magnitude dos gastos do governo quando a autoridade monetária garante liberdade de capitais e câmbio flexível.</p></li>
+<li><p>As operações compromissadas realizadas pelo BCB entram no cálculo da dívida bruta do governo geral (DBGG).</p></li>
+<li><p>O BCB emite títulos para a execução da política monetária.</p></li>
+</ol>
+</div>
+<hr>
+</section>
+<section id="questões-60-a-64-banco-central-2024-cargo-analista---economia-e-finanças" class="level3">
+<h3 class="anchored" data-anchor-id="questões-60-a-64-banco-central-2024-cargo-analista---economia-e-finanças">Questões 60 a 64 (Banco Central 2024, Cargo: Analista - Economia e Finanças)</h3>
+<div id="exr-bc-2024-Q60a64" class="theorem exercise">
+<p><span class="theorem-title"><strong>Exercício 17</strong></span> &nbsp;</p>
+<blockquote class="blockquote">
+<p>Tema: Ciclos de negócios e dinâmica cambial.</p>
+</blockquote>
+<p>A macroeconomia é uma área do conhecimento que engloba o estudo de diversos conceitos-chave para entender as dinâmicas econômicas globais. Considerando conceitos relacionados à macroeconomia, julgue os itens a seguir.</p>
+<ol start="60" type="1">
+<li><p>A curva de Phillips, conceito econômico que estabelece uma relação inversa de curto prazo entre desemprego e inflação, mostra-se mais complexa a longo prazo, particularmente ao levar em conta as expectativas de inflação.</p></li>
+<li><p>A teoria da paridade do poder de compra apresenta limitações decorrentes de fatores como barreiras comerciais e diferenças nos bens consumidos entre os países.</p></li>
+<li><p>A paridade de taxas de juros na sua forma coberta (CIP) se mantém com bastante precisão devido à arbitragem no mercado financeiro.</p></li>
+<li><p>Nos modelos de exportação e importação, a elasticidade-preço é irrelevante para determinar o efeito de mudanças na taxa de câmbio sobre a balança comercial.</p></li>
+<li><p>Os regimes cambiais e a taxa de câmbio de equilíbrio consideram os efeitos no curto prazo sobre a economia.</p></li>
+</ol>
+</div>
+</section>
+<section id="questões-65-e-66-banco-central-2024-cargo-analista---economia-e-finanças" class="level3">
+<h3 class="anchored" data-anchor-id="questões-65-e-66-banco-central-2024-cargo-analista---economia-e-finanças">Questões 65 e 66 (Banco Central 2024, Cargo: Analista - Economia e Finanças)</h3>
+<div id="exr-bc-2024-Q65e66" class="theorem exercise">
+<p><span class="theorem-title"><strong>Exercício 18</strong></span> &nbsp;</p>
+<blockquote class="blockquote">
+<p>Tema: Modelo de ciclo de negócios reais.</p>
+</blockquote>
+<p>A respeito da teoria dos ciclos econômicos reais, que oferece uma explicação para as flutuações na atividade econômica, concentrando-se em choques reais como o principal motor desses ciclos, julgue os itens subsequentes.</p>
+<ol start="65" type="1">
+<li><p>Os choques de produtividade resultantes de variações na eficiência de uso dos recursos não incluem mudanças na qualidade da mão de obra.</p></li>
+<li><p>Um choque tecnológico positivo pode aumentar a produção e o emprego, resultando em expansão econômica.</p></li>
+</ol>
+</div>
+<hr>
+</section>
+<section id="questões-67-e-68-banco-central-2024-cargo-analista---economia-e-finanças" class="level3">
+<h3 class="anchored" data-anchor-id="questões-67-e-68-banco-central-2024-cargo-analista---economia-e-finanças">Questões 67 e 68 (Banco Central 2024, Cargo: Analista - Economia e Finanças)</h3>
+<div id="exr-bc-2024-Q67e68" class="theorem exercise">
+<p><span class="theorem-title"><strong>Exercício 19</strong></span> &nbsp;</p>
+<blockquote class="blockquote">
+<p>Tema: Modelos classico e novo-keynesiano.</p>
+</blockquote>
+<p>A respeito da determinação dos salários no modelo novo-keynesiano e no clássico, julgue os itens a seguir.</p>
+<ol start="67" type="1">
+<li><p>Segundo o modelo novo-keynesiano, não há desemprego cíclico a longo prazo e qualquer desemprego existente ocorre devido a fatores como mudanças tecnológicas ou preferências de trabalho.</p></li>
+<li><p>A perspectiva clássica enfatiza a capacidade dos mercados de alcançar equilíbrio e eficiência por conta própria, enquanto o modelo novo-keynesiano reconhece a possibilidade de desequilíbrios persistentes devido a rigidezes e imperfeições no mercado, sugerindo um papel mais ativo da política econômica na estabilização da economia.</p></li>
+</ol>
+</div>
+<hr>
+</section>
+<section id="questão-27-cnu-2024---setores-econômicos-e-regulação-bloco-6---tarde" class="level3">
+<h3 class="anchored" data-anchor-id="questão-27-cnu-2024---setores-econômicos-e-regulação-bloco-6---tarde">Questão 27 (CNU 2024 - Setores Econômicos e Regulação, Bloco 6 - Tarde)</h3>
+<div id="exr-cnu-2024-bloco6-tarde-Q27" class="theorem exercise">
+<p><span class="theorem-title"><strong>Exercício 20</strong></span> &nbsp;</p>
+<blockquote class="blockquote">
+<p>Tema: Balanço de Pagamentos.</p>
+</blockquote>
+<p>A Tabela a seguir registra os resultados do Balanço de Pagamentos do Brasil (em US$ milhões) no período 2012-2014.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>2012</th>
+<th>2013</th>
+<th>2014</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Transações correntes</td>
+<td>-54,249</td>
+<td>-81,227</td>
+<td>-91,288</td>
+</tr>
+<tr class="even">
+<td>Conta Capital</td>
+<td>-1,877</td>
+<td>1,193</td>
+<td>590</td>
+</tr>
+<tr class="odd">
+<td>Conta Financeira</td>
+<td>71,886</td>
+<td>73,159</td>
+<td>97,809</td>
+</tr>
+<tr class="even">
+<td>Erros e Omissões</td>
+<td>3,130</td>
+<td>949</td>
+<td>3,722</td>
+</tr>
+</tbody>
+</table>
+<p>Nota: Os valores de Erros e Omissões, relativos a 2012 e 2013, foram ligeiramente aproximados. Fonte: Banco Central do Brasil. Séries históricas – BPM6 (até fevereiro de 2015). Disponível em: <a href="https://www.bcb.gov.br/estatisticas/tabelasespeciais">https://www.bcb.gov.br/estatisticas/tabelasespeciais</a>. Acesso em: 14 fev. 2024.</p>
+<p>De acordo com os dados informados, o Brasil</p>
+<ol type="A">
+<li>teve saída líquida de capitais financeiros no triênio 2012-2014. <input type="checkbox" unchecked=""></li>
+<li>teve superávit no Balanço de Pagamentos em 2013. <input type="checkbox" unchecked=""></li>
+<li>teve aumento de reservas internacionais em 2013. <input type="checkbox" unchecked=""></li>
+<li>registrou perda de reservas internacionais em 2012. <input type="checkbox" unchecked=""></li>
+<li>dependeu de poupança externa no triênio 2012-2014. <input type="checkbox" unchecked=""></li>
+</ol>
+<p><label for="resposta">Sua resposta:</label> <select name="resposta" id="altenativa"> <option value="A">A</option> <option value="B">B</option> <option value="C">C</option> <option value="D">D</option> <option value="E">E</option> </select></p>
+</div>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiada");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiada");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
