@@ -1,0 +1,150 @@
+---
+title: "Exercícios Resolvidos: Matemática Financeira e Finanças"
+format: html
+lang: pt
+date: 10/01/2025
+date-format: "MMM, YYYY"
+author:
+  - name: Pedro Chaim
+    id: pc
+    email: pedro.chaim@ufsc.br
+    affiliation: 
+      - name: CNM/UFSC
+        city: Florianópolis
+        state: Santa Catarina
+        url: https://cnm.ufsc.br/
+---
+
+Resoluções comentadas de exercícios selecionados sobre Matemática Financeira e Finanças em provas padronizadas e concursos públicos diversos.
+
+Contato: [pedro.chaim@ufsc.br](mailto:pedro.chaim@ufsc.br).
+
+
+
+## Exame ANPEC
+
+- [Link para provas antigas e gabaritos.](https://exame.anpec.org.br/index.php?r=site/provasAnteriores)
+
+---
+
+### Questão 04 (ANPEC 2025 – Matemática)
+
+::: {#exr-anpec-2025-matematica-Q04}
+
+> Tema: Tabela price de amortização de empréstimos.
+
+Uma dívida de $P_0>0$ reais, contraída no período $0$, é paga a partir do período subsequente em uma quantidade de prestações dada por um número par $T>0$, todas de $R$ reais, sob o sistema Price de amortização.
+Assim, $P_t=(1+r)P_{t-1}-R$, $\forall, t \in {1,\ldots,T}$, e $P_T=0$; em que $P_t$ representa o saldo devedor ao fim do período $t$, e $r>0$ é a taxa de juros acordada entre as partes. Julgue as afirmativas abaixo quanto a sua veracidade:
+
+(0) Para cada $t \in {0,1,\ldots,T}$, vale $P_t = P_0 - tP_0/T$. <select name="vf" id="vf">
+  <option value=""></option>
+  <option value="Verdadeiro">Verdadeiro</option>
+  <option value="Falso">Falso</option>
+</select>
+(1) Cada prestação é de $P_0(1+r)^T/T$ reais. <select name="vf" id="vf">
+  <option value=""></option>
+  <option value="Verdadeiro">Verdadeiro</option>
+  <option value="Falso">Falso</option>
+</select>
+(2) Cada prestação supera os $rP_0$ reais. <select name="vf" id="vf">
+  <option value=""></option>
+  <option value="Verdadeiro">Verdadeiro</option>
+  <option value="Falso">Falso</option>
+</select>
+(3) Quanto maior $r$, maior será $R$. <select name="vf" id="vf">
+  <option value=""></option>
+  <option value="Verdadeiro">Verdadeiro</option>
+  <option value="Falso">Falso</option>
+</select>
+(4) Ao fim do período $T/2$, o saldo devedor ainda corresponde a mais da metade da dívida inicial. <select name="vf" id="vf">
+  <option value=""></option>
+  <option value="Verdadeiro">Verdadeiro</option>
+  <option value="Falso">Falso</option>
+</select>
+
+::: {.callout-caution title="Resolução" collapse="true" appearance="minimal"}
+
+:::
+
+:::
+
+### Questão 10 (ANPEC 2025 – Matemática)
+
+::: {#exr-anpec-2025-matematica-Q10}
+
+> Tema: Equações em diferenças.
+
+Considere o contexto em que um investimento inicial de $A>0$ unidades monetárias pode ser aplicado, no período inicial $t=0$, em apenas um dentre dois ativos disponíveis.
+
+O primeiro ativo remunera a uma taxa de juros $r>0$ e, devido a custos operacionais, deduz do saldo um valor $B_t$ em cada período $t=0,1,2,\ldots$. Ainda, dada uma aplicação inicial $x_0$ igual a $A>0$, o valor no instante $t+1$ satisfaz $x_{t+1}=(1+r)x_t-B_t$, onde $\forall t\geq 0$, $B_{t+1}=\left(\frac{1+r}{2}\right)B_t$ e $B_0=\frac{A}{2}$.
+
+Com respeito ao segundo ativo, uma mesma aplicação inicial $y_0$ em $t=0$ igual a $A>0$ implica um valor $y_{t+1}$ no período $t+1$ que satisfaz $y_{t+1}=(1+\bar r)y_t$, onde $\bar r>0$.
+
+Sabendo que $\frac{1+r}{1+\bar r}=V\geq 0$ e $\lim_{t\rightarrow\infty}\frac{x_t}{y_t}=\frac{1}{2}$, determine o valor de $V$.
+
+::: {.callout-caution title="Resolução" collapse="true" appearance="minimal"}
+
+:::
+
+:::
+
+
+## Concursos Públicos
+
+- Concurso Banco Central 2024, Cargo: Analista - Economia e Finanças. 
+  - [Link para a prova.](https://arq.pciconcursos.com.br/provas/33165042/5cc924e9beef/analista_Economia_e_financas.pdf)
+  - [Link para o gabarito oficial.](https://arq.pciconcursos.com.br/provas/33165042/68c6775a2364/gabarito.pdf)
+
+### Questão 77 (Banco Central 2024, Cargo: Analista - Economia e Finanças)
+  
+::: {#exr-bc-2024-Q77}
+
+Acerca dos títulos emitidos pelo Tesouro Nacional, julgue os itens seguintes.
+
+(79)  O valor investido no título Tesouro Prefixado 2031 pode ser resgatado a qualquer data, com a garantia da taxa de juros contratada no dia da compra.
+(80)  O rendimento dos títulos Tesouro IPCA corresponde a uma taxa prefixada de juros somada à variação do índice nacional de preços ao consumidor amplo (IPCA) no período.
+
+No que se refere ao mercado de ações, julgue os itens a seguir.
+
+(81)  O valor de mercado de uma ação coincide com o seu valor intrínseco, por corresponder às expectativas de fluxos de ganhos futuros.
+(82)  Enquanto ações ordinárias dão direito apenas a voto, as ações preferenciais dão direito à parte dos dividendos proporcional ao número de votos detidos pelo acionista.
+
+Considerando que o preço de mercado de uma ação esteja em **R$ 195,00**, julgue o próximo item, referente ao mercado de opções.
+
+(83)  No referido contexto, o titular de opções de venda da referida ação poderá vendê-la por **R$ 200,00** e, com isso, terá ganho igual a **R$ 5,00**, descontado o prêmio pago pelas opções.
+
+::: {.callout-caution title="Resolução" collapse="true" appearance="minimal"}
+
+> *79. O valor investido no título Tesouro Prefixado 2031 pode ser resgatado a qualquer data, com a garantia da taxa de juros contratada no dia da compra.*
+
+Falso. É possível vender o Tesouro Prefixado antes do vencimento, mas sem garantia da taxa contratada — o preço oscila conforme as taxas de mercado (marcação a mercado).
+
+---
+
+> *80.  O rendimento dos títulos Tesouro IPCA corresponde a uma taxa prefixada de juros somada à variação do índice nacional de preços ao consumidor amplo (IPCA) no período.*
+
+Verdadeiro. O Tesouro IPCA rende taxa real prefixada + variação do IPCA do período.
+
+---
+
+> *81.  O valor de mercado de uma ação coincide com o seu valor intrínseco, por corresponder às expectativas de fluxos de ganhos futuros.*
+
+Falso. O preço de mercado de uma ação resulta de oferta e demanda e pode divergir do “valor intrínseco” (valor presente dos fluxos esperados). É formado pela expectativa conjunta dos agentes do mercado acerca dos fluxos futuros de dividendos.
+
+---
+
+> *82. Enquanto ações ordinárias dão direito apenas a voto, as ações preferenciais dão direito à parte dos dividendos proporcional ao número de votos detidos pelo acionista.*
+
+Falso. Ações ordinárias têm direito a voto (e também a dividendos); ações preferenciais geralmente têm prioridade em dividendos e, em situações usuais, não têm direito voto na assembéia dos acionistas. Dividendos são proporcionais ao número de ações, não de votos.
+
+---
+
+> *Considerando que o preço de mercado de uma ação esteja em **R$ 195,00**, julgue o próximo item, referente ao mercado de opções.*
+
+> *83. No referido contexto, o titular de opções de venda da referida ação poderá vendê-la por **R\$ 200,00** e, com isso, terá ganho igual a **R\$ 5,00**, descontado o prêmio pago pelas opções.*
+
+Verdadeiro. Se eu detenho uma opção de venda com strike $K=200$ e o preço de mercado da ação é $S=195$, e eu exercer tal opção (o equivalente a vender minha ação ao emissor pelo preço $K$), o resultado líquido é $K-S=5$, não considerando o prêmio pago pela opção de venda.
+
+:::
+
+:::

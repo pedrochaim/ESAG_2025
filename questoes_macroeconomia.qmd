@@ -1,0 +1,891 @@
+---
+title: "Exercícios Resolvidos: Macroeconomia"
+format: html
+lang: pt
+date: 10/01/2025
+date-format: "MMM, YYYY"
+author:
+  - name: Pedro Chaim
+    id: pc
+    email: pedro.chaim@ufsc.br
+    affiliation: 
+      - name: CNM/UFSC
+        city: Florianópolis
+        state: Santa Catarina
+        url: https://cnm.ufsc.br/
+---
+
+Resoluções comentadas de exercícios selecionados sobre Macroeconomia em provas padronizadas e concursos públicos diversos.
+
+Contato: [pedro.chaim@ufsc.br](mailto:pedro.chaim@ufsc.br).
+
+## ENADE 2022
+
+- [Link para a prova.](https://download.inep.gov.br/enade/provas_e_gabaritos/2022_PV_ciencias_economicas.pdf)
+- [Link para o gabarito oficial.](https://download.inep.gov.br/enade/provas_e_gabaritos/2022_GB_ciencias_economicas.pdf) 
+
+---
+
+### Questão 13 (ENADE 2022 – Economia)
+
+::: {#exr-enade-2022-Q13}
+
+> Tema: Multiplicador monetário e política monetária.
+
+A equação $a = \frac{1}{1 − d(1 − e)}$ representa o multiplicador do sistema monetário, em que $a = \frac{MP}{B}$, $d = \frac{DV_{BC}}{MP}$, $e = \frac{E_T}{DV_{BC}}$, sendo $MP$ os meios de pagamento, $B$ a base monetária, $DV_{BC}$ o depósito à vista dos bancos comerciais e $E_T$ o encaixe dos bancos.
+
+DE CARVALHO, F. J. C. et al. Economia Monetária e Financeira: Teoria e Política. 3. ed. São Paulo: GEN Atlas, 2015 (adaptado).
+
+Considerando as relações entre as variáveis financeiras expressas nessa equação, avalie as afirmações a seguir.
+
+- I.  O Banco Central, ao alterar as taxas de juros das operações de redesconto e empréstimos aos bancos comerciais, está interferindo diretamente na razão $d$. <select name="vf" id="vf">
+  <option value=""></option>
+  <option value="Verdadeiro">Verdadeiro</option>
+  <option value="Falso">Falso</option>
+</select>
+- II. O multiplicador monetário, ao ser ajustado por meio do aumento das reservas dos bancos, constitui estratégia dos bancos centrais para enfrentar as crises de liquidez. <select name="vf" id="vf">
+  <option value=""></option>
+  <option value="Verdadeiro">Verdadeiro</option>
+  <option value="Falso">Falso</option>
+</select>
+- III. O aumento da aversão ao risco dos bancos comerciais contrai os meios de pagamento, em momentos de crises financeiras, como no caso do estouro da bolha do subprime. <select name="vf" id="vf">
+  <option value=""></option>
+  <option value="Verdadeiro">Verdadeiro</option>
+  <option value="Falso">Falso</option>
+</select>
+- IV. A razão $e$ representa o percentual fixado legalmente dos depósitos à vista — que devem ser recolhidos ao Banco Central —, além de refletir a aversão dos bancos comerciais a recorrer a auxílios do Banco Central. <select name="vf" id="vf">
+  <option value=""></option>
+  <option value="Verdadeiro">Verdadeiro</option>
+  <option value="Falso">Falso</option>
+</select>
+
+É correto apenas o que se afirma em
+
+A. I e II.  
+B. I e III.  
+C. III e IV.  
+D. I, II e IV.  
+E. II, III e IV.
+
+<label for="resposta">Sua resposta:</label>
+<select name="resposta" id="altenativa">
+  <option value=""></option>
+  <option value="A">A</option>
+  <option value="B">B</option>
+  <option value="C">C</option>
+  <option value="D">D</option>
+  <option value="E">E</option>
+</select>
+
+::: {.callout-caution title="Resolução" collapse="true" appearance="minimal"}
+
+## Gabarito comentado — Multiplicador monetário (revisão expressa)
+
+### Conceitos-chave (bem rápido)
+
+* **Reservas bancárias.** Parte dos depósitos mantida pelos bancos como **encaixe**:
+  • **Compulsórias** (exigidas pelo BC) + **excedentes** (voluntárias, por prudência).
+  Indicador: $e=\dfrac{E_T}{DV_{BC}}$ (encaixe total sobre depósitos à vista).
+* **Redesconto.** Empréstimo do **Banco Central para bancos** (última instância), a taxas de curtíssimo prazo, contra colateral. **Aumentar/diminuir a taxa de redesconto** altera o **custo da liquidez** e incentiva/desincentiva manter **reservas**, mas **não muda diretamente** a preferência do público por manter **depósitos vs. papel-moeda**.
+* **Multiplicador monetário.**
+  \begin{align}
+  a = \frac{1}{1 - d(1 - e)}, \qquad d=\frac{DV_{BC}}{MP}, \qquad MP = a,B.
+  \end{align}
+  Intuição: **$e\uparrow \Rightarrow a\downarrow$** (mais reservas, menos multiplicação); **$d\uparrow \Rightarrow a\uparrow$** (mais depósitos na composição do dinheiro).
+
+---
+
+### Julgamento das assertivas
+
+**I. Falsa.** Mudar a **taxa de redesconto** afeta **reservas e custo de liquidez** (logo, $e$ e a base via uso da janela), **não** “diretamente” $d=\dfrac{DV_{BC}}{MP}$, que reflete a **composição** do meio de pagamento determinada pela preferência do público (depósitos vs. papel-moeda).
+
+**II. Falsa.** “Ajustar o multiplicador **aumentando reservas**” eleva $e$ e **reduz $a$**:
+\begin{align}
+e\uparrow ;\Rightarrow; a\downarrow ;\Rightarrow; MP=aB \text{ cai se } B \text{ fixo.}
+\end{align}
+Em crises, a prática é **elevar $B$** e/ou **baixar compulsórios** (diminuir $e$) para **sustentar** $MP$, não o contrário.
+
+**III. Verdadeira.** **Aversão ao risco ↑** → bancos guardam **mais reservas** (excedentes) → **$e\uparrow$**, **$a\downarrow$** → **contração de $MP$** (com $B$ dado). É o mecanismo típico em estresse financeiro.
+
+**IV. Verdadeira.** $e=\dfrac{E_T}{DV_{BC}}$ **combina** o **percentual legal** (compulsório) **e** as **reservas voluntárias**, que refletem a prudência/relutância em recorrer ao BC.
+
+:::
+
+:::
+
+---
+
+### Questão 16 (ENADE 2022 – Economia)
+
+::: {#exr-enade-2022-Q16}
+
+> Tema: Regime de Metas de Inflação (RMI) e choques de oferta/demanda. 
+
+A partir de 1999, a política monetária brasileira, a exemplo do que ocorre em vários países emergentes e desenvolvidos, passou a ser realizada no contexto do Regime de Metas de Inflação (RMI). A ideia por trás desse arcabouço é que o Banco Central (Bacen) se compromete a alcançar determinada meta anual de inflação. Nesse sentido, essa passa a ser uma regra a ser seguida pela autoridade monetária, aumentando-se a credibilidade da política monetária, o que serve para reduzir ou “ancorar” as expectativas de inflação dos agentes privados. O principal instrumento utilizado é a taxa básica de juros, definida como a taxa de juros da Selic para títulos públicos federais. A meta de inflação, determinada com dois anos de antecedência pelo Conselho Monetário Nacional (CMN), é balizada pelo Índice Nacional de Preços ao Consumidor Amplo (IPCA), que constitui o índice oficial. Existe uma margem de tolerância que permite que a variação anual do índice esteja 2% abaixo ou acima da meta estipulada. Outra característica do RMI é sua transparência. No caso brasileiro, após a reunião do Comitê de Política Monetária (Copom), o Bacen publica, em seu portal, a Ata do Copom, que apresenta todos os indicadores econômicos analisados por seus integrantes. 
+
+VASCONCELLOS, M. S.; GAMBOA, U. M. de; TUROLLA, A. *Macroeconomia para gestão empresarial*. 1. ed. São Paulo: Saraiva, 2016 (adaptado). 
+
+Considerando as informações apresentadas, ao que se refere ao RMI, avalie as afirmações a seguir. 
+
+- I.  O RMI foi implementado no Brasil em 1999, com a autonomia operacional do Bacen, que foi transformada em independência, de fato, após a crise financeira internacional de 2008. <select name="vf" id="vf">
+  <option value=""></option>
+  <option value="Verdadeiro">Verdadeiro</option>
+  <option value="Falso">Falso</option>
+</select>
+- II. A discricionariedade constitui princípio básico de funcionamento da política monetária do RMI, pois permite mudanças na taxa de juros para o alcance da meta, conforme a perspectiva keynesiana de funcionamento adequado da política monetária. <select name="vf" id="vf">
+  <option value=""></option>
+  <option value="Verdadeiro">Verdadeiro</option>
+  <option value="Falso">Falso</option>
+</select>
+- III.  O RMI vem-se mostrando, no Brasil e em outros países em que foi implementado, uma estratégia de política de combate à inflação alternativa ao que se praticava no passado, como, por exemplo, o cumprimento das metas de agregados monetários e(ou) a ancoragem cambial. <select name="vf" id="vf">
+  <option value=""></option>
+  <option value="Verdadeiro">Verdadeiro</option>
+  <option value="Falso">Falso</option>
+</select>
+
+É correto o que se afirma em
+
+(A) II, apenas.
+(B) III, apenas.
+(C) I e II, apenas.
+(D) I e III, apenas.
+(E) I, II e III. 
+
+<label for="resposta">Sua resposta:</label>
+<select name="resposta" id="altenativa">
+  <option value=""></option>
+  <option value="A">A</option>
+  <option value="B">B</option>
+  <option value="C">C</option>
+  <option value="D">D</option>
+  <option value="E">E</option>
+</select>
+
+::: {.callout-caution title="Resolução" collapse="true"}
+
+**Regime de Metas de Inflação**
+
+Segundo [Kiley e Mishkin (2025)](https://www.federalreserve.gov/econres/feds/files/2025025pap.pdf), **meta de inflação** é uma estratégia de política monetária que possui cinco elementos centrais:
+
+* **Anúncio público** pelo banco central de metas numéricas de médio prazo para a inflação — por exemplo, 2% — a fim de **ancorar as expectativas** de inflação.
+* **Compromisso institucional** com a **estabilidade de preços** como objetivo primário da política monetária, ao qual os demais objetivos ficam subordinados.
+* **Estratégia prospectiva e informacionalmente abrangente**, na qual **muitas variáveis** — e não apenas agregados monetários ou a taxa de câmbio — são usadas para decidir a configuração dos instrumentos de política.
+* **Maior transparência** da estratégia de política monetária, por meio da **comunicação com o público e os mercados** sobre planos, objetivos e decisões das autoridades monetárias.
+* **Maior responsabilização** do banco central pelo **cumprimento de seus objetivos de inflação**.
+
+**O Regime de Metas de Inflação Brasileiro**
+
+* **Quem define a meta:** **CMN** fixa **ponto e banda** (tipicamente com **antecedência de 2 anos**).
+* **Índice oficial:** a meta é **balizada pelo IPCA** (IBGE), **índice oficial de inflação**.
+* **Quem executa:** o **BCB/Copom** persegue a meta ajustando a **Selic** e usando instrumentos secundários (operações de mercado aberto, compulsórios, linhas de liquidez, *swaps* cambiais).
+* **Transparência/Accountability:** **Comunicados e Ata do Copom**, **Relatório Trimestral de Inflação**; **se o IPCA sai da banda**, o BC envia **carta aberta** explicando causas e estratégia de retorno.
+* **Cronologia:** RMI **desde 1999**; **autonomia legal** do BCB veio **com a LC 179/2021**.
+
+**Julgamento das assertivas**
+
+* **I. Falsa.** O início em **1999** está correto, mas **não houve “independência” pós-2008**; a **autonomia legal** do BCB é **de 2021**.
+* **II. Falsa.** O princípio do RMI é a **meta explícita (regra)**; a discrição é **instrumental e condicionada** pela meta, transparência e prestação de contas — não “discricionariedade como princípio básico”.
+* **III. Verdadeira.** O RMI se consolidou como **alternativa** a regimes anteriores (metas de **agregados monetários** e/ou **âncoras cambiais**), com foco em **ancorar expectativas** e **combater a inflação**.
+
+:::
+
+:::
+
+---
+
+### Questão 20 (ENADE 2022 – Economia)
+
+::: {#exr-enade-2022-Q20}
+
+> Tema: Modelos de crescimento (Harrod-Domar, Solow, Romer, Lucas).
+
+Uma das formas de analisar o processo de crescimento econômico de um país é pela elaboração de modelos formais de crescimento. (i) O primeiro modelo específico de crescimento surgiu na década de 1930; neste primeiro modelo, de tradição keynesiana, tem-se o investimento líquido como a chave para o crescimento econômico, porém não se define como obtê-lo. (ii) Posteriormente, foi formulado um modelo que trouxe mudanças para a análise do crescimento, permitindo a substituição de capital por trabalho e introduzindo a contabilidade do crescimento e a análise de produtividade total dos fatores; neste modelo, no entanto, há uma limitação: o motor do crescimento é exógeno. Na década de 1980, dois novos modelos vencem esta limitação, ao considerarem, respectivamente, (iii) os gastos em pesquisa e desenvolvimento e (iv) os gastos com capital humano como fatores-chave para o crescimento econômico.
+
+As descrições apresentadas em (i), (ii), (iii) e (iv) no texto referem-se, respectivamente, aos modelos teóricos de
+
+A.  Harrod-Domar; Solow; Romer; e Lucas.
+B.  Lucas; Harrod-Domar; Solow; e Romer.
+C.  Romer; Solow; Lucas; e Harrod-Domar.
+D.  Solow; Harrod-Domar; Romer; e Lucas.
+E.  Harrod-Domar; Solow; Lucas; e Romer.
+
+<label for="resposta">Sua resposta:</label>
+<select name="resposta" id="altenativa">
+  <option value="A">A</option>
+  <option value="B">B</option>
+  <option value="C">C</option>
+  <option value="D">D</option>
+  <option value="E">E</option>
+</select>
+
+::: {.callout-caution title="Resolução" collapse="true"}
+
+## Modelos de crescimento — até 3 equações por modelo (≈50 palavras cada)
+
+### (i) Harrod–Domar
+
+Modelo keynesiano com **coeficientes fixos** (sem substituição). O **investimento líquido** determina a variação do produto; a **poupança** o financia. O **ICOR** (v) liga capital e produto. A taxa “garantida” depende de (s) e (v); desvios do crescimento “natural” geram **instabilidade**. Políticas que elevam (s) ou reduzem (v) aumentam (g).
+\begin{align}
+I = sY \
+\Delta Y = \frac{1}{v} I \
+g = \frac{\Delta Y}{Y} = \frac{s}{v}
+\end{align}
+
+### (ii) Solow
+
+Neoclássico com **substituição K–L** e **retornos decrescentes**; progresso tecnológico **exógeno** (g). A dinâmica do capital por trabalho efetivo iguala **poupança** menos **depreciação ampliada**; o estado estacionário resolve investimento efetivo = depreciação. **Aumentos em (s)** elevam o **nível** de renda, não a **taxa** per capita, que é dada por (g).
+\begin{align}
+\dot{k} = s f(k) - (n + g + \delta) k \
+s f(k^*) = (n + g + \delta) k^* \
+g_y = g
+\end{align}
+
+### (iii) Romer (P&D)
+
+Crescimento **endógeno** via **ideias**: P&D expande o conhecimento (A), gerando **externalidades** e retornos agregados não decrescentes. A **alocação de trabalho em P&D** determina a taxa de crescimento; incentivos, escala e patentes elevam (g) **permanentemente**. O setor final usa (A) para produzir com produtividade crescente.
+\begin{align}
+\dot{A} = \phi L_A A \
+Y = K^{\alpha} (A L_Y)^{1-\alpha} \
+g = \frac{\dot{A}}{A} = \phi L_A
+\end{align}
+
+### (iv) Lucas (capital humano)
+
+Crescimento **endógeno** via **capital humano** (h). Agentes dedicam fração (u) do tempo ao **aprendizado**, acumulando (h); **externalidades** do capital humano sustentam crescimento sem tecnologia exógena. Políticas educacionais e incentivos a (u) elevam (g); diferenças em (u) e na eficiência de aprendizado explicam heterogeneidade internacional.
+\begin{align}
+\dot{h} = \phi u h \
+Y = K^{\alpha} \big((1-u) h L\big)^{1-\alpha} \
+g_y = \frac{\dot{h}}{h} = \phi u
+\end{align}
+
+> Mapeamento do enunciado: **Harrod–Domar; Solow; Romer; Lucas** → alternativa **A**.
+
+
+:::
+
+:::
+
+---
+
+### Questão 26 (ENADE 2022 – Economia)
+
+::: {#exr-enade-2022-Q26}
+
+> Tema: Efeitos de política fiscal/monetária no IS-LM. 
+
+
+Considere o gráfico seguinte, em que Y* é o produto de equilíbrio e i* consiste na taxa de juros de equilíbrio.
+
+![Figura](ENADE_2022_Q26.png "Title")
+
+Com base no gráfico apresentado, avalie as afirmações a seguir.
+
+- I.  Uma diminuição da carga tributária deslocaria a curva IS para cima (direita) e provocaria um aumento da taxa de juros de equilíbrio e da renda. <input type="checkbox" unchecked>
+- II. Uma compra de títulos, por parte da autoridade monetária, deslocaria a curva LM para cima (esquerda), o que provocaria um aumento da taxa de juros de equilíbrio e uma redução da renda da economia. <input type="checkbox" unchecked>
+- III.  Um aumento dos gastos autônomos deslocaria a curva de equilíbrio de bens e serviços para cima, o que, consequentemente, aumentaria a taxa de juros e a renda de equilíbrio. <input type="checkbox" unchecked>
+- IV. Uma política monetária restritiva provocaria, no equilíbrio IS-LM, um deslocamento da curva LM para baixo (direita) e uma redução das taxas de juros, o que, por sua vez, incentivaria um aumento dos investimentos e da renda. <input type="checkbox" unchecked>
+
+É correto apenas o que se afirma em
+
+A.  I e III.  
+B.  II e IV.  
+C.  III e IV.  
+D.  I, II e III.  
+E.  I, II e IV.
+
+<label for="resposta">Sua resposta:</label>
+<select name="resposta" id="altenativa">
+  <option value="A">A</option>
+  <option value="B">B</option>
+  <option value="C">C</option>
+  <option value="D">D</option>
+  <option value="E">E</option>
+</select>
+
+::: {.callout-caution title="Resolução" collapse="true"}
+
+Modelo IS-LM de equilíbrio conjunto no mercado de bens e mercado financeiro
+
+\begin{align*}
+  Y &= \frac{1}{1-c_1}\left[ c_0 - c_1T + G + I(\stackrel{-}{i},\stackrel{-}{+})\right] \tag{IS} \\
+  M/P &= L(\stackrel{-}{i}, \stackrel{+}{Y}) \tag{LM}
+\end{align*}
+
+**Julgamento das Assertivas:**
+
+(I) Correta. “Diminuição da carga tributária” eleva a demanda agregada (mais renda disponível), deslocando a IS para a direita (para cima). No novo equilíbrio com LM dada, a economia opera com renda ($Y$) e taxa de juros ($i$) maiores.
+(II) Falsa. “Compra de títulos” pelo Banco Central expande a base/quantidade de moeda, o que desloca a LM para a direita (para baixo), reduz $i$ e aumenta $Y$. A assertiva afirma o oposto (LM para cima/esquerda, $i\uparrow$, $Y\downarrow$).
+(III) Correta. “Aumento dos gastos autônomos” é choque de demanda que desloca a IS para a direita (para cima). Com LM fixa, o novo equilíbrio tem $i$ e $Y$ maiores.
+(IV) Falsa. “Política monetária restritiva” reduz a oferta real de moeda, deslocando a LM para a esquerda (para cima). Isso eleva $i$ e reduz $Y$ — exatamente o contrário do que a assertiva descreve (ela fala em LM para baixo/direita, queda de $i$ e aumento de $Y$).
+
+:::
+
+:::
+
+---
+
+### Questão 27 (ENADE 2022 – Economia)
+
+::: {#exr-enade-2022-Q27}
+
+> Tema: IS-LM-BP, mobilidade de capitais e regime cambial.
+
+O chamado "Consenso de Washington" predominou como receituário de política econômica durante a década de 1990. Entre suas propostas, incluía-se a liberalização comercial e financeira. Nesse mesmo período, observou-se uma predominância, para um conjunto grande de países, de medidas de maior flexibilidade para o fluxo de capitais estrangeiros.
+
+Considerando as implicações da adoção do aumento do grau de mobilidade de capitais em determinado país e o referencial teórico do modelo IS-LM-BP para uma pequena economia aberta, avalie as afirmações a seguir.
+
+- I.  O aumento do grau de mobilidade de capitais, preconizado pelo Consenso de Washington, sob o regime de taxas de câmbio flutuantes, aumenta o poder da política fiscal de amortizar choques exógenos sobre a demanda agregada. <input type="checkbox" unchecked>
+- II. A adoção de perfeita mobilidade de capitais resultará em uma política fiscal sem efeito sobre o produto no novo equilíbrio, se o regime cambial for o de taxa de câmbio fixa. <input type="checkbox" unchecked>
+- III.  A política monetária expansionista, supondo-se o regime de taxa de câmbio flutuante e a adoção de perfeita mobilidade de capitais, é capaz de aumentar o produto no novo equilíbrio. <input type="checkbox" unchecked>
+
+É correto o que se afirma em
+
+A.  I, apenas.
+B.  III, apenas.
+C.  I e II, apenas.
+D.  II e III, apenas.
+E.  I, II e III. 
+
+<label for="resposta">Sua resposta:</label>
+<select name="resposta" id="altenativa">
+  <option value="A">A</option>
+  <option value="B">B</option>
+  <option value="C">C</option>
+  <option value="D">D</option>
+  <option value="E">E</option>
+</select>
+
+:::
+
+
+### Questão 35 (ENADE 2022 – Economia)
+
+::: {#exr-enade-2022-Q35}
+
+> Tema: Curva de Phillips (inflação esperada, desemprego cíclico, choques).
+
+A curva de Phillips, em sua forma moderna, enuncia que a taxa de inflação depende de três forças: inflação esperada; desvio do desemprego em relação à taxa natural, também chamada de desemprego cíclico; e choques de oferta. Essas três forças estão expressas na equação
+\begin{align}
+p = p^{e} - b(u - u^{n}) + v
+\end{align}
+em que $p$ é a inflação, $p^{e}$ a inflação esperada, $(u - u^{n})$ corresponde ao desemprego cíclico, $b$ mede a relação entre inflação e desemprego, e $v$ mede o choque de oferta.
+
+MANKIW, N. G. Macroeconomia. São Paulo: Editora Atlas, 2021 (adaptado).
+
+Quanto à curva de Phillips, avalie as afirmações a seguir.
+
+- I.  A relação entre inflação e desemprego é negativa e expressa pelo valor de $b$. <input type="checkbox" unchecked>
+- II. A curva de Phillips é usada para as seguintes finalidades: descrever o lado da demanda da economia em modelos macroeconômicos; medir o impacto do desvio do produto em relação ao seu nível potencial na taxa de inflação; medir a inércia inflacionária; e realizar previsões. <input type="checkbox" unchecked>
+- III.  Os modelos de curva de Phillips têm como objetivo medir a expectativa de inflação, a partir das variáveis da equação relacionadas à inflação e ao desemprego. <input type="checkbox" unchecked>
+- IV. As expectativas das famílias e empresas, no Regime de Metas de Inflação, repercutem nas decisões de política monetária. <input type="checkbox" unchecked>
+
+É correto apenas o que se afirma em
+
+A.  I e IV.  
+B.  II e III.  
+C.  III e IV.  
+D.  I, II e III.  
+E.  I, II e IV.
+
+<label for="resposta">Sua resposta:</label>
+<select name="resposta" id="altenativa">
+  <option value=""></option>
+  <option value="A">A</option>
+  <option value="B">B</option>
+  <option value="C">C</option>
+  <option value="D">D</option>
+  <option value="E">E</option>
+</select>
+
+::: {.callout-caution title="Resolução" collapse="true"}
+
+**Gabarito: A (I e IV).**
+
+* **I. Verdadeira.** Pela equação \(p = p^{e} - b(u-u^{n}) + v\), com \(b>0\), o coeficiente do desemprego cíclico é \(-b\): maior desemprego reduz a inflação.
+* **II. Falsa.** A curva de Phillips é relação de **oferta agregada** (dinâmica da inflação), não do lado da demanda. Ela serve para estudar inércia, efeito do hiato (ou desemprego cíclico) sobre a inflação e para previsão, mas a frase “descrever o lado da demanda” torna o item incorreto.
+* **III. Falsa.** O objetivo dos modelos de Phillips não é “medir a expectativa de inflação” a partir de inflação e desemprego; usualmente (p^{e}) é tomado de pesquisas/mercado ou modelado separadamente.
+* **IV. Verdadeira.** Em regimes de metas de inflação, expectativas de famílias e empresas afetam decisões do BC (pois \(p^{e}\) entra na dinâmica da inflação e a autoridade busca ancorá-las).
+:::
+
+:::
+
+---
+
+## ENADE 2018
+
+- [Link para a prova.](https://download.inep.gov.br/educacao_superior/enade/provas/2018/ciencias_economicas.pdf)
+- [Link para o gabarito oficial.](https://download.inep.gov.br/educacao_superior/enade/gabaritos/2018/ciencias_economicas.pdf) 
+
+---
+
+### Questão 09 (ENADE 2018 – Economia)
+
+::: {#exr-enade-2018-Q09}
+
+> Tema: Câmbio e swap cambial em regime de câmbio flutuante
+
+Se a saída de dólares for superior ao ingresso de recursos no País por vários meses seguidos, a retirada consecutiva de divisas afetará o preço do dólar. Caso o Banco Central decida evitar a flutuação no preço da moeda estrangeira, poderia realizar operações de swap cambial, que funcionam como uma venda futura de dólares, ou mesmo operar no mercado à vista com leilões de moeda estrangeira.
+
+Disponível em: <http://www.g1.globo.com>. 
+Acesso em: 15 ago. 2018 (adaptado).
+
+Considerando a tendência à equalização das taxas de juros, um regime de taxa de câmbio flutuante, com livre mobilidade de capitais e expectativas racionais, avalie as asserções a seguir e a relação proposta entre elas.
+
+- I.  Se o diferencial de juros e os riscos mantêm-se inalterados, um anúncio da autoridade monetária de não realizar o programa de oferta diária de swaps afeta a cotação do dólar no período presente, caracterizando uma relação positiva entre a cotação futura e a cotação presente da moeda norte-americana.
+
+<center> **PORQUE** </center>
+
+- II. A expectativa de menor rentabilidade em dólares no futuro resulta em retirada de divisas da economia brasileira, com prejuízo para as exportações do País.
+
+A respeito dessas asserções, assinale a opção correta.
+
+A.  As asserções I e II são proposições verdadeiras, e a II é uma justificativa correta da I.
+B.  As asserções I e II são proposições verdadeiras, mas a II não é uma justificativa correta da I.
+C.  A asserção I é uma proposição verdadeira, e a II é uma proposição falsa.
+D.  A asserção I é uma proposição falsa, e a II é uma proposição verdadeira.
+E.  As asserções I e II são proposições falsas.
+
+<label for="resposta">Sua resposta:</label>
+<select name="resposta" id="altenativa">
+  <option value="A">A</option>
+  <option value="B">B</option>
+  <option value="C">C</option>
+  <option value="D">D</option>
+  <option value="E">E</option>
+</select>
+
+:::
+
+### Questão 10 (ENADE 2018 – Economia)
+
+::: {#exr-enade-2018-Q10}
+
+> Tema: IS-LM-BP em pequena economia aberta, política monetária expansionista.
+
+A seguinte notícia foi veiculada em 8 de abril de 2018. Em apontamentos realizados no Fundo Monetário Internacional (FMI) em Washington, o presidente do Banco Central do Brasil destacou que, no início da sua gestão, foi dada alta prioridade para ancorar expectativas de inflação antes do início do ciclo de redução de juros, o que baixou a Selic de 14,25% para os atuais 6,5%.
+
+Disponível em: <http://www.jb.com.br>. Acesso em: 26 jun. 2018 (adaptado).
+
+O gráfico a seguir apresenta uma pequena economia aberta do modelo IS-LM-BP, com mobilidade imperfeita de capitais, caracterizada pela curva BP menos inclinada que a curva LM, e expectativas econômicas ancoradas que operam em regime de câmbio flexível. O ponto A indica o equilíbrio interno e externo inicial.
+
+![Figura](ENADE_2018_Q10.png "Title")
+
+Considere que foi adotada uma política monetária expansionista, levando a economia para um novo equilíbrio interno e externo.
+
+Nesse contexto, é correto afirmar que
+
+A.  a taxa de câmbio será valorizada em relação à moeda estrangeira.  
+B.  a renda inicial permanecerá igual ao observado no equilíbrio interno e externo inicial.  
+C.  a curva BP será deslocada para a esquerda no processo de ajuste do setor externo.  
+D.  as curvas IS e BP serão deslocadas para a direita no processo de ajuste do setor externo.  
+E.  a curva LM será deslocada para a esquerda no processo de ajuste do setor externo.
+
+<label for="resposta">Sua resposta:</label>
+<select name="resposta" id="altenativa">
+  <option value="A">A</option>
+  <option value="B">B</option>
+  <option value="C">C</option>
+  <option value="D">D</option>
+  <option value="E">E</option>
+</select>
+
+:::
+
+---
+
+### Questão 20 (ENADE 2018 – Economia)
+
+::: {#exr-enade-2018-Q20}
+
+>Tema: Modelo de crescimento de Solow.
+
+Entre os objetivos macroeconômicos, inclui-se o crescimento econômico. A forma de se obter este resultado varia de país para país, bem como de acordo com o próprio estágio de desenvolvimento econômico que determinado país alcançou. Entre os modelos de crescimento, destaca-se o modelo de Solow, que toma como base a seguinte função de produção:
+\begin{align}
+Y = f(K, L)
+\end{align}
+em que $Y =$ produto; $K =$ estoque de capital; $L =$ quantidade de trabalho.
+
+Sobre os resultados do modelo de Solow, avalie as afirmações a seguir.
+
+- I.  Quanto maior a taxa de poupança, maior será a taxa de crescimento do produto por trabalhador no estado estacionário. <input type="checkbox" unchecked>
+- II. Quanto maior a relação capital-trabalho, menor será a taxa de crescimento econômico do produto por trabalhador. <input type="checkbox" unchecked>
+- III.  Quanto maior o crescimento populacional, maior será a taxa de crescimento do produto por trabalhador no estado estacionário. <input type="checkbox" unchecked>
+
+É correto o que se afirma em
+
+A.  II, apenas.  
+B.  III, apenas.  
+C.  I e II, apenas.  
+D.  I e III, apenas.  
+E.  I, II e III.
+
+<label for="resposta">Sua resposta:</label>
+<select name="resposta" id="altenativa">
+  <option value="A">A</option>
+  <option value="B">B</option>
+  <option value="C">C</option>
+  <option value="D">D</option>
+  <option value="E">E</option>
+</select>
+
+:::
+
+---
+
+### Questão 21 (ENADE 2018 – Economia)
+
+::: {#exr-enade-2018-Q21}
+
+> Tema: IS-LM, efeitos de políticas no equilíbrio entre mercados de bens e monetário. 
+
+Uma forma útil e muito conhecida de deduzir o padrão da demanda agregada e de verificar os efeitos de políticas macroeconômicas é o modelo IS-LM, uma representação gráfica desenvolvida em 1937 pelo economista britânico, laureado prêmio Nobel, John Hicks.
+
+SACHS; J. D.; LARRAIN, F. Macroeconomia em uma Economia Global. Ed. revisada e atualizada. São Paulo: Makron Books, 1997 (adaptado).
+
+Considere o modelo IS-LM, em uma economia fechada, com governo e em situação de equilíbrio entre o mercado de bens e serviços e o mercado monetário.
+
+A partir dessas informações, avalie as afirmações a seguir.
+
+- I.  A contração monetária aumenta a taxa de juros, ocasionando uma redução nos investimentos privados. <input type="checkbox" unchecked>
+- II. A expansão monetária reduz a taxa de juros e sua eficácia está diretamente relacionada à propensão marginal a poupar. <input type="checkbox" unchecked>
+- III.  A expansão dos gastos governamentais aumenta a taxa de juros, ocasionando uma redução nos investimentos privados. <input type="checkbox" unchecked>
+
+É correto o que se afirma em
+
+A.  I, apenas.  
+B.  II, apenas.  
+C.  I e III, apenas.  
+D.  II e III, apenas.  
+E.  I, II e III.
+
+<label for="resposta">Sua resposta:</label>
+<select name="resposta" id="altenativa">
+  <option value=""></option>
+  <option value="A">A</option>
+  <option value="B">B</option>
+  <option value="C">C</option>
+  <option value="D">D</option>
+  <option value="E">E</option>
+</select>
+
+:::
+
+---
+
+## ENADE 2015
+
+- [Link para a prova.](https://download.inep.gov.br/educacao_superior/enade/provas/2015/04_ciencias_economicas.pdf)
+- [Link para o gabarito oficial.](https://download.inep.gov.br/educacao_superior/enade/gabaritos/2015/04_gab_ciencias_economicas.pdf) 
+
+### Questão 16 (ENADE 2015 – Economia)
+
+::: {#exr-enade-2015-Q16}
+
+> Tema: Curva de Phillips (inflação x desemprego).
+
+A decisão do Comitê de Política Monetária (Copom) do Banco Central do Brasil, divulgada em 29/07/2015, de elevar a taxa de juros básica da economia em 0,5%, para o nível de 14,25% ao ano, corresponde a uma contração monetária e implica menor nível de atividade econômica nos próximos períodos. A relação entre o nível de atividade econômica, medido pela taxa de desemprego, e a taxa de inflação é estudada por meio da versão moderna da Curva de Phillips. Os dados mensais no período de novembro de 2012 a abril de 2015 (30 observações) para essas duas variáveis foram obtidos na página do Instituto de Pesquisa Econômica Aplicada (IPEA). A componente cíclica do desemprego foi obtida utilizando-se o filtro Hodrick-Prescott.
+
+A Curva de Phillips aumentada pelas expectativas pode ser especificada como:
+
+\begin{align}
+  \pi_t = \pi_t^{e} - \varepsilon(u_t - u_n).
+\end{align}
+
+em que se presume que as expectativas de inflação são a própria inflação passada $\pi_t^{e} = \pi_{t-1}$, o que resulta em
+
+\begin{align}
+  \Delta \pi_t = -\varepsilon(u_t - u_n),
+\end{align}
+
+em que $\Delta\pi_t = \pi_t-\pi_{t-1}$ é a variação da inflação, $u_t$ é o nível de desemprego, $u_n$ é a taxa natural de desemprego e $\varepsilon$ é a resposta da inflação aos desvios do desemprego em relação à taxa natural de desemprego. Utilizando-se um modelo de regressão simples entre a variação da inflação e o ciclo de desemprego, o coeficiente $\varepsilon$ foi estimado em $-0{,}7$, com uma probabilidade exata do teste ($p$-valor ou nível empírico de significância) associada de $0{,}0865$.
+
+Nas figuras abaixo, estão dispostos a evolução da variação da inflação (em azul) e do ciclo de desemprego (em vermelho) e também o diagrama de dispersão para essas duas variáveis, com a reta de regressão ajustada (em preto) para os dados da economia brasileira. 
+
+![Figura](ENADE_2015_Q16.png "Title")
+
+Considerando a teoria da Curva de Phillips e os resultados obtidos para a economia brasileira, avalie as afirmações a seguir. 
+
+- I.  Se a decisão de contração monetária do Banco Central do Brasil for crível, a Curva de Phillips será deslocada paralelamente para baixo. <input type="checkbox" unchecked>
+- II. Para um nível de significância de 0,05, é possível inferir que há evidência de relação entre inflação e desemprego no Brasil. <input type="checkbox" unchecked>
+- III.  Se a taxa natural de desemprego for de 4,5% ao mês, espera-se que a inflação seja 1,75% menor, se o nível de desemprego atingir 7% ao mês. <input type="checkbox" unchecked>
+- IV. Se o Banco Central desejar manter a taxa de inflação constante (sem variação), para uma taxa natural de desemprego de 4,5%, o nível de desemprego deve ser de 6,5%. <input type="checkbox" unchecked>
+
+É correto apenas o que se afirma em
+
+A.  I, apenas.
+B.  II, apenas.
+C.  I e III.
+D.  II e IV.
+E.  III e IV. 
+
+<label for="resposta">Sua resposta:</label>
+<select name="resposta" id="altenativa">
+  <option value=""></option>
+  <option value="A">A</option>
+  <option value="B">B</option>
+  <option value="C">C</option>
+  <option value="D">D</option>
+  <option value="E">E</option>
+</select>
+
+::: {.callout-caution title="Resolução" collapse="true"}
+
+:::
+
+:::
+
+### Questão 23 (ENADE 2015 – Economia)
+
+::: {#exr-enade-2015-Q23}
+
+> Tema: Liquidez/Meios de pagamento (fechamento dos bancos na Grécia).
+
+A situação da Grécia ficou ainda mais difícil no meio de 2015 porque o Banco Central Europeu decidiu não aumentar o repasse de fundos emergenciais. Diante disso, o governo grego fechou os bancos durante uma semana (às vésperas de um plebiscito) e limitou o saque diário nos caixas automáticos, o que causou longas filas. Os bancos gregos dependem da assistência do BCE, que tem enviado fundos emergenciais ao Banco Central grego diariamente. O teto desse fundo é de 89 bilhões de euros. Acredita-se que todo esse dinheiro já tenha sido gasto.
+
+Disponível em: [http://www.bbc.com/](http://www.bbc.com/). Acesso em: 20 jul. 2015 (adaptado).
+
+Considerando a situação exposta, avalie as afirmações a seguir.
+
+- I.  O governo grego visava ampliar a razão papel-moeda em poder do público sobre os meios de pagamento, estimulando, com isso, o aumento do multiplicador monetário. <input type="checkbox" unchecked>
+- II. O governo grego pretendia reduzir o acesso do público aos meios de pagamento e, com isso, diminuir o nível geral de preços. <input type="checkbox" unchecked>
+- III.  O governo grego objetivava manter o fluxo de liquidez do mercado interbancário, restabelecendo, com isso, os níveis de reservas bancárias. <input type="checkbox" unchecked>
+- IV. O governo grego procurava evitar o colapso do multiplicador monetário, ao estabilizar a razão depósitos à vista dos bancos comerciais sobre os meios de pagamento. <input type="checkbox" unchecked>
+
+É correto apenas o que se afirma em
+
+A.  I e II.
+B.  II e III.
+C.  III e IV.
+D.  I, II e IV.
+E.  I, III e IV.
+
+<label for="resposta">Sua resposta:</label>
+<select name="resposta" id="altenativa">
+  <option value="A">A</option>
+  <option value="B">B</option>
+  <option value="C">C</option>
+  <option value="D">D</option>
+  <option value="E">E</option>
+</select>
+
+:::
+
+---
+
+### Questão 31 (ENADE 2015 – Economia)
+
+::: {#exr-enade-2015-Q31}
+
+> Tema: Modelos de crescimento (Solow/endógeno, convergência).
+
+Do ponto de vista empírico, o mundo assistiu ao longo do século XX a um aumento da disparidade entre a renda per capita dos países mais ricos e a renda per capita dos países mais pobres, mesmo quando considerados alguns poucos processos de convergência.
+
+Considerando esse contexto, avalie as afirmações a seguir.
+
+- I.  De acordo com o modelo de crescimento de Solow, países mais pobres deveriam crescer a uma taxa superior à taxa de crescimento de países mais ricos. <input type="checkbox" unchecked>
+- II. De acordo com o modelo de crescimento de Solow, uma explicação para o diferencial de nível de renda per capita, no longo prazo, seria a diferença nas taxas de poupança dos países. <input type="checkbox" unchecked>
+- III.  De acordo com o modelo de crescimento de Solow, uma explicação para a diferença nas taxas de crescimento da renda per capita, no longo prazo, seria a diferença nas taxas de poupança dos países. <input type="checkbox" unchecked>
+- IV. De acordo com o modelo de crescimento de Solow, o crescimento contínuo do volume de investimento por trabalhador contribui para a determinação da taxa de crescimento da renda per capita. <input type="checkbox" unchecked>
+- V.  De acordo com os modelos de crescimento endógeno, algumas explicações para o diferencial de renda per capita podem ser encontradas em variáveis como capital humano e investimento em pesquisa e desenvolvimento. <input type="checkbox" unchecked>
+
+É correto o que se afirma em:
+
+(A)  I, II e V.
+(B)  I, III e IV.
+(C)  I, III e V.
+(D)  II, III e IV.
+(E)  II, IV e V.
+
+<label for="resposta">Sua resposta:</label>
+<select name="resposta" id="altenativa">
+  <option value="A">A</option>
+  <option value="B">B</option>
+  <option value="C">C</option>
+  <option value="D">D</option>
+  <option value="E">E</option>
+</select>
+
+:::
+
+---
+
+## Exame ANPEC
+
+- [Link para provas antigas e gabaritos.](https://exame.anpec.org.br/index.php?r=site/provasAnteriores)
+
+---
+
+### Questão 07 (ANPEC 2025 – Macroeconomia)
+
+::: {#exr-anpec-2025-macro-Q07}
+
+> Tema: IS-LM-BP.
+
+Considere uma economia aberta e pequena descrita pelas seguintes relações:
+
+\begin{align}
+C &= c_0 + c_1(Y - T)\\
+I &= d_0 + d_1\theta\\
+G &= \bar G\\
+T &= \bar T = \frac{\bar G}{c_1}\\
+EL &= \bar X + b\theta - mY
+\end{align}
+
+em que $C, Y, T, I, G$ e $EL$ denotam, respectivamente, o consumo, o produto, a receita tributária, o investimento, o gasto público e as exportações líquidas. No caso destas últimas, $\bar X$ é o montante (exógeno) de exportações, $0<m<1$ é a propensão marginal a importar e $\theta$ é o nível (exógeno) da taxa de câmbio real, definida como a razão entre os preços da produção externa e da produção local, ambos em moeda local. Por sua vez, $c_0$ e $d_0$ são componentes de gasto autônomo estritamente positivos, enquanto $b$, $c_1$ e $d_1$ são parâmetros estritamente positivos, com $0<d_1<b<c_1<1$.
+
+Assinale como verdadeiras ou falsas as afirmativas abaixo:
+
+0. O multiplicador dos gastos autônomos será tanto maior quanto maior for a propensão marginal a importar. <input type="checkbox" unchecked>
+1. O multiplicador dos gastos autônomos será tanto maior quanto maior for a propensão marginal a consumir. <input type="checkbox" unchecked>
+2. O multiplicador dos gastos autônomos será tanto maior quanto mais alta for a taxa de câmbio real. <input type="checkbox" unchecked>
+3. A especificação das exportações líquidas supõe que a condição de Marshall–Lerner não é satisfeita. <input type="checkbox" unchecked>
+4. O aumento do produto de equilíbrio que resulta de um pequeno aumento do componente autônomo do consumo é o mesmo que resulta de um aumento de igual magnitude do componente autônomo do investimento. <input type="checkbox" unchecked>
+
+:::
+
+---
+
+## Concursos Públicos
+
+- Concurso Banco Central 2024, Cargo: Analista - Economia e Finanças. 
+  - [Link para a prova.](https://arq.pciconcursos.com.br/provas/33165042/5cc924e9beef/analista_Economia_e_financas.pdf)
+  - [Link para o gabarito oficial.](https://arq.pciconcursos.com.br/provas/33165042/68c6775a2364/gabarito.pdf)
+
+- Concurso Público Nacional Unificado (CNU) 2024, Setores Econômicos e Regulação, Bloco 6 - Tarde.
+    - [Link para a prova.](https://www.gov.br/gestao/pt-br/concursonacional/caderno-de-provas/tarde/prova-14-gabarito-1-setores-economicos-e-regulacao-tarde.pdf)
+  - [Link para o gabarito oficial.](https://www.gov.br/gestao/pt-br/concursonacional/gabaritos-finais/cpnu2024_gabaritosoficiais_todos-os-blocos-tarde.pdf)
+
+---
+
+### Questões 51 a 53 (Banco Central 2024, Cargo: Analista - Economia e Finanças)
+
+::: {#exr-bc-2024-Q51a53}
+
+> Tema: Diversos.
+
+No que diz respeito aos principais modelos macroeconômicos, julgue os itens a seguir.
+
+51. De acordo com o modelo keynesiano, o aumento do salário mínimo acarreta aumento da renda de equilíbrio.
+
+52. Segundo o modelo de crescimento proposto por Solow, o crescimento populacional reduz o produto de equilíbrio da economia.
+
+53. Em uma economia aberta com câmbio flutuante, se o produto de equilíbrio for determinado pelas condições do mercado de trabalho, haverá relação causal entre moeda e preços, como estabelece a teoria quantitativa da moeda.
+
+:::
+
+### Questões 54 a 59 (Banco Central 2024, Cargo: Analista - Economia e Finanças)
+
+::: {#exr-bc-2024-Q54a59}
+
+> Tema: Política monetária, fiscal, e cambial.
+
+Considerando a operacionalização da política monetária executada pelo Banco Central do Brasil (BCB) e as principais medidas macroprudenciais, julgue os itens subsequentes.
+
+54. A exigência de capital dos bancos para fazer frente ao risco operacional é majoritariamente calculada com base nas perdas incorridas pelas instituições.
+
+55. Se o câmbio é fixo e há plena mobilidade de capitais, então a política monetária é passiva.
+
+56. Quando o BCB define a taxa SELIC, choques no multiplicador monetário não afetam a economia.
+
+57. Se o governo realiza uma política fiscal ativa, evidencia-se redução das exportações líquidas na mesma magnitude dos gastos do governo quando a autoridade monetária garante liberdade de capitais e câmbio flexível.
+
+58. As operações compromissadas realizadas pelo BCB entram no cálculo da dívida bruta do governo geral (DBGG).
+
+59. O BCB emite títulos para a execução da política monetária.
+
+:::
+
+---
+
+### Questões 60 a 64 (Banco Central 2024, Cargo: Analista - Economia e Finanças)
+
+::: {#exr-bc-2024-Q60a64}
+
+> Tema: Ciclos de negócios e dinâmica cambial.
+
+A macroeconomia é uma área do conhecimento que engloba o estudo de diversos conceitos-chave para entender as dinâmicas econômicas globais. Considerando conceitos relacionados à macroeconomia, julgue os itens a seguir.
+
+60. A curva de Phillips, conceito econômico que estabelece uma relação inversa de curto prazo entre desemprego e inflação, mostra-se mais complexa a longo prazo, particularmente ao levar em conta as expectativas de inflação.
+
+61. A teoria da paridade do poder de compra apresenta limitações decorrentes de fatores como barreiras comerciais e diferenças nos bens consumidos entre os países.
+
+62. A paridade de taxas de juros na sua forma coberta (CIP) se mantém com bastante precisão devido à arbitragem no mercado financeiro.
+
+63. Nos modelos de exportação e importação, a elasticidade-preço é irrelevante para determinar o efeito de mudanças na taxa de câmbio sobre a balança comercial.
+
+64. Os regimes cambiais e a taxa de câmbio de equilíbrio consideram os efeitos no curto prazo sobre a economia.
+
+
+:::
+
+### Questões 65 e 66 (Banco Central 2024, Cargo: Analista - Economia e Finanças)
+
+::: {#exr-bc-2024-Q65e66}
+
+> Tema: Modelo de ciclo de negócios reais.
+
+A respeito da teoria dos ciclos econômicos reais, que oferece uma explicação para as flutuações na atividade econômica, concentrando-se em choques reais como o principal motor desses ciclos, julgue os itens subsequentes.
+
+65. Os choques de produtividade resultantes de variações na eficiência de uso dos recursos não incluem mudanças na qualidade da mão de obra.
+
+66. Um choque tecnológico positivo pode aumentar a produção e o emprego, resultando em expansão econômica.
+
+
+:::
+
+---
+
+### Questões 67 e 68 (Banco Central 2024, Cargo: Analista - Economia e Finanças)
+
+::: {#exr-bc-2024-Q67e68}
+
+> Tema: Modelos classico e novo-keynesiano.
+
+A respeito da determinação dos salários no modelo novo-keynesiano e no clássico, julgue os itens a seguir.
+
+67. Segundo o modelo novo-keynesiano, não há desemprego cíclico a longo prazo e qualquer desemprego existente ocorre devido a fatores como mudanças tecnológicas ou preferências de trabalho.
+
+68. A perspectiva clássica enfatiza a capacidade dos mercados de alcançar equilíbrio e eficiência por conta própria, enquanto o modelo novo-keynesiano reconhece a possibilidade de desequilíbrios persistentes devido a rigidezes e imperfeições no mercado, sugerindo um papel mais ativo da política econômica na estabilização da economia.
+
+
+:::
+
+---
+
+### Questão 27 (CNU 2024 - Setores Econômicos e Regulação, Bloco 6 - Tarde)
+
+::: {#exr-cnu-2024-bloco6-tarde-Q27}
+
+> Tema: Balanço de Pagamentos.
+
+A Tabela a seguir registra os resultados do Balanço de Pagamentos do Brasil (em US$ milhões) no período 2012-2014.
+
+|                      | 2012    | 2013    | 2014    |
+| -------------------- | ------- | ------- | ------- |
+| Transações correntes | -54,249 | -81,227 | -91,288 |
+| Conta Capital        | -1,877  | 1,193   | 590     |
+| Conta Financeira     | 71,886  | 73,159  | 97,809  |
+| Erros e Omissões     | 3,130   | 949     | 3,722   |
+
+Nota: Os valores de Erros e Omissões, relativos a 2012 e 2013, foram ligeiramente aproximados.
+Fonte: Banco Central do Brasil. Séries históricas – BPM6 (até fevereiro de 2015).
+Disponível em: [https://www.bcb.gov.br/estatisticas/tabelasespeciais](https://www.bcb.gov.br/estatisticas/tabelasespeciais). Acesso em: 14 fev. 2024.
+
+De acordo com os dados informados, o Brasil
+
+(A) teve saída líquida de capitais financeiros no triênio 2012-2014. <input type="checkbox" unchecked>
+(B) teve superávit no Balanço de Pagamentos em 2013. <input type="checkbox" unchecked>
+(C) teve aumento de reservas internacionais em 2013. <input type="checkbox" unchecked>
+(D) registrou perda de reservas internacionais em 2012. <input type="checkbox" unchecked>
+(E) dependeu de poupança externa no triênio 2012-2014. <input type="checkbox" unchecked>
+
+<label for="resposta">Sua resposta:</label>
+<select name="resposta" id="altenativa">
+  <option value="A">A</option>
+  <option value="B">B</option>
+  <option value="C">C</option>
+  <option value="D">D</option>
+  <option value="E">E</option>
+</select>
+
+:::

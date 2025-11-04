@@ -1,0 +1,826 @@
+---
+title: "Exercícios Resolvidos: Estatística"
+format: html
+lang: pt
+date: 10/01/2025
+date-format: "MMM, YYYY"
+author:
+  - name: Pedro Chaim
+    id: pc
+    email: pedro.chaim@ufsc.br
+    affiliation: 
+      - name: CNM/UFSC
+        city: Florianópolis
+        state: Santa Catarina
+        url: https://cnm.ufsc.br/
+---
+
+Resoluções comentadas de exercícios selecionados sobre Estatística em provas padronizadas e concursos públicos diversos.
+
+Contato: [pedro.chaim@ufsc.br](mailto:pedro.chaim@ufsc.br).
+
+## ENADE 2022
+
+### Questão 28 (ENADE 2022 – Economia)
+
+::: {#exr-enade-2022-Q28}
+
+> Tema: Comparação de alternativas por retorno esperado, desvio-padrão e coeficiente de variação.
+
+Para avaliar o risco de investimento financeiro em cinco empresas na Bolsa de Valores — Alpha, Beta, Charlie, Delta e Eco —, determinada empresa capitalista está avaliando qual delas lhe traria o menor risco de investimento, com base em três medidas: (i) retorno esperado; (ii) desvio-padrão; e (iii) coeficiente de variação. A tabela a seguir apresenta as estatísticas descritivas das empresas analisadas.
+
+**Estatísticas Descritivas das Empresas Analisadas**
+
+|                               | Alpha | Beta | Charlie | Delta | Eco |
+| ----------------------------- | :---: | :--: | :-----: | :---: | :-: |
+| (i) Retorno esperado          |  17%  |  20% |   28%   |  13%  | 16% |
+| (ii) Desvio-padrão            |   8%  |  11% |   14%   |   7%  |  8% |
+| (iii) Coeficiente de variação |  47%  |  55% |   50%   |  54%  | 50% |
+
+Nessa situação, a empresa que representa o investimento financeiro menos arriscado é
+
+(A) Alpha.
+(B) Beta.
+(C) Charlie.
+(D) Delta.
+(E) Eco.
+
+<label for="resposta">Sua resposta:</label>
+<select name="resposta" id="altenativa">
+  <option value=""></option>
+  <option value="A">A</option>
+  <option value="B">B</option>
+  <option value="C">C</option>
+  <option value="D">D</option>
+  <option value="E">E</option>
+</select>
+
+::: {.callout-caution title="Resolução" collapse="true" appearance="minimal"}
+
+O coeficiente de variação é definido como desvio-padrão dividio pele média.
+
+\begin{align*}
+  CV(X) = \frac{DP(X)}{E(X)}.
+\end{align*}
+
+O enunciado pede *"o investimento financeiro menos arriscado"*.
+
+O ativo financeiro **menos arriscado** é aquele com o menor desvio-padrão dos retornos, portanto o ativo *Delta*, que tem desvio-padrão de 7%. Resposta **D. Delta**.
+
+No gabarito oficial a resposta é **A. Alpha**. 
+
+Está, então, implícito que o critério de escolha é a relação risco-retorno, capturada pelo coeficiente de variação. Como Alpha tem o menor coeficiente de variação, seria aquele com melhor relação risco-retorno.
+
+Ainda assim essa resposta é problemática. Segundo a teoria de carteiras (baseada em preferências reveladas), a única coisa que podemos afirmar sobre a relação entre os ativos do enunciado é que o ativo Alpha domina o ativo Eco. Ou seja, porquê $E(A)>E(E)$, e $DP(A)=DP(E)$, nenhum agente racional ofertado Alpha e Eco escolheria Eco. 
+
+Sem algum critério de utilidade guiando a escolha do investidor, não é possível afirmar que a "melhor relação risco-retorno" do ativo Alpha seria preferível ao menor risco absoluto do ativo Delta.
+
+:::
+
+:::
+
+## ENADE 2018
+
+### Questão 12 (ENADE 2018 – Economia)
+
+::: {#exr-enade-2018-Q12}
+
+> Tema: Comparação de alternativas por retorno esperado e desvio-padrão.
+
+Considere a tabela a seguir que apresenta dados referentes a aplicações em três ativos hipotéticos, com respectivos retornos e probabilidades.
+
+**Retornos e probabilidades**
+
+| Ativos | Retorno anual | Probabilidade |
+| :----: | :-----------: | :-----------: |
+|    A   |      10%      |      100%     |
+|    B   |       6%      |      50%      |
+|    B   |      14%      |      50%      |
+|    C   |       0%      |      50%      |
+|    C   |      25%      |      50%      |
+
+Com base nos dados apresentados, avalie as afirmações a seguir.
+
+(I) O retorno esperado dos ativos A e B é o mesmo, mas a variabilidade do retorno do Ativo B é menor.
+(II)  O coeficiente de variação do Ativo C é superior ao coeficiente de variação do Ativo B.
+(III) Na comparação entre os Ativos A e B, um investidor neutro em relação ao risco tem preferência pelo Ativo A.
+
+É correto o que se afirma em
+
+(A) I, apenas.
+(B) II, apenas.
+(C) I e III, apenas.
+(D) II e III, apenas.
+(E) I, II e III.
+
+<label for="resposta">Sua resposta:</label>
+<select name="resposta" id="altenativa">
+  <option value=""></option>
+  <option value="A">A</option>
+  <option value="B">B</option>
+  <option value="C">C</option>
+  <option value="D">D</option>
+  <option value="E">E</option>
+</select>
+
+::: {.callout-caution title="Resolução" collapse="true" appearance="minimal"}
+
+> *I.  O retorno esperado dos ativos A e B é o mesmo, mas a variabilidade do retorno do Ativo B é menor.*
+
+\begin{align*}
+  E(A) &= 10\%\times 100\% = 10\% \\
+  E(B) &= 6\%\times 50\% + 14\% \times 50\% = 10\%
+\end{align*}
+
+De fato, $E(A)=E(B)$. Repare que variância dos retornos do ativo A é zero (o retorno de 10\% é o único evento possível). Então qualquer que seja a variância dos retornos do ativo B, será superior à variância dos retornos do ativo A. 
+
+Afirmação falsa.
+
+---
+
+> *II. O coeficiente de variação do Ativo C é superior ao coeficiente de variação do Ativo B.*
+
+Lembre que $CV(X)=DP(X)/E(X)$, e que podemos calcular $Var(X)=E(X^2)-E(X)$.
+
+\begin{align*}
+  E(B^2) &= (6\%)^2\times 50\% + (14\%)^2 \times 50\% \\
+  &=0.0036\times 0.5 + 0.0196\times 0.5 = 0.0116
+\end{align*}
+\begin{align*}
+  Var(B) &= E(B^2) - E(B)^2 \\
+  &=0.0116-0.1^2 = 0.0016
+\end{align*}
+
+\begin{align*}
+  E(C) = 0\%\times 50\% + 25\% \times 50\% = 12.5\%
+\end{align*}
+\begin{align*}
+  E(C^2) = 0^2\times 0.5+0.25^2 \times 0.5 = 0.03125
+\end{align*}
+\begin{align*}
+  Var(C) &= E(C^2)-E(C)^2 \\
+  &=0.03125-(0.125)^2=0.015625
+\end{align*}
+
+Para realmente calcular os $CV(\cdot)$ teríamos que calcular as raízes quadradas das variâncias $0.0016$ e $0.015625$. Não é impossível e os desvios-padrão são $0.04$ e $0.125$, espectivamente. Dessa forma temos $CV(B) = 0.04/0.1=0.4$ e $CV(C)=0.125/0.125=1$. $CV(C)>CV(B)$, afirmação verdadeira.
+
+Mas repare que, se $CV(X)>CV(Y)$, então 
+\begin{align*}
+  \frac{\sqrt{Var(X)}}{E(X)}>\frac{\sqrt{Var(Y)}}{E(Y)}.
+\end{align*}
+Tomando o quadrado de ambos os lados temos
+\begin{align*}
+  \frac{Var(X)}{E(X)^2}>\frac{Var(Y)}{E(Y)^2}.
+\end{align*}
+
+Costuma ser muito mais fácil elevar um número ao quadrado do que calcular uma raíz quadrada. Então veja que
+
+\begin{align*}
+  CV(C)^2 = \frac{Var(C)}{E(C)^2} = \frac{0.015625}{0.125^2} = 1 \\
+  CV(B)^2 = \frac{Var(B)}{E(B)^2} = \frac{0.0016}{0.1^2}=0.16
+\end{align*}
+
+---
+
+> *III.  Na comparação entre os Ativos A e B, um investidor neutro em relação ao risco tem preferência pelo Ativo A.*
+
+Um investidor **neutro ao risco** compararia apenas $E(A)$ e $E(B)$ ao escolher entre os ativos. Como $E(A)=E(B)$, tal investidor estaria indiferente entre os ativos A e B. Afirmativa falsa.
+
+:::
+
+:::
+
+### Questão 30 (ENADE 2018 – Economia)
+
+::: {#exr-enade-2018-Q30}
+
+> Tema: Tendência central em dados agrupados (média, moda, mediana do IDH).
+
+Se o Índice de Desenvolvimento Humano (IDH) de uma região é muito alto, considera-se essa região desenvolvida, se apresenta IDH médio ou alto, é considerada em desenvolvimento e, por fim, se apresenta IDH baixo ou muito baixo, é considerada subdesenvolvida. A tabela a seguir apresenta a frequência relativa das 27 Unidades da Federação do Brasil em relação às classes do IDH.
+
+**Frequência relativa das UF por classes do IDH**
+
+| Classes do IDH            | Frequência Relativa (%) |
+| ------------------------- | :---------------------: |
+| 0,00 ├ 0,50 (muito baixo) |           0,0           |
+| 0,50 ├ 0,60 (baixo)       |           0,0           |
+| 0,60 ├ 0,70 (médio)       |           50,0          |
+| 0,70 ├ 0,80 (alto)        |           45,0          |
+| 0,80 ├ 1,00 (muito alto)  |           5,0           |
+
+Disponível em: [http://www.atlasbrasil.org.br](http://www.atlasbrasil.org.br). Acesso em: 12 jul. 2018 (adaptado).
+
+Nesse contexto, avalie as afirmações a seguir, a respeito das medidas de tendência central dos dados agrupados apresentados na tabela.
+
+(I) A média do IDH das Unidades da Federação está situada na 3ª classe (IDH médio).
+(II) A moda do IDH das Unidades da Federação está situada na 4ª classe (IDH alto).
+(III) A mediana do IDH das Unidades da Federação está situada na 3ª classe (IDH médio).
+
+É correto o que se afirma em
+
+(A) I, apenas.
+(B) III, apenas.
+(C) I e II, apenas.
+(D) II e III, apenas.
+(E) I, II e III.
+
+<label for="resposta">Sua resposta:</label>
+<select name="resposta" id="altenativa">
+  <option value=""></option>
+  <option value="A">A</option>
+  <option value="B">B</option>
+  <option value="C">C</option>
+  <option value="D">D</option>
+  <option value="E">E</option>
+</select>
+
+::: {.callout-caution title="Resolução" collapse="true" appearance="minimal"}
+
+- **Média**: $E(X)=\sum_{x_j \in X[\Omega]} x_j \Pr(X=x_j)$.
+
+- **Mediana**: É o quantil de 50%, a observação para a qual 50% das outras observações são menores ou iguais, 50% das outras observações são maiores ou iguais.
+
+- **Moda**: É a observação mais "popular" de um conjunto de dados. O valor que aparece mais vezes no conjunto de dados. No caso da tabela acima, é a classe com a maior frequencia relativa.
+
+Não está explícito no enunciado, mas é tradicional tomarmos o ponto médio da classe como valor representativo.
+
+- **Média**:
+\begin{align*}
+  E(X) = 0.25\times 0 + 0.55 \times 0 + 0.65 \times 0.5 + 0.75 \times 0.45 + 0.9 \times 0.05 = 0.7075
+\end{align*}
+
+- **Mediana**: $\text{med}(X)=0.65$ (terceira classe).
+
+- **Moda**: $\text{moda}(X)=0.65$ (terceira classe).
+
+Resposta: B
+
+:::
+
+:::
+
+## ENADE 2015
+
+### Questão 32 (ENADE 2015 – Economia)
+
+::: {#exr-enade-2015-Q32}
+
+> Tema: Interpretação de gráfico e Coeficiente de Gini.
+
+Em estudo realizado em 2008, o Instituto de Pesquisa Econômica Aplicada (IPEA) analisou o efeito da desigualdade de renda sobre a condição de saúde individual no Brasil, tendo por base espacial os municípios brasileiros. A variável utilizada para analisar a desigualdade foi o coeficiente de Gini, enquanto a probabilidade de ser saudável foi baseada nas autodeclarações dos cidadãos, extraídas das Pesquisas Nacionais por Amostra de Domicílio (PNADs). As conclusões estão apresentadas no gráfico abaixo.
+
+![Figura](ENADE_2015_Q32.png "Title")
+
+Com base nas informações acima, avalie as assertões a seguir e a relação proposta entre elas.
+
+(I) Existe relação negativa entre desigualdade de renda e a proxy para saúde, de modo que políticas públicas que visem reduzir a desigualdade de renda tendem a gerar efeitos positivos sobre a saúde da população.
+
+**PORQUE**
+
+(II)  Quanto maior o coeficiente de Gini, isto é, quanto mais perto da perfeita igualdade = 1, menor a probabilidade de as pessoas se autodeclararem saudáveis.
+
+A respeito dessas assertões, assinale a opção correta.
+
+(A) As assertões I e II são proposições verdadeiras, e a II é uma justificativa correta da I.
+(B) As assertões I e II são proposições verdadeiras, mas a II não é uma justificativa correta da I.
+(C) A assertão I é uma proposição verdadeira, e a II é uma proposição falsa.
+(D) A assertão I é uma proposição falsa, e a II é uma proposição verdadeira.
+(E) As assertões I e II são proposições falsas.
+
+<label for="resposta">Sua resposta:</label>
+<select name="resposta" id="altenativa">
+  <option value=""></option>
+  <option value="A">A</option>
+  <option value="B">B</option>
+  <option value="C">C</option>
+  <option value="D">D</option>
+  <option value="E">E</option>
+</select>
+
+::: {.callout-caution title="Resolução" collapse="true" appearance="minimal"}
+
+O coeficiente de Gini é uma medida de dispersão que representa a desigualdade entre as frequências relativas de uma distribuição de probabilidades. É tradicionalmente aplicado no estudo de desigualdade de renda. 
+
+O coeficiente de Gini pode adotar valores entre 0 e 1: o valor 0 representa o caso no qual todos os indivíduos têm mesma renda, enquanto o valor 1 representa uma situação na qual uma única pessoa detém toda a renda na economia.
+
+---
+
+> *I. Existe relação negativa entre desigualdade de renda e a proxy para saúde, de modo que políticas públicas que visem reduzir a desigualdade de renda tendem a gerar efeitos positivos sobre a saúde da população.*
+
+Do gráfico, vemos que quanto maior o coeficiente de Gini (maior concentração de renda), menor a "probabilidade de ser saudável". Extrapolando essa relação, de fato, "políticas públicas que visem reduzir a desigualdade de renda tendem a gerar efeitos positivos sobre a saúde da população". Afirmação verdadeira
+
+---
+
+> *II. Quanto maior o coeficiente de Gini, isto é, quanto mais perto da perfeita igualdade = 1, menor a probabilidade de as pessoas se autodeclararem saudáveis.*
+
+Essa frase é mal escrita e dá margem para duas interpretações. 
+
+De fato, quanto mais "perto da perfeita igualdade = 1" o coeficiente de Gini, menor a probabilidade de as pessoas se autodeclararem saudáveis. É o que o gráfico nos conta. Nessa interpretação a afirmativa II é correta e é uma justificativa válida para I.
+
+No entanto, o trecho "quanto mais perto da perfeita igualdade = 1" pode ser interpretado como: um coeficiente de Gini igual a 1 indica perfeita igualdade de renda. Mas, no caso, é um coeficiente de Gini igual a zero que implica em perfeita igualdade de renda. Nessa interpretação a afirmativa II contém elementos incorretos. Essa é a interpretação no gabarito.
+
+---
+
+Resposta: **C. A assertão I é uma proposição verdadeira, e a II é uma proposição falsa.**
+
+:::
+
+:::
+
+### Questão 35 (ENADE 2015 – Economia)
+
+::: {#exr-enade-2015-Q35}
+
+> Tema: Probabilidade de cenários e valor esperado
+
+Um analista econômico precisa tomar uma decisão que envolve a inflação esperada para o próximo ano, com base apenas na taxa de juros, que varia de acordo com os únicos três cenários possíveis, conforme tabela a seguir.
+
+|           | Taxa de juros fixada ao ano | Inflação estimada para o próximo ano | Probabilidade de ocorrência |
+| --------- | --------------------------- | ------------------------------------ | --------------------------- |
+| Cenário 1 | 5%                          | 10%                                  | 0,5                         |
+| Cenário 2 | 8%                          | 5%                                   | 2x                          |
+| Cenário 3 | 12%                         | 2%                                   | x                           |
+
+Nessa situação, o valor esperado para a inflação no próximo ano é de
+
+(A) 10,00%.
+(B) 7,00%.
+(C) 6,50%.
+(D) 5,67%.
+(E) 5,00%.
+
+<label for="resposta">Sua resposta:</label>
+<select name="resposta" id="altenativa">
+  <option value=""></option>
+  <option value="A">A</option>
+  <option value="B">B</option>
+  <option value="C">C</option>
+  <option value="D">D</option>
+  <option value="E">E</option>
+</select>
+
+::: {.callout-caution title="Resolução" collapse="true" appearance="minimal"}
+Primeiro devemos determinar as probabilidades dos cenários. Do axioma da normalização unitária, a soma da probabilidade de todos os eventos individuais possíveis deve ser igual a 1.
+
+\begin{align*}
+  &0.5 + 2x + x = 1 \\
+  &3x = 1-0.5\\
+  &x=1/6.
+\end{align*}
+
+Agora calculamos o valor esperado da taxa de inflação no próximo período.
+
+\begin{align}
+  E(Y) = \sum_{y_j\in \{0.1,0.05,0.02\}}y_j\Pr(Y=y_j) = 0.1\times (1/2)+0.05 \times (2/6) + 0.02\times (1/6) = 0.07
+\end{align}
+
+**Resposta**: B. 7,00%.
+:::
+
+:::
+
+## Exame ANPEC
+
+### Questão 07 (ANPEC 2025 – Estatística)
+
+::: {#exr-anpec-2025-estatistica-Q01}
+
+> Tema: Probabilidades de eventos.
+
+Para essa questão, considere a seguinte notação: se $X$ e $Y$ são eventos de um espaço amostral $\Omega$, $P(X)$ representa a probabilidade de ocorrência do evento $X$, $P(X\mid Y)$ representa a probabilidade de ocorrência do evento $X$ condicionada à ocorrência do evento $Y$, e $\bar X$ é o complemento de $X$. Julgue as alternativas abaixo como verdadeiras ou falsas.
+
+0. Sejam $A$ e $B$ eventos do espaço amostral de um experimento aleatório $S$. Se $A$ e $B$ são independentes, $A$ e $\bar B$ também são independentes. <select name="vf" id="vf">
+  <option value=""></option>
+  <option value="Verdadeiro">Verdadeiro</option>
+  <option value="Falso">Falso</option>
+</select>
+1. Sejam $A$ e $B$ eventos independentes do espaço amostral de um experimento aleatório $S$, onde $P(A)=\tfrac{1}{4}$ e $P(B)=\tfrac{1}{3}$. A probabilidade de que pelo menos um desses dois eventos ($A$ e $B$) ocorra é $\tfrac{7}{12}$. <select name="vf" id="vf">
+  <option value=""></option>
+  <option value="Verdadeiro">Verdadeiro</option>
+  <option value="Falso">Falso</option>
+</select>
+2. Sejam $A$ e $B$ dois eventos do espaço amostral de um experimento aleatório $S$, onde $P(A)=\tfrac{2}{3}$, $P(B)=\tfrac{1}{3}$, e $P(\bar A\mid B)=\tfrac{1}{4}$. Então: $P(A\mid B)=P(B\mid A)$. <select name="vf" id="vf">
+  <option value=""></option>
+  <option value="Verdadeiro">Verdadeiro</option>
+  <option value="Falso">Falso</option>
+</select>
+3. Sejam $A$, $B$ e $C$ três eventos do mesmo espaço amostral de um experimento aleatório $T$, onde $P(A)=\tfrac{2}{5}$, $P(C)=\tfrac{1}{2}$, $P(A\cup B)=\tfrac{3}{4}$, $P(B\mid A)=\tfrac{3}{10}$ e $P(C\mid A)=\tfrac{1}{4}$. Então, $P(\bar A\mid \bar C)=\tfrac{4}{5}$. <select name="vf" id="vf">
+  <option value=""></option>
+  <option value="Verdadeiro">Verdadeiro</option>
+  <option value="Falso">Falso</option>
+</select>
+4. Sejam $A$, $B$ e $C$ três eventos do mesmo espaço amostral de um experimento aleatório $T$, onde $P(A)=\tfrac{2}{5}$, $P(C)=\tfrac{1}{2}$, $P(A\cup B)=\tfrac{3}{4}$, $P(B\mid A)=\tfrac{3}{10}$ e $P(C\mid A)=\tfrac{1}{4}$. Então, $P(\bar A\mid \bar C)=\tfrac{1}{5}$. <select name="vf" id="vf">
+  <option value=""></option>
+  <option value="Verdadeiro">Verdadeiro</option>
+  <option value="Falso">Falso</option>
+</select>
+
+::: {.callout-caution title="Resolução" collapse="true" appearance="minimal"}
+
+> *0. Sejam $A$ e $B$ eventos do espaço amostral de um experimento aleatório $S$. Se $A$ e $B$ são independentes, $A$ e $\bar B$ também são independentes.*
+
+Dizer que $A$ e $B$ são independentes é equivalente a 
+
+\begin{align*}
+  \Pr(A\cap B) = \Pr(A)\Pr(B) \tag{1}
+\end{align*}
+
+Se $\bar B$ é o complemento de $B$,
+
+\begin{align*}
+  \Pr(\bar B) = 1-\Pr(B) \tag{2}
+\end{align*}
+
+Equivalentemente,
+
+\begin{align*}
+  \Pr(B) = 1-\Pr(\bar B) \tag{3}
+\end{align*}
+
+Então substituindo (3) em (1),
+
+\begin{align*}
+  \Pr(A\cap B) = \Pr(A)-\Pr(A)\Pr(\bar B) \tag{4}
+\end{align*}
+
+Aqui precisamos particionar $A$ em sua intersecção com $B$ e $\bar B$. Escrevemos $A=(A\cap B)\cup(A\cap \bar B)$. Por definição, $B$ e $\bar B$ são eventos disjuntos. Isso quer dizer que $(B\cap\bar B)=\emptyset$. O axioma da aditividade finita nos diz que se $X$ e $Y$ são disjuntos, $\Pr(X\cup Y)=\Pr(X)+\Pr(Y)$. Portanto $\Pr(A)=\Pr(A\cap B)+\Pr(A\cap \bar B)$. Então, 
+
+\begin{align*}
+  \Pr(A\cap B) = \Pr(A\cap B)+\Pr(A\cap \bar B) -\Pr(A)\Pr(\bar B) \\
+  \Pr(A\cap B) - \Pr(A\cap B) - \Pr(A\cap \bar B) = -\Pr(A)\Pr(\bar B)
+\end{align*}
+\begin{align*}
+  \Pr(A\cap \bar B) = \Pr(A)\Pr(\bar B) \tag{5}
+\end{align*}
+
+E (5) é a própria definição da independência entre $A$ e $\bar B$. Afirmação verdadeira.
+
+---
+
+> *1. Sejam $A$ e $B$ eventos independentes do espaço amostral de um experimento aleatório $S$, onde $P(A)=\tfrac{1}{4}$ e $P(B)=\tfrac{1}{3}$. A probabilidade de que pelo menos um desses dois eventos ($A$ e $B$) ocorra é $\tfrac{7}{12}$.*
+
+
+A probabilidade de que pelo menos um desses dois eventos ($A$ e $B$) ocorra é $\Pr(A\cup B)$. Em geral,
+
+\begin{align*}
+  \Pr(A\cup B) = \Pr(A) + \Pr(B) - \Pr(A\cap B)
+\end{align*}
+
+Como $A$ e $B$ são independentes, $\Pr(A\cap B)=\Pr(A)\Pr(B)$. Portanto,
+
+\begin{align*}
+  \Pr(A\cup B) = \Pr(A) + \Pr(B) - \Pr(A)\Pr(B) \\
+  \Pr(A\cup B) = (1/4) + (1/3) - (1/4)\times(1/3) = 0.5
+\end{align*}
+
+Afirmação falsa.
+
+---
+
+> *2. Sejam $A$ e $B$ dois eventos do espaço amostral de um experimento aleatório $S$, onde $P(A)=\tfrac{2}{3}$, $P(B)=\tfrac{1}{3}$, e $P(\bar A\mid B)=\tfrac{1}{4}$. Então: $P(A\mid B)=P(B\mid A)$.*
+
+A probabilidade de um evento $A$, condicionada ao acontecimento simultâneo do evento $B$ é
+
+\begin{align*}
+  \Pr(A\mid B) = \frac{\Pr(A\cap B)}{\Pr(B)} \\
+  \Pr(B)\Pr(A\mid B) = \Pr(A\cap B)
+\end{align*}
+
+Alternativamente, 
+
+\begin{align*}
+  \Pr(B\mid A) = \frac{\Pr(A\cap B)}{\Pr(A)} \\
+  \Pr(A)\Pr(B\mid A)=\Pr(A\cap B)
+\end{align*}
+
+Usando ambas as definições de probabilidade condicional, podemos escrever
+
+\begin{align*}
+  \Pr(B)\Pr(A\mid B) = \Pr(A)\Pr(B\mid A)
+\end{align*}
+
+Portanto só teremos que $\Pr(A\mid B)=\Pr(B\mid A)$ se $\Pr(A)=\Pr(B)$. Como não é o caso, afirmação falsa.
+
+---
+
+> *3. Sejam $A$, $B$ e $C$ três eventos do mesmo espaço amostral de um experimento aleatório $T$, onde $P(A)=\tfrac{2}{5}$, $P(C)=\tfrac{1}{2}$, $P(A\cup B)=\tfrac{3}{4}$, $P(B\mid A)=\tfrac{3}{10}$ e $P(C\mid A)=\tfrac{1}{4}$. Então, $P(\bar A\mid \bar C)=\tfrac{4}{5}$.*
+
+Queremos
+
+\begin{align*}
+  \Pr(\bar A \mid \bar C) = \frac{\Pr(\bar A \cap \bar C)}{\Pr(\bar C)}
+\end{align*}
+
+Sabemos que $\Pr(\bar C) = 1-\Pr(C) = 1-1/2 = 1/2$, então precisamos do valor $\Pr(\bar A\cap \bar C)$.
+
+Escreva
+
+\begin{align*}
+  \Pr(C\mid A) = \frac{\Pr(A\cap C)}{\Pr(A)} \\
+  \Pr(A)\Pr(C\mid A)=\Pr(A\cap C)
+\end{align*}
+
+\begin{align*}
+  \Pr(\bar C) = \Pr(A\cap \bar C) + \Pr(\bar A \cap \bar C) \\
+  \Pr(\bar A \cap \bar C) = \Pr(\bar C) - \Pr(A \cap \bar C)
+\end{align*}
+
+Sabemos $\Pr(\bar C)$, mas ainda precisamos de $\Pr(A\cap \bar C)$. Do enunciado, temos o valor numérico de $\Pr(C\mid A)$. Então,
+
+\begin{align*}
+  \Pr(A)\Pr(C\mid A) = \Pr(A\cap C) \\
+  \Pr(A\cap C) = (2/5)(1/4) = 1/10
+\end{align*}
+
+Aqui, usamos a partição de $A$ para escrever
+
+\begin{align*}
+  \Pr(A) = \Pr(A\cap C) + \Pr(A\cap \bar C) \\
+  \Pr(A\cap \bar C) = \Pr(A) - \Pr(A\cap C) \\
+  \Pr(A\cap \bar C) = (2/5)-(1/10) = 3/10
+\end{align*}
+
+Portanto,
+
+\begin{align*}
+  \Pr(\bar C) = \Pr(A\cap \bar C) + \Pr(\bar A \cap \bar C) \\
+  \Pr(\bar A \cap \bar C) = \Pr(\bar C) - \Pr(A\cap \bar C) \\
+  \Pr(\bar A \cap \bar C) = (1/2)-(3/10) = 1/5
+\end{align*}
+
+Finalmente podemos calcular
+
+\begin{align*}
+  \Pr(\bar A \mid \bar C) = \frac{(1/5)}{(1/2)} = 2/5
+\end{align*}
+
+Afirmação falsa.
+
+---
+
+> *4. Sejam $A$, $B$ e $C$ três eventos do mesmo espaço amostral de um experimento aleatório $T$, onde $P(A)=\tfrac{2}{5}$, $P(C)=\tfrac{1}{2}$, $P(A\cup B)=\tfrac{3}{4}$, $P(B\mid A)=\tfrac{3}{10}$ e $P(C\mid A)=\tfrac{1}{4}$. Então, $P(\bar A\mid \bar C)=\tfrac{1}{5}$.*
+
+Falso, calculamos acima $\Pr(\bar A\mid \bar C) = 2/5$.
+
+:::
+
+:::
+
+
+## Concursos Públicos
+
+- Concurso Banco Central 2024, Cargo: Analista - Economia e Finanças. 
+  - [Link para a prova.](https://arq.pciconcursos.com.br/provas/33165042/5cc924e9beef/analista_Economia_e_financas.pdf)
+  - [Link para o gabarito oficial.](https://arq.pciconcursos.com.br/provas/33165042/68c6775a2364/gabarito.pdf)
+
+### Questão 77 (Banco Central 2024, Cargo: Analista - Economia e Finanças)
+  
+::: {#exr-bc-2024-Q77}
+
+> Tema: Payoff esperado e escolha racional
+
+Em artigo publicado em conjunto com Amos Tversky em 1979, Daniel Kahneman, ganhador do prêmio Nobel de Economia em 2002 por seus estudos em economia comportamental, descreve vários padrões de comportamento que se afastam do pressuposto racional da microeconomia clássica.
+
+No referido artigo, os estudiosos apresentam, como exemplo, dois experimentos em que os sujeitos da pesquisa deveriam escolher uma opção entre duas que lhes foram oferecidas.
+
+No primeiro experimento, os sujeitos deveriam escolher entre as opções A e B, conforme descrição a seguir.
+
+* **opção A:** ganhar $\$2.500$ com probabilidade de 33%, $\$2.400$ com probabilidade de 66%, ou $\$0$ com probabilidade de 1%.
+* **opção B:** ganhar $\$2.400$ com certeza.
+
+No segundo experimento, os mesmos sujeitos deveriam escolher entre as opções C e D, conforme descrição a seguir.
+
+* **opção C:** ganhar $\$2.500$ com probabilidade de 33%, $\$0$ com probabilidade de 67%.
+* **opção D:** ganhar $\$2.400$ com probabilidade de 34%, $\$0$ com probabilidade de 66%.
+
+No primeiro experimento, 82% dos participantes escolheram a opção B. No segundo experimento, 83% dos participantes escolheram a opção C; além disso, 61% dos participantes escolheram B e C, em conjunto.
+
+Com base na situação apresentada, julgue os itens seguintes, relativos à economia comportamental.
+
+(77) Um agente perfeitamente racional e neutro ao risco escolheria as opções **A** e **D**. <select name="vf" id="vf">
+  <option value=""></option>
+  <option value="Verdadeiro">Verdadeiro</option>
+  <option value="Falso">Falso</option>
+</select>
+
+::: {.callout-caution title="Resolução" collapse="true" appearance="minimal"}
+
+\begin{align*}
+  E(A) &= 2500\times 0.33 + 2400\times 0.66 + 0 \times 0.01 = 2409 \\
+  E(B) &= 2400\times 1 = 2400
+\end{align*}
+
+Um agente racional neutro ao risco escolheria $A$ a $B$ porque $E(A)>E(B)$.
+
+\begin{align*}
+  E(C) &= 2500\times 0.33 + 0 \times 0.67 = 825 \\
+  E(D) &= 2400\times 0.34 + 0 \times 0.66 = 816
+\end{align*}
+
+Um agente racional neutro ao risco escolheria $C$ a $D$ porque $E(C)>E(D)$.
+
+Afirmação falsa.
+
+:::
+
+:::
+
+### Questões 26 a 30 (Banco Central 2024, Cargo: Analista - Economia e Finanças)
+
+::: {#exr-bc-2024-Q26a30}
+
+> Tema: Função massa de probabilidade.
+
+| x  | P(X = x) |
+| -- | -------- |
+| −2 | 5c       |
+| −1 | c        |
+| 0  | 2c       |
+| +1 | 3c       |
+| +2 | 4c       |
+
+Considerando que $X$ representa uma variável aleatória com suporte $x \in \{-2, -1, 0, +1, +2\}$, cuja função de distribuição de probabilidade é dada no quadro acima, na qual $c$ é uma constante real positiva, julgue os próximos itens.
+
+(26) A moda de $X$ é igual a zero. <select name="vf" id="vf">
+  <option value=""></option>
+  <option value="Verdadeiro">Verdadeiro</option>
+  <option value="Falso">Falso</option>
+</select>
+(27) $P(X = 1) = 0{,}2$. <select name="vf" id="vf">
+  <option value=""></option>
+  <option value="Verdadeiro">Verdadeiro</option>
+  <option value="Falso">Falso</option>
+</select>
+(28) $X$ segue uma distribuição contínua, pois $c$ é uma constante real positiva. <select name="vf" id="vf">
+  <option value=""></option>
+  <option value="Verdadeiro">Verdadeiro</option>
+  <option value="Falso">Falso</option>
+</select>
+(29) A média de $X$ é igual a zero. <select name="vf" id="vf">
+  <option value=""></option>
+  <option value="Verdadeiro">Verdadeiro</option>
+  <option value="Falso">Falso</option>
+</select>
+(30) A mediana de $X$ é igual ou superior a 1. <select name="vf" id="vf">
+  <option value=""></option>
+  <option value="Verdadeiro">Verdadeiro</option>
+  <option value="Falso">Falso</option>
+</select>
+
+::: {.callout-caution title="Resolução" collapse="true" appearance="minimal"}
+
+Precisamos obter os valores numéricos das probabilidades.
+
+\begin{align*}
+  5c + c + 2c + 3c + 4c = 1
+\end{align*}
+\begin{align*}
+    15c &= 1 \\
+    c &= 1/15
+\end{align*}
+
+---
+
+> *26. A moda de $X$ é igual a zero.*
+
+A **moda** é o valor mais provável, portanto é $x=-2$. Afirmação falsa
+
+---
+
+> *27. $P(X = 1) = 0{,}2$.*
+
+$\Pr(X=1) = 3\times c = 3/15 = 0.2$. Afirmação verdadeira.
+
+---
+
+> *28. $X$ segue uma distribuição contínua, pois $c$ é uma constante real positiva.*
+
+Afirmação falsa, uma variável aleatória segue uma distribuição contínua se sua imagem for um intervalo dos números reais. A variável aleatória do enunciado segue uma distribuição discreta. 
+
+---
+
+> *29. A média de $X$ é igual a zero.*
+
+\begin{align*}
+  E(X) = (-2)\times 5c + (-1)\times c + (0) \times 2c + (1) \times 3c + (2) \times 4c = 0
+\end{align*}
+
+Afirmação verdadeira.
+
+---
+
+> *30. A mediana de $X$ é igual ou superior a 1.*
+
+Chamamos $x_0 \in X[\Omega]$, um valor da imagem $X[\Omega]$ da variável aleatória $X$ de mediana se $\Pr(X\leq x_0)=0.5$.
+
+Repare que
+
+\begin{align*}
+  \Pr(X\leq 1) = 5c + c + 2c + 3c = 11c = 11/15 > 0.5
+\end{align*}
+
+Então sabemos que a mediana de $X$ é inferior ao valor 1.
+
+:::
+
+:::
+
+### Questões 31 a 35 (Banco Central 2024, Cargo: Analista - Economia e Finanças)
+
+::: {#exr-bc-2024-Q31a35}
+
+> Tema: Duas variáveis aleatórias contínuas.
+
+Supondo que $V$ e $W$ sejam duas variáveis contínuas e mutuamente independentes, tais que $P(V>0)=0{,}3$ e $P(W>0)=0{,}7$, julgue os próximos itens.
+
+(31) Considerando-se que as médias de $V$ e $W$ sejam iguais a 1 e que o coeficiente de variação de $V$ seja igual ao dobro do coeficiente de variação de $W$, é correto concluir que a variância de $V$ deve ser igual ao dobro da variância de $W$. <select name="vf" id="vf">
+  <option value=""></option>
+  <option value="Verdadeiro">Verdadeiro</option>
+  <option value="Falso">Falso</option>
+</select>
+(32) O primeiro quartil da variável $V$ é inferior a zero.<select name="vf" id="vf">
+  <option value=""></option>
+  <option value="Verdadeiro">Verdadeiro</option>
+  <option value="Falso">Falso</option>
+</select>
+(33) A probabilidade de ocorrência simultânea dos eventos $V<0$ e $W<0$ é igual a $0{,}21$. <select name="vf" id="vf">
+  <option value=""></option>
+  <option value="Verdadeiro">Verdadeiro</option>
+  <option value="Falso">Falso</option>
+</select>
+(34) Em relação aos eventos $V\ge 0$ e $W\ge 0$, é correto afirmar que a probabilidade condicional $P(V\ge 0 \mid W\ge 0)$ deve ser superior a $0{,}3$. <select name="vf" id="vf">
+  <option value=""></option>
+  <option value="Verdadeiro">Verdadeiro</option>
+  <option value="Falso">Falso</option>
+</select>
+(35) Se o desvio padrão de $V$ for igual a $3$ e se o desvio padrão de $W$ for igual a $4$, então o desvio padrão da diferença $V - W$ será igual a $5$. <select name="vf" id="vf">
+  <option value=""></option>
+  <option value="Verdadeiro">Verdadeiro</option>
+  <option value="Falso">Falso</option>
+</select>
+
+::: {.callout-caution title="Resolução" collapse="true" appearance="minimal"}
+
+> *31. Considerando-se que as médias de $V$ e $W$ sejam iguais a 1 e que o coeficiente de variação de $V$ seja igual ao dobro do coeficiente de variação de $W$, é correto concluir que a variância de $V$ deve ser igual ao dobro da variância de $W$.*
+
+Coeficiente de variação $CV(\cdot)$ é definido como o desvio padrão dividido pela média. Então se $E(V)=E(W)$, dizer que $CV(V) = 2CV(W)$ é dizer que o desvio padrão de $V$ é o dobro do desvio padrão de $W$. 
+
+\begin{align*}
+  CV(V) = 2CV(W) \\
+ \sqrt{Var(V)} = 2\sqrt{Var(W)} \\
+ Var(V) = 4 Var(W)
+\end{align*}
+
+Então a variância de $V$ é quatro vezes a variância de $W$.
+
+---
+
+> *32. O primeiro quartil da variável $V$ é inferior a zero.*
+
+O primeiro quartil de $V$ é o valor $v$ tal que $\Pr(V\leq v)=0.25$. Do enunciado temos $\Pr(V>0)=0.3$. Portanto $\Pr(V\leq 0)=0.7$. Sabemos que o primeiro quartil da variável aleatória $V$ é inferior a zero.
+
+---
+
+> *33. A probabilidade de ocorrência simultânea dos eventos $V<0$ e $W<0$ é igual a $0{,}21$.*
+
+Como $V$ e $W$ são independentes, $\Pr(V\cap W) = \Pr(V) \Pr(W) = (1-0.3)(1-0.7) = 0.21$.
+
+---
+
+> *34. Em relação aos eventos $V\ge 0$ e $W\ge 0$, é correto afirmar que a probabilidade condicional $P(V\ge 0 \mid W\ge 0)$ deve ser superior a $0{,}3$.*
+
+\begin{align*}
+  \Pr(V\geq 0| W \geq 0) = \frac{\Pr((V\geq 0)\cap(W \geq 0))}{\Pr(W\geq 0)}
+\end{align*}
+
+Porque $V$ e $W$ são independentes, $\Pr((V\geq 0)\cap(W \geq 0)) = \Pr(V\geq 0)\Pr(W\geq 0) = 0.21$. Então,
+
+\begin{align*}
+  \Pr(V\geq 0\mid W \geq 0) = \frac{0.21}{0.7} = 0.3
+\end{align*}
+
+Falso.
+
+---
+
+> *35. Se o desvio padrão de $V$ for igual a $3$ e se o desvio padrão de $W$ for igual a $4$, então o desvio padrão da diferença $V - W$ será igual a $5$.*
+
+A variância da diferença $V-W$ é dada por
+
+\begin{align*}
+  Var(V-W) = Var(V) + Var(W) - 2Cov(V,W)
+\end{align*}
+
+Como $V$ e $W$ independentes, $Cov(V,W)=0$. Então,
+
+\begin{align*}
+  Var(V-W) &= Var(V) + Var(W) \\
+  &=3^2+4^2=25
+\end{align*}
+
+Portanto, $DP(V-W)=\sqrt{Var(V-W))}=\sqrt{25}=5$.
+:::
+
+:::
+
+
