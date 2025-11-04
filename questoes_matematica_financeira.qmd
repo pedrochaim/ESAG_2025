@@ -350,7 +350,7 @@ Afirmação falsa. Dentre esses ativos, apenas o CDB é coberto pelo FGC.
 
 :::
 
-## Questão 9
+### Questão 9
 
 ::: {#exr-anbima-CPA-Q09}
 
