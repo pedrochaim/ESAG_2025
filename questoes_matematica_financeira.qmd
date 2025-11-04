@@ -2,7 +2,7 @@
 title: "Exercícios Resolvidos: Matemática Financeira e Finanças"
 format: html
 lang: pt
-date: 10/01/2025
+date: 11/01/2025
 date-format: "MMM, YYYY"
 author:
   - name: Pedro Chaim
@@ -19,7 +19,90 @@ Resoluções comentadas de exercícios selecionados sobre Matemática Financeira
 
 Contato: [pedro.chaim@ufsc.br](mailto:pedro.chaim@ufsc.br).
 
+## ENADE 2015
 
+::: {#exr-enade-2015-economia-Q26}
+
+### QUESTÃO 26
+
+Empresas em fase de crescimento necessitam de recursos financeiros para alavancar seus projetos de expansão e, para isso, podem contar com o mercado financeiro e de capitais ao utilizar uma composição de capital próprio e/ou recursos de terceiros.
+
+Com referência à condução da política monetária e considerando que o mercado de capitais é a principal fonte de capital próprio para as empresas e que os bancos comerciais e múltiplos são as principais instituições intermediárias entre os agentes superavitários e deficitários, avalie as afirmações a seguir.
+
+(I) Uma política monetária contracionista reduzirá o custo do capital próprio ao aumentar a taxa livre de risco. <select name="vf" id="vf">
+  <option value=""></option>
+  <option value="Verdadeiro">Verdadeiro</option>
+  <option value="Falso">Falso</option>
+</select>
+(II)  O custo do dinheiro no mercado interbancário sofrerá uma redução em função da diminuição da taxa de juros básica da economia, o que estimulará um maior nível de endividamento das empresas. <select name="vf" id="vf">
+  <option value=""></option>
+  <option value="Verdadeiro">Verdadeiro</option>
+  <option value="Falso">Falso</option>
+</select>
+(III) A política monetária adotada pelo governo influencia os preços dos títulos de renda fixa quando afeta o comportamento das taxas de juros de mercado. <select name="vf" id="vf">
+  <option value=""></option>
+  <option value="Verdadeiro">Verdadeiro</option>
+  <option value="Falso">Falso</option>
+</select>
+(IV)  Quando a Taxa Interna de Retorno (TIR) sofre uma redução significativa, torna-se fundamental o Banco Central adotar uma política monetária expansionista para evitar uma queda do investimento privado. <select name="vf" id="vf">
+  <option value=""></option>
+  <option value="Verdadeiro">Verdadeiro</option>
+  <option value="Falso">Falso</option>
+</select>
+
+**É correto apenas o que se afirma em:**
+
+(A) I e II.
+(B) I e III.
+(C) II e IV.
+(D) I, II e IV.
+(E) II, III e IV.
+
+<label for="resposta">Sua resposta:</label>
+<select name="resposta" id="altenativa">
+  <option value=""></option>
+  <option value="A">A</option>
+  <option value="B">B</option>
+  <option value="C">C</option>
+  <option value="D">D</option>
+  <option value="E">E</option>
+</select>
+
+::: {.callout-caution title="Resolução" collapse="true" appearance="minimal"}
+
+> *I. Uma política monetária contracionista reduzirá o custo do capital próprio ao aumentar a taxa livre de risco.*
+
+O **custo do capital próprio** é a remuneração requerida pelos acionistas, os donos da empresa. Acionistas só são remunerados (com dividendos) se a empresa estiver gerando lucro líquido. Credores são remunerados independentemente do lucro corrente da empresa, a menos de insolvência. Portanto o **custo do capital de terceiros** tende a ser inferior ao **custo do capital próprio**. Seria o **custo do capital de terceiros** impactado diretamente por um aumento da taxa livre de risco. Devido à relação de custo de oportunidade entre ações e ativos de dívida, um aumento na taxa livre de risco tenderia a aumentar (indiretamente) o **custo do capital próprio**. Afirmação falsa.
+
+---
+
+> *II. O custo do dinheiro no mercado interbancário sofrerá uma redução em função da diminuição da taxa de juros básica da economia, o que estimulará um maior nível de endividamento das empresas.*
+
+De fato, o *custo do dinheiro no mercado interbancário* depende diretamente da *taxa de juros básica da economia*. Uma redução da taxa básica leva, então, a uma redução no custo do capital de terceiros. Mais investimentos produtivos se tornam economicamente viáveis (VPL positivo, TIR superior ao custo de capital), incentivando empresas a se endividarem e executarem tais projetos de investimento. Afirmação verdadeira.
+
+---
+
+> *III. A política monetária adotada pelo governo influencia os preços dos títulos de renda fixa quando afeta o comportamento das taxas de juros de mercado.*
+
+O preço de um título de desconto (zero-cupom) é dado por
+
+\begin{align*}
+  PU = \frac{VF}{(1+y)^T},
+\end{align*}
+
+onde $VF$ é o valor de face do título, $T$ é a quantidade de períodos até o vencimento, e $y$ é a *yield to maturity*, a taxa de juros de mercado embutida no título (que tende a responder na mesma direção de mudanças na taxa básica de juros da economia). Repare que, tudo mais constante, um aumento em $y$ leva a uma redução de $PU$. Afirmação verdadeira.
+
+---
+
+> *IV. Quando a Taxa Interna de Retorno (TIR) sofre uma redução significativa, torna-se fundamental o Banco Central adotar uma política monetária expansionista para evitar uma queda do investimento privado.*
+
+A Taxa Interna de Retorno (TIR) de um projeto de investimento (quando existe) é a taxa de juros que torna o Valor Presente Líquido (VPL) desse projeto zero. Portanto pode ser interpretada como o maior custo de capital para qual tal projeto de investimento ainda é economicamente viável. 
+
+Portanto se as TIR na economia (que estão relacionadas fundamentalmente com a rentabilidade de um investimento, independentemente de como esse investimento é financiado, seja via dívida ou capital próprio) cairem como um todo, menos projetos de investimentos serão economicamente viáveis, o que leva a uma queda no fluxo de investimento privado. Ao promover uma política monetária expansionista (redução da taxa de juros básica), o banco central reduz o custo do capital de terceiros na economia, o que leva a uma redução no custo de capital (agregado) das empresas, elevando a quantidade de investimentos executados, aumentando o fluxo de investimento privado. Afirmação verdadeira.
+
+:::
+
+:::
 
 ## Exame ANPEC
 
@@ -144,6 +227,165 @@ Falso. Ações ordinárias têm direito a voto (e também a dividendos); ações
 > *83. No referido contexto, o titular de opções de venda da referida ação poderá vendê-la por **R\$ 200,00** e, com isso, terá ganho igual a **R\$ 5,00**, descontado o prêmio pago pelas opções.*
 
 Verdadeiro. Se eu detenho uma opção de venda com strike $K=200$ e o preço de mercado da ação é $S=195$, e eu exercer tal opção (o equivalente a vender minha ação ao emissor pelo preço $K$), o resultado líquido é $K-S=5$, não considerando o prêmio pago pela opção de venda.
+
+:::
+
+:::
+
+## Certificações Anbima CPA
+
+- [Link para fonte das questões](https://www.anbima.com.br/data/files/DF/86/EE/B6/EB6F8910C03A3F89B82BA2A8/Caderno-de-questoes-CPA.pdf)
+
+### Questão 2 
+
+::: {#exr-anbima-CPA-Q02}
+
+
+**Contexto:**
+
+Paulo pediu ao seu gerente duas opções de investimento com um horizonte de 360 dias para aplicar R$ 1.000,00. O gerente apresentou-lhe um CDB de instituição de grande porte com prazo de 1 ano e taxa de remuneração bruta de 12% a.a. A segunda opção foi um Certificado de Operações Estruturadas (COE) com exposição ao Índice Ibovespa (IBOV), também com prazo de 1 ano. O COE tem a seguinte estrutura de retornos:
+
+| Valor do IBOV em um ano                         | Valor retornado aos investidores em um ano         |
+| ----------------------------------------------- | -------------------------------------------------- |
+| Menor ou igual que 125.000                      | R$ 1.000,00                                        |
+| Maior que 125.000 e abaixo ou igual que 145.000 | 1.000 * [1 + (IBOV − 125.000) / 125.000]           |
+| Acima de 145.000 e abaixo ou igual de 153.700   | 1.000 * [1,16 + 0,75 * (IBOV − 145.000) / 145.000] |
+| Acima de 153.700                                | 1.000 * 1,205                                      |
+
+**Enunciado:**
+
+Com base nos aspectos apresentados e nas características dos produtos, a análise correta sobre
+o investimento de Paulo é:
+
+(A) Para que o COE apresente remuneração bruta superior ao CDB, o índice deve atingir ou
+superar 140.000 pontos.
+(B) Caso o índice Ibovespa atinja 160.000 em um ano, a rentabilidade líquida de impostos do
+COE será de 17,425%.
+(C) A tributação do imposto de renda incidente sobre o retorno do COE é inferior àquele
+incidente sobre o CDB.
+(D) O COE, assim como o CDB, são produtos cobertos pelo Fundo Garantidor de Créditos (FGC).
+
+::: {.callout-caution title="Resolução" collapse="true" appearance="minimal"}
+
+Um Certificado de Depósito Bancário (CDB) é um tipo de investimento de renda fixa bastante popular no Brasil em que você "empresta" dinheiro para uma instituição bancária em troca de juros. Condições de remuneração (pré ou pós-fixado) e de liquidez dependem do acordo entre a instituição bancária emitente e o detentor do CDB. Os CDB são cobertos pelo FGC (fundo garantidor de crédito).
+
+Um Certificado de Operações Estruturadas (COE) é um produto financeiro de renda fixa, cuja remuneração (similarmente a um derivativo) é contingente ao valor de um ou mais diferentes ativos. Esses ativos podem ser ações, moedas, taxas de juro, etc. É comum que um COE defina perdas e ganhos máximos frente bandas de variação do preço dos "ativos objeto". Os COE não são cobertos pelo FGC.
+
+A tributação IR de ambos CDB e COE segue a tabela regressiva abaixo. 
+
+| Prazo do Investimento              | Alíquota de IR sobre os Rendimentos |
+| ---------------------------------- | ----------------------------------- |
+| Até 180 dias                       | 22,5%                               |
+| De 181 a 360 dias                  | 20,0%                               |
+| De 361 a 720 dias                  | 17,5%                               |
+| Acima de 720 dias (mais de 2 anos) | 15,0%                               |
+
+
+
+---
+
+> *A. Para que o COE apresente remuneração bruta superior ao CDB, o índice deve atingir ou
+superar 140.000 pontos.*
+
+A rentabilidade bruta do CDB pré-fixado do enunciado é sempre 12\% ao ano.
+
+Se o Ibovespa atingir 140000 pontos, o valor retornado ao investidor pelo COE é
+
+\begin{align*}
+  R\$ 1000\times\left(1+\frac{140000-125000}{125000}\right)
+\end{align*}
+
+Precisamos fazer a divisão acima:
+
+\begin{align*}
+  140-125 = 15
+\end{align*}
+\begin{align*}
+  \frac{15}{125} &= \frac{1}{10}\frac{150}{125}\\
+  &=\frac{1}{10}\frac{6}{5}\\
+  &=0{,}1\times 1{,}2=0{,}12
+\end{align*}
+
+Portanto o valor retornado ao investidor seria
+\begin{align*}
+  R\$ 1000\times(1+0{,}12) = R\$ 1120
+\end{align*}
+
+Calculando o retorno como $(S_1-S_0)/S_0$ vemos que, se o índice Ibovespa atingir 140000 pontos, o retorno bruto do investidor é exatamente 12\%. 
+
+Então se o índice Ibovespa superar 140000 pontos, a remuneração bruta do COE é superior à remuneração bruta do CDB. Mas se o índice Ibovespa atingir exatamente 140000 pontos, ambas remunerações são idênticas. Logo: *"Para que o COE apresente remuneração bruta **superior** ao CDB, o índice deve **superar** 140000 pontos."*
+
+Eu diria que a afirmativa é falsa. No gabarito oficial essa afirmação é considerada correta.
+
+---
+
+> *B.  Caso o índice Ibovespa atinja 160.000 em um ano, a rentabilidade líquida de impostos do
+COE será de 17,425%.*
+
+Se o índice Ibovespa atingir 160.000 pontos ao final do ano, o valor bruto retornado ao investidor no COE é $R\$1205$.
+
+Como o prazo do investimento é 360 dias, a alíquota relevante é 20\%.
+
+Portanto o imposto pago seria
+
+\begin{align*}
+  (R\$1205-R\$1000)\times 0.2 = R\$41
+\end{align*}
+
+O rendimento líquido seria $R\$1205-R\$41 = R\$1164$, resultando em um retorno líquido de $16{,4}\%$. Afirmação falsa.
+
+---
+
+> *C. A tributação do imposto de renda incidente sobre o retorno do COE é inferior àquele incidente sobre o CDB.*
+
+Afirmação falsa. Ambos os investimentos têm o mesmo prazo e mesma tabela de IR, a tributação é a mesma.
+
+---
+
+> *D. O COE, assim como o CDB, são produtos cobertos pelo Fundo Garantidor de Créditos (FGC).*
+
+Afirmação falsa. Dentre esses ativos, apenas o CDB é coberto pelo FGC.
+
+:::
+
+:::
+
+## Questão 9
+
+::: {#exr-anbima-CPA-Q09}
+
+Lucas é um investidor conservador que busca preservar seu capital enquanto ganha um retorno constante. Ele tem algumas economias e deseja investir em títulos públicos. Lucas está particularmente preocupado com a inflação e quer garantir que seu investimento mantenha seu poder de compra ao longo do tempo, mesmo no caso de uma disparada inflacionária.
+
+**Enunciado**
+
+Lucas buscou orientação de seu gerente, que, considerando seu perfil, sugeriu que ele investisse em:
+
+(A) NTN-B.
+(B) LTN.
+(C) CDB.
+(D) LCA.
+
+::: {.callout-caution title="Resolução" collapse="true" appearance="minimal"}
+
+Lucas busca "preservar seu capital enquanto ganha um retorno constante", "investir em títulos públicos", e "está particularmente preocupado com a inflação".
+
+[Descrição dos títulos emitidos pelo Tesouro](https://www.tesourodireto.com.br/produtos/nossos-produtos)
+
+---
+
+A NTN-B (Nota do Tesouro Nacional Série B), ou Tesouro IPCA+ com Juros Semestrais, é um título de renda fixa emitido pelo Tesouro nacional cuja remuneração é composta por uma parte pré-fixada (garantida no momento da compra), mais a variação do índice IPCA. Essa seria a indicação adequada.
+
+---
+
+A LTN (Letra do Tesouro Nacional), ou Tesouro Prefixado, é um título pré-fixado zero-cupom. No momento da compra o detentor paga o PU (que depende da *yield to maturity* implícita) e no vencimento recebe o valor de face de R$1000. Não seria uma indicação adequada porque não protege contra a inflação.
+
+---
+
+Certificados de Depósito Bancário (CDB) é um tipo de investimento de renda fixa bastante popular no Brasil em que você "empresta" dinheiro para uma instituição bancária em troca de juros. Condições de remuneração (pré ou pós-fixado) e de liquidez dependem do acordo entre a instituição bancária emitente e o detentor do CDB. Os CDB são cobertos pelo FGC (fundo garantidor de crédito). Não seria uma indicação adequada porque nem sempre sua remuneração é vínculada à inflação, e porque não é um título público.
+
+---
+
+Letras de Crédito do Agronegócio são títulos de renda fixa emitidos por instituições privadas cujos recursos são redirecionados para crédito a atividades agrícolas. Atualmente as LCA são isentas de imposto de renda. Não seria uma indicação adequada porque nem sempre sua remuneração é vínculada à inflação, e porque não é um título público.
 
 :::
 
