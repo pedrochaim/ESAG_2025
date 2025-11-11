@@ -93,7 +93,7 @@ O multiplicador monetário, $a$, é definido como a razão entre os meios de pag
 
 - A **base monetária** $B$ é o passivo monetário do banco central (aparece explicitamente em seu balanço patrimonial). É composta pelo papel moeda emitido em poder do público, mais as "reservas bancárias". *As reservas bancárias incluem os depósitos compulsórios em espécie, não remunerados, incidentes sobre os depósitos à vista, mais as reservas livres. As reservas bancárias representam a  “conta-corrente” das instituições financeiras no Banco Central, sendo um instrumento de liquidação necessário para que sejam efetuadas as  transações monetárias entre a Autoridade Monetária e os demais agentes econômicos (sistema financeiro, governo e setor externo). (BCB 2018)*
 
-- O agregado chamado **meios de pagamento (restritos)** $MP$* é definido como sendo o passivo monetário restrito do BCB e das instituições financeiras que captam depósitos à vista, em poder dos detentores de moeda, sendo coerente com o conceito de base monetária restrita (passivo monetário do BCB). (BCB 2018)*
+- O agregado chamado **meios de pagamento (restritos)** $MP$ *é definido como sendo o passivo monetário restrito do BCB e das instituições financeiras que captam depósitos à vista, em poder dos detentores de moeda, sendo coerente com o conceito de base monetária restrita (passivo monetário do BCB). (BCB 2018)*
 
 Também é escrito
 
@@ -146,7 +146,7 @@ Quando o enunciado fala *"aumento das reservas dos bancos"*, interpretamos como 
 
 ---
 
-III. O aumento da aversão ao risco dos bancos comerciais contrai os meios de pagamento, em momentos de crises financeiras, como no caso do estouro da bolha do subprime.
+> *III. O aumento da aversão ao risco dos bancos comerciais contrai os meios de pagamento, em momentos de crises financeiras, como no caso do estouro da bolha do subprime.*
 
 Afirmação verdadeira. Um aumento na percepção de risco torna os bancos mais cautelosos em promover empréstimos a empresas e famílias. Aumenta a quantidade de encaixes voluntários, reduzindo a razão $\frac{DV_{BC}-E_T}{MP}$, e portanto reduzindo o valor do multiplicador $a$. 
 
@@ -155,7 +155,7 @@ Afirmação verdadeira. Um aumento na percepção de risco torna os bancos mais 
 
 ---
 
-* IV. A razão $e$ representa o percentual fixado legalmente dos depósitos à vista — que devem ser recolhidos ao Banco Central —, além de refletir a aversão dos bancos comerciais a recorrer a auxílios do Banco Central.*
+> *IV. A razão $e$ representa o percentual fixado legalmente dos depósitos à vista — que devem ser recolhidos ao Banco Central —, além de refletir a aversão dos bancos comerciais a recorrer a auxílios do Banco Central.*
 
 Afirmação verdadeira. 
 
@@ -320,12 +320,31 @@ Modelo IS-LM de equilíbrio conjunto no mercado de bens e mercado financeiro
   M/P &= L(\stackrel{-}{i}, \stackrel{+}{Y}) \tag{LM}
 \end{align*}
 
+---
+
 **Julgamento das Assertivas:**
 
-(I) Correta. “Diminuição da carga tributária” eleva a demanda agregada (mais renda disponível), deslocando a IS para a direita (para cima). No novo equilíbrio com LM dada, a economia opera com renda ($Y$) e taxa de juros ($i$) maiores.
-(II) Falsa. “Compra de títulos” pelo Banco Central expande a base/quantidade de moeda, o que desloca a LM para a direita (para baixo), reduz $i$ e aumenta $Y$. A assertiva afirma o oposto (LM para cima/esquerda, $i\uparrow$, $Y\downarrow$).
-(III) Correta. “Aumento dos gastos autônomos” é choque de demanda que desloca a IS para a direita (para cima). Com LM fixa, o novo equilíbrio tem $i$ e $Y$ maiores.
-(IV) Falsa. “Política monetária restritiva” reduz a oferta real de moeda, deslocando a LM para a esquerda (para cima). Isso eleva $i$ e reduz $Y$ — exatamente o contrário do que a assertiva descreve (ela fala em LM para baixo/direita, queda de $i$ e aumento de $Y$).
+> *I.  Uma diminuição da carga tributária deslocaria a curva IS para cima (direita) e provocaria um aumento da taxa de juros de equilíbrio e da renda. *
+
+Afirmação correta. “Diminuição da carga tributária” eleva a demanda agregada (mais renda disponível), deslocando a IS para a direita (para cima). No novo equilíbrio com LM dada, a economia opera com renda ($Y$) e taxa de juros ($i$) maiores.
+
+---
+
+> *II. Uma compra de títulos, por parte da autoridade monetária, deslocaria a curva LM para cima (esquerda), o que provocaria um aumento da taxa de juros de equilíbrio e uma redução da renda da economia.*
+
+Afirmação falsa um “compra de títulos” pelo Banco Central expande a base/quantidade de moeda, o que desloca a LM para a direita (para baixo), reduz $i$ e aumenta $Y$. A assertiva afirma o oposto (LM para cima/esquerda, $i\uparrow$, $Y\downarrow$).
+
+---
+
+> *III. Um aumento dos gastos autônomos deslocaria a curva de equilíbrio de bens e serviços para cima, o que, consequentemente, aumentaria a taxa de juros e a renda de equilíbrio.*
+
+Afirmação correta. Um “aumento dos gastos autônomos” é um choque de demanda que desloca a IS para a direita (para cima). Com LM fixa, o novo equilíbrio tem $i$ e $Y$ maiores.
+
+---
+
+> *IV. Uma política monetária restritiva provocaria, no equilíbrio IS-LM, um deslocamento da curva LM para baixo (direita) e uma redução das taxas de juros, o que, por sua vez, incentivaria um aumento dos investimentos e da renda.*
+
+Afirmativa falsa. Uma “política monetária restritiva” reduz a oferta real de moeda, deslocando a LM para a esquerda (para cima). Isso eleva $i$ e reduz $Y$ — exatamente o contrário do que a assertiva descreve (ela fala em LM para baixo/direita, queda de $i$ e aumento de $Y$).
 
 :::
 
@@ -366,19 +385,43 @@ E.  I, II e III.
 
 ::: {.callout-caution title="Resolução" collapse="true"}
 
-I. **Falsa.**
+**Política econômica e regime cambial**
+
+* **Câmbio fixo + alta mobilidade de capitais**
+
+  * Política fiscal (↑$G$ ou ↓$T$) é poderosa: desloca IS, pressiona juros, atrai capitais e obriga o BC a expandir $M$ para manter o câmbio, deslocando LM.
+  * Política monetária é fraca: mudanças em $M$ geram fluxos de capitais que forçam o BC a desfazer a operação.
+
+* **Câmbio flexível + alta mobilidade de capitais**
+
+  * Política monetária é eficaz: ↑$M$ reduz $i$, deprecia $e$, aumenta $NX$ e eleva $Y$.
+  * Política fiscal é menos eficaz: o aumento de $i$ aprecia $e$, reduz $NX$ e compensa parte do estímulo.
+
+---
+
+> *I.  O aumento do grau de mobilidade de capitais, preconizado pelo Consenso de Washington, sob o regime de taxas de câmbio flutuantes, aumenta o poder da política fiscal de amortizar choques exógenos sobre a demanda agregada.*
+
 No modelo IS-LM-BP para pequena economia aberta, com **câmbio flutuante e alta mobilidade de capitais**, a política fiscal perde eficácia.
-Um aumento de gasto público (ou redução de impostos) desloca a IS para a direita, eleva a taxa de juros doméstica acima da internacional, entra capital, há apreciação cambial e queda das exportações líquidas → a IS volta praticamente para a posição inicial. O efeito sobre o produto é muito pequeno (no limite, nulo). Logo, o aumento da mobilidade **reduz**, e não aumenta, o poder estabilizador da política fiscal.
 
-II. **Falsa.**
-Com **câmbio fixo e perfeita mobilidade de capitais**, a política fiscal é **muito eficaz**.
-A expansão fiscal desloca a IS para a direita, aumenta juros, entra capital, o que pressiona o câmbio à apreciação. Para manter o câmbio fixo, o BC compra reservas e expande a base monetária (LM para a direita), reforçando o aumento do produto. Assim, a política fiscal **não é neutra** sobre o produto; ela eleva o nível de atividade.
+Um aumento de gasto público (ou redução de impostos) desloca a IS para a direita, eleva a taxa de juros doméstica acima da internacional, entra capital, há apreciação cambial e queda das exportações líquidas → a IS volta praticamente para a posição inicial. O efeito sobre o produto é muito pequeno (no limite, nulo). Logo, o aumento da mobilidade **reduz**, e não aumenta, o poder estabilizador da política fiscal. 
 
-III. **Verdadeira.**
-Com **câmbio flutuante e perfeita mobilidade de capitais**, a política **monetária** é a ferramenta eficaz.
-Uma expansão monetária desloca a LM para a direita, reduz a taxa de juros, provoca saída de capitais, depreciação cambial, aumento das exportações líquidas e novo deslocamento da IS para a direita. O novo equilíbrio tem **produto maior**.
+Afirmativa falsa.
 
-Portanto, **apenas a afirmação III está correta**.
+---
+
+> *II. A adoção de perfeita mobilidade de capitais resultará em uma política fiscal sem efeito sobre o produto no novo equilíbrio, se o regime cambial for o de taxa de câmbio fixa.*
+
+Com **câmbio fixo e perfeita mobilidade de capitais**, a política fiscal é **muito eficaz**. A expansão fiscal desloca a IS para a direita, aumenta juros, entra capital, o que pressiona o câmbio à apreciação. Para manter o câmbio fixo, o BC compra reservas e expande a base monetária (LM para a direita), reforçando o aumento do produto. Assim, a política fiscal **não é neutra** sobre o produto; ela eleva o nível de atividade.
+
+Afirmação falsa.
+
+---
+
+> *III.  A política monetária expansionista, supondo-se o regime de taxa de câmbio flutuante e a adoção de perfeita mobilidade de capitais, é capaz de aumentar o produto no novo equilíbrio.*
+
+Com **câmbio flutuante e perfeita mobilidade de capitais**, a política **monetária** é a ferramenta eficaz. Uma expansão monetária desloca a LM para a direita, reduz a taxa de juros, provoca saída de capitais, depreciação cambial, aumento das exportações líquidas e novo deslocamento da IS para a direita. O novo equilíbrio tem **produto maior**. 
+
+Afirmação verdadeira
 
 :::
 
@@ -428,13 +471,17 @@ E.  I, II e IV.
 
 > *I.  A relação entre inflação e desemprego é negativa e expressa pelo valor de $b$. *
 
-Afirmação verdadeira. 
+Afirmação verdadeira. Veja que, de fato
+
+\begin{align*}
+  p = p^e -bu +bu^n + v
+\end{align*}
 
 ---
 
 > *II. A curva de Phillips é usada para as seguintes finalidades: descrever o lado da demanda da economia em modelos macroeconômicos; medir o impacto do desvio do produto em relação ao seu nível potencial na taxa de inflação; medir a inércia inflacionária; e realizar previsões.*
 
-De fato, a curva de Phillips é usada para "medir o impacto do desvio do produto em relação ao seu nível potencial na taxa de inflação; medir a inércia inflacionária; e realizar previsões", mas descreve o lado da oferta em modelos macroeconômicos. Afirmação falsa.
+De fato, a curva de Phillips é usada para "medir o impacto do desvio do produto em relação ao seu nível potencial na taxa de inflação; medir a inércia inflacionária; e realizar previsões", mas **descreve o lado da oferta** em modelos macroeconômicos (pense no modelo de três equações novo-keynesiano ou no modelo keynesiano tradicional expandido com curva de philips IS-LM-PC). Afirmação falsa.
 
 ---
 
@@ -499,20 +546,30 @@ E.  As asserções I e II são proposições falsas.
 
 ::: {.callout-caution title="Resolução" collapse="true"}
 
-**Gabarito: letra C.**
-
-**(I) Verdadeira.**
 Com câmbio flutuante, livre mobilidade de capitais e expectativas racionais, vale a *paridade descoberta de juros*:
 
-[
-i \approx i^* + \frac{E_{t+1}^e - E_t}{E_t},
-]
+\begin{align*}
+  i \approx i^* + \frac{E_{t+1}^e - E_t}{E_t}
+\end{align*}
 
-onde (E_t) é a cotação presente do dólar e (E_{t+1}^e) a cotação esperada. Mantidos constante o diferencial de juros e o prêmio de risco, qualquer mudança na **cotação futura esperada** (por exemplo, porque o BC anuncia que não fará mais swaps, deixando o mercado esperar um dólar mais caro no futuro) altera a cotação presente. Como um aumento de (E_{t+1}^e) leva a um aumento de (E_t), há uma **relação positiva** entre cotação futura esperada e cotação presente.
+Swaps cambiais similares a uma venda futura de dólares levam a uma apreciação da taxa de câmbio esperada.
 
-**(II) Falsa.**
-Uma expectativa de **menor rentabilidade em dólares** no futuro tornaria ativos em dólar **menos atraentes**, levando investidores a *substituir dólares por outros ativos* (por exemplo, ativos em reais). Isso tenderia a **aumentar a oferta de dólares** no Brasil e **baratear** o dólar (apreciação do real), o que **prejudica as exportações** — mas o enunciado fala em “retirada de divisas da economia brasileira”, isto é, saída de dólares, o que vai na direção oposta. Logo, a afirmação como está é falsa.
 
+---
+
+> *I.  Se o diferencial de juros e os riscos mantêm-se inalterados, um anúncio da autoridade monetária de não realizar o programa de oferta diária de swaps afeta a cotação do dólar no período presente, caracterizando uma relação positiva entre a cotação futura e a cotação presente da moeda norte-americana.*
+
+Mantidos constante o diferencial de juros e o prêmio de risco, qualquer mudança na **cotação futura esperada** (por exemplo, porque o BC anuncia que não fará mais swaps, deixando o mercado esperar um dólar mais caro no futuro) altera a cotação presente. Como um aumento de $E_{t+1}^e$ leva a um aumento de $E_t$, há uma **relação positiva** entre cotação futura esperada e cotação presente. 
+
+Afirmativa verdadeira.
+
+---
+
+> *II. A expectativa de menor rentabilidade em dólares no futuro resulta em retirada de divisas da economia brasileira, com prejuízo para as exportações do País.*
+
+Uma *menor rentabilidade em dólares* no futuro (menor juro estrangeiro) leva a uma *entrada de divisas da economia doméstica*. Afirmação falsa.
+
+De fato, poderia haver *prejuízo para as exportações do País*, via apreciação da taxa de câmbio.
 
 :::
 
@@ -552,6 +609,114 @@ E.  a curva LM será deslocada para a esquerda no processo de ajuste do setor ex
 </select>
 
 ::: {.callout-caution title="Resolução" collapse="true"}
+
+**Modelo IS–LM–BP (Mundell–Fleming) – resumo**
+
+O modelo **IS–LM–BP** descreve o curto prazo em uma economia aberta, com preços rígidos, combinando:
+
+* **IS**: equilíbrio no mercado de bens
+* **LM**: equilíbrio no mercado monetário
+* **BP**: equilíbrio do balanço de pagamentos
+
+**Curva IS – mercado de bens**
+
+O produto de equilíbrio é dado por
+\begin{align*}
+Y &= C(Y - T) + I(i) + G + NX(Y, Y^*, e),
+\end{align*}
+onde $Y$ é a renda, $i$ a taxa de juros doméstica, $G$ o gasto do governo, $NX$ as exportações líquidas, $Y^*$ a renda externa e $e$ a taxa de câmbio (por exemplo, reais por dólar).
+
+Juros mais altos reduzem investimento $I(i)$ e tendem a apreciar a moeda, diminuindo $NX$; isso desloca a curva IS para a esquerda.
+
+**Curva LM – mercado monetário**
+
+O equilíbrio entre oferta e demanda de moeda é
+\begin{align*}
+\frac{M}{P} &= L(Y,i),
+\end{align*}
+em que $M/P$ é a oferta real de moeda e $L(Y,i)$ é a demanda por encaixes reais, crescente em $Y$ e decrescente em $i$. Aumento em $M$ desloca a LM para a direita (juros menores para cada $Y$).
+
+**Curva BP – balanço de pagamentos**
+
+O balanço de pagamentos é a soma da conta corrente ($CC$) e da conta de capitais ($CK$):
+\begin{align*}
+BP &= CC(Y, Y^*, e) + CK(i - i^*) = 0,
+\end{align*}
+onde $i^*$ é a taxa de juros externa. Com **alta mobilidade de capitais**, pequenos desvios de $i$ em relação a $i^*$ geram fortes fluxos de capitais, tornando a BP quase horizontal em $i = i^*$.
+
+**Política econômica e regime cambial**
+
+* **Câmbio fixo + alta mobilidade de capitais**
+
+  * Política fiscal (↑$G$ ou ↓$T$) é poderosa: desloca IS, pressiona juros, atrai capitais e obriga o BC a expandir $M$ para manter o câmbio, deslocando LM.
+  * Política monetária é fraca: mudanças em $M$ geram fluxos de capitais que forçam o BC a desfazer a operação.
+
+* **Câmbio flexível + alta mobilidade de capitais**
+
+  * Política monetária é eficaz: ↑$M$ reduz $i$, deprecia $e$, aumenta $NX$ e eleva $Y$.
+  * Política fiscal é menos eficaz: o aumento de $i$ aprecia $e$, reduz $NX$ e compensa parte do estímulo.
+
+**Condição de Marshall–Lerner**
+
+Quando a taxa de câmbio $e$ se deprecia (a moeda doméstica se desvaloriza), o efeito sobre $NX$ depende das elasticidades-preço de exportações e importações. A **condição de Marshall–Lerner** diz que uma desvalorização melhora a conta corrente se a soma das elasticidades (em valor absoluto) da demanda por exportações e importações for maior que 1. Caso contrário, a desvalorização pode não aumentar (ou até piorar) $NX$, limitando o canal externo do modelo IS–LM–BP.
+
+---
+
+O gráfico a seguir apresenta uma **pequena economia aberta do modelo IS-LM-BP**, com **mobilidade imperfeita de capitais**, caracterizada pela **curva BP menos inclinada que a curva LM**, e expectativas econômicas ancoradas que operam em **regime de câmbio flexível**. O ponto A indica o equilíbrio interno e externo inicial.
+
+Considere que foi adotada uma **política monetária expansionista**, levando a economia para um **novo equilíbrio interno e externo**.
+
+---
+
+A política monetária expansionista **desloca a LM para a direita** (maior oferta real de moeda, juros menores).
+
+Com câmbio **flexível** e mobilidade imperfeita de capitais:
+
+1. **Passo inicial:**
+
+   * LM → LM’ (para a direita).
+   * A taxa de juros cai.
+   * Há saída de capitais → pressão de **depreciação cambial** (não valorização).
+   * Nesse momento, o equilíbrio externo (BP=0) é rompido.
+
+2. **Ajuste externo via câmbio:**
+
+   * A depreciação do câmbio torna exportações mais baratas e importações mais caras.
+   * As **exportações líquidas (NX)** aumentam.
+   * Isso eleva a demanda agregada para cada nível de juros ⇒ **IS desloca-se para a direita**.
+   * A melhora da conta corrente permite um nível maior de renda com equilíbrio externo ⇒ **BP também se desloca para a direita**.
+
+O processo continua até que se atinja um novo ponto de equilíbrio interno (mercados de bens e moeda) e externo (BP=0) com **renda maior** e **câmbio depreciado**.
+
+---
+
+> *A.  a taxa de câmbio será valorizada em relação à moeda estrangeira.*
+
+Uma política monetária expansionista leva a uma **redução na taxa de juros doméstica**, que leva a uma **depreciação cambial**. O grau do efeito depende do nível de mobilidade de capitais na economia. Afirmativa falsa.
+
+---
+
+> *B.  a renda inicial permanecerá igual ao observado no equilíbrio interno e externo inicial. * 
+
+Afirmativa falsa. A renda final é superior à renda inicial.
+
+---
+
+> *C.  a curva BP será deslocada para a esquerda no processo de ajuste do setor externo.  *
+
+Afirmativa falsa. A curva BP se desloca para a direita no processo de ajuste do setor externo.
+
+---
+
+> *D.  as curvas IS e BP serão deslocadas para a direita no processo de ajuste do setor externo. * 
+
+Afirmativa verdadeira. Essa é a dinâmica da transição do equilíbrio original para o novo equilíbrio (frente redução da taxa de juros doméstica).
+
+---
+
+> *E.  a curva LM será deslocada para a esquerda no processo de ajuste do setor externo.*
+
+Afirmativa falsa. A curva LM é deslocada para a direita com a redução dos juros domésticos e permanece lá. Um deslocamento posterior da LM poderia acontecer em situações de câmbio fixo.
 
 :::
 
@@ -694,6 +859,34 @@ E.  I, II e III.
 </select>
 
 ::: {.callout-caution title="Resolução" collapse="true"}
+
+> *I.  A contração monetária aumenta a taxa de juros, ocasionando uma redução nos investimentos privados.*
+
+Afirmação verdadeira. A contração monetária (talvez via venda de títulos públicos pelo BC no mercado aberto) leva a um aumento na taxa de juros. O aumento na taxa de juros faz com que menos investimentos sejam lucrativos. Menor fluxo de investimento privado.
+
+---
+
+> *II. A expansão monetária reduz a taxa de juros e sua eficácia está diretamente relacionada à propensão marginal a poupar.*
+
+---
+
+> *III.  A expansão dos gastos governamentais aumenta a taxa de juros, ocasionando uma redução nos investimentos privados.*
+
+Uma expansão nos gastos governamentais $G$ leva a um aumento da taxa de juros, já que a curva IS se desloca para a direita. Mas só isso não é o suficiente para afirmarmos que acarreta em uma redução dos investimentos privados, já que esses também dependem do próprio nível de produto $Y$, que está aumentando.
+
+A condição de equilíbrio do mercado de bens (IS) pode ser vista como
+
+\begin{align*}
+  \text{Poupança} = \text{Inv. Privado} + \text{Inv. Público}
+\end{align*}
+
+\begin{align*}
+  S = I + (G-T)
+\end{align*}
+
+Então se $S$ e $T$ são constantes, se $G$ aumentar, $I$ tem que diminuir para manter a igualdade. É chamado de efeito *crowding out*.
+
+Afirmativa verdadeira.
 
 :::
 
