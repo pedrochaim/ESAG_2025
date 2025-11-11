@@ -146,6 +146,179 @@ Assim, $P_t=(1+r)P_{t-1}-R$, $\forall, t \in {1,\ldots,T}$, e $P_T=0$; em que $P
 </select>
 
 ::: {.callout-caution title="Resolução" collapse="true" appearance="minimal"}
+Escrevendo $\{P_t\}$ de forma recursiva (tomando $P_0$ como dado), temos
+\begin{align*}
+  P_1 &= (1+r)P_0 - R
+\end{align*}
+
+\begin{align*}
+  P_2 &= (1+r)P_1 - R \\&= (1+r)[(1+r)P_0-R]-R \\&= (1+r)^2P_0 - R[1 + (1+r)]
+\end{align*}
+
+\begin{align*}
+  P_3 &= (1+r)P_2 - R \\&=(1+r)^3 - R[1 + (1+r) + (1+r)^2]
+\end{align*}
+
+Conseguimos então perceber que
+\begin{align*}
+  P_t &= (1+r)^tP_0 - R[1+(1+r)+(1+r)^2+\cdots+(1+r)^{t-1}]
+\end{align*}
+
+Chame $(1+r)=q$, a expressão entre colchetes acima, que é a soma parcial de uma progressão geométrica com $n$ elementos (o expoente máximo é $n-1$) fica
+\begin{align*}
+  S_{n-1} = 1 + q + q^2 + \cdots + q^{n-1}
+\end{align*}
+Faça 
+\begin{align*}
+  S_{n-1}-qS_{n-1} &= 1-q^n \\
+  S_{n-1} &= \frac{1-q^n}{1-q}
+\end{align*}
+
+Substituindo $q=(1+r)$ temos
+\begin{align*}
+  \frac{1-(1+r)^t}{1-(1+r)}=\frac{(1+r)^t-1}{r}
+\end{align*}
+
+Então
+
+\begin{align*}
+  P_t = (1+r)^tP_0-R\left(\frac{(1+r)^t-1}{r}\right)
+\end{align*}
+
+Sabemos que o saldo devedor é quitado no período $t=T$, tal que $P_T=0$. Então
+\begin{align*}
+  0 = (1+r)^TP_0-R\left(\frac{(1+r)^T-1}{r}\right)
+\end{align*}
+
+Resolvendo para $R$, temos
+
+\begin{align*}
+  R = P_0 \cdot r \cdot \left( \frac{(1+r)^T}{(1+r)^T-1}\right)
+\end{align*}
+
+---
+
+> *0. Para cada $t \in {0,1,\ldots,T}$, vale $P_t = P_0 - tP_0/T$.*
+
+Afirmação falsa, nós calcluamos 
+\begin{align*}
+  P_t = (1+r)^tP_0-R\left(\frac{(1+r)^t-1}{r}\right)
+\end{align*}
+
+---
+
+> *1. Cada prestação é de $P_0(1+r)^T/T$ reais.*
+
+Afirmação também falsa, calculamos a prestação $R$ como
+\begin{align*}
+  R = P_0 \cdot r \cdot \left( \frac{(1+r)^T}{(1+r)^T-1}\right)
+\end{align*}
+
+---
+
+> *2. Cada prestação supera os $rP_0$ reais.*
+
+Essa afirmação é verdadeira. Intuitivamente, $rP_0$ é o juro acumulado sobre o principal $P_0$ entre $t=0$ e $t=1$. Se a prestação fosse $rP_0$, o saldo devedor $P_t$ se manteria constante no tempo e a dívida nunca seria quitada. Faça $P_t=P_{t-1}$:
+\begin{align*}
+  P &= (1+r)P-R \\
+  P-P-rP &= -R \\
+  R &= rP
+\end{align*}
+
+Conseguimos também ver isso diretamente da expressão para $R$. Tome 
+\begin{align*}
+  R = P_0 \cdot r \cdot \left( \frac{(1+r)^T}{(1+r)^T-1}\right)
+\end{align*}
+Agora multiplique por $(1+r)^{-T}/(1+r)^{-T}$. Ficamos com
+\begin{align*}
+  R = P_0 \cdot r \cdot \left( \frac{1}{1-(1+r)^{-T}}\right)
+\end{align*}
+
+Se $(1+r)>1$, então $(1+r)^{-k}<1$, para $k=1,2,3,\dots$. Portanto 
+\begin{align*}
+\left( \frac{1}{1-(1+r)^{-T}}\right) > 1, \text{ e } R>rP_0
+\end{align*}
+
+---
+
+> *3. Quanto maior $r$, maior será $R$.*
+
+Afirmação verdadeira. Claro que, fixada a duração $T$, quanto maior a taxa de juros de um financiamento, maior será a parcela necessária para quitar o saldo devedor. 
+
+A rígor, deveríamos calcular $dR/dr$ e mostrar que se $r>0$ e $P_0>0$ então $dR/dr>0$.
+
+---
+
+> *4 Ao fim do período $T/2$, o saldo devedor ainda corresponde a mais da metade da dívida inicial.*
+
+Esse é, de longe, o item mais difícil da questão. 
+
+Se a afirmação é verdadeira, então
+
+\begin{align*}
+  P_{T/2} > (1/2)P_0.
+\end{align*}
+
+Equivalentemente, se
+
+\begin{align*}
+  2\frac{P_{T/2}}{P_0}>1.
+\end{align*}
+
+Ou, ainda,
+
+\begin{align*}
+  2\frac{P_{T/2}}{P_0}-1>0.
+\end{align*}
+
+É a desigualdade acima que iremos julgar.
+
+
+
+
+Agora lembre que, porque $P_T=0$, sabemos que $R=P_0\cdot r \cdot (1-(1+r)^{-T})^{-1}$. Esse é o valor da prestação fixa que zera o saldo devedor $P_t$ exatamente no período $t=T$.
+
+Substituindo na fórmula para $P_t$,
+\begin{align*}
+  P_t = (1+r)^tP_0 - P_0\cdot r \cdot \left(\frac{(1+r)^T}{(1+r)^T-1}\right)\left(\frac{(1+r)^t-1}{r}\right)
+\end{align*}
+
+Depois de algumas manipulações conseguimos escrever
+
+\begin{align*}
+  \frac{P_t}{P_0} = \frac{(1+r)^T-(1+r)^t}{(1+r)^T-1}.
+\end{align*}
+
+Fazendo $t=T/2$ e multiplicando por $2$,
+
+\begin{align*}
+  \frac{2P_{T/2}}{P_0} = 2\left(\frac{(1+r)^T-(1+r)^{T/2}}{(1+r)^T-1}\right).
+\end{align*}
+
+Chame $(1+r)^{T/2}=x$
+
+\begin{align*}
+  \frac{2P_{T/2}}{P_0} &= 2\left(\frac{x^2-x}{x^2-1}\right) \\
+  &= 2x \left(\frac{x-1}{(x+1)(x-1)}\right) \\
+  &= 2x \left(\frac{1}{x+1}\right)
+\end{align*}
+
+Então,
+
+\begin{align*}
+  \frac{2P_{T/2}}{P_0}-1 &= 2x \left(\frac{1}{x+1}\right)-1 \\
+  &= \frac{2x-(x+1)}{x+1} = \frac{x-1}{x+1}
+\end{align*}
+
+Lembrando que a afirmação é verdadeira se $\dfrac{2P_{T/2}}{P_0}-1>0$, e que $x=(1+r)^{T/2}>1$. Como $x>1$, a desigualdade abaixo vale.
+
+\begin{align*}
+\frac{x-1}{x+1} > 0
+\end{align*}
+
+
+
+Afirmação verdadeira.
 
 :::
 
@@ -166,6 +339,120 @@ Com respeito ao segundo ativo, uma mesma aplicação inicial $y_0$ em $t=0$ igua
 Sabendo que $\frac{1+r}{1+\bar r}=V\geq 0$ e $\lim_{t\rightarrow\infty}\frac{x_t}{y_t}=\frac{1}{2}$, determine o valor de $V$.
 
 ::: {.callout-caution title="Resolução" collapse="true" appearance="minimal"}
+
+\begin{align*}
+  B_1 &= \left(\frac{1+r}{2}\right)B_0\\
+  B_2 &= \left(\frac{1+r}{2}\right)B_1 = \left(\frac{1+r}{2}\right)^2B_0 
+\end{align*}
+
+Generalizando,
+
+\begin{align*}
+  B_t = \left(\frac{1+r}{2}\right)^tB_0
+\end{align*}
+
+\begin{align*}
+  x_t = (1+r)x_{t-1}-B_{t-1}
+\end{align*}
+
+\begin{align*}
+  x_t = (1+r)x_{t-1}-\left(\frac{1+r}{2}\right)^{t-1}B_0
+\end{align*}
+
+Com $(1+r)=a$, também, faça $(a/2)=q$.
+
+\begin{align*}
+  x_t = ax_{t-1}-q^{t-1}B_0
+\end{align*}
+
+
+\begin{align*}
+  x_1 &= ax_0-q^{1-1}B_0\\
+  &= ax_0-B_0
+\end{align*}
+
+\begin{align*}
+  x_2 &= ax_1 - B_1 \\
+  &= a(ax_0-B_0) - qB_0 \\
+  &= a^2x_0 - aB_0 - qB_0
+\end{align*}
+
+\begin{align*}
+  x_3 &= ax_2 - B_2 \\
+  &=  a(a^2x_0-aB_0-qB_0)-q^2B_0 \\
+  &= a^3x_0 - a^2B_0 - aqB_0 - q^2B_0
+\end{align*}
+
+\begin{align*}
+  x_4 &= ax_3 - B_3 \\
+  &= a(a^3x_0 - a^2B_0 - aqB_0 - q^2B_0) - q^3B_0 \\
+  &= a^4x_0 - (a^3 + a^2q + aq^2 + q^3)B_0
+\end{align*}
+
+\begin{align*}
+  x_5 &= ax_4 - B_4 \\
+  &= a^5 x_0 - B_0(a^4 + a^3q + a^2q^2 + aq^3 + q^4)
+\end{align*}
+
+Perceba que a expressão entre parênteses é
+
+\begin{align*}
+  S_n = \sum_{j=1}^n a^{n-j}q^j
+\end{align*}
+
+Faça $a^{-n}S_n$:
+
+\begin{align*}
+  a^{-n}S_n = a^{-n}\sum_{j=0}^n a^{n-j}q^j=\sum_{j=0}^n a^{-j}q^j = \sum^n_{j=0}(q/a)^j
+\end{align*}
+
+\begin{align*}
+  a^{-n}S_n &= 1 + p + p^2 + \cdots + p^n \\
+  pa^{-n}S_n &= p + p + p^2 + \cdots + p^n + p^{n+1}
+\end{align*}
+
+Então
+
+\begin{align*}
+  a^{-n}S_n-pa^{-n}S_n = 1-p^{n+1} \\
+  S_na^{-n}(1-p) = 1-p^{n+1}
+\end{align*}
+
+\begin{align*}
+  S_n = a^n\left(\frac{1-p^{n+1}}{1-p}\right)
+\end{align*}
+
+\begin{align*}
+  S_n = a^n\left(\frac{1-p^{n+1}}{1-p}\right)
+\end{align*}
+
+Mas $q=a/2$, então 
+
+\begin{align*}
+  p = \frac{a/2}{a/1} = 1/2
+\end{align*}
+
+E
+
+\begin{align*}
+  S_n &= a^n \left( \frac{1-(1/2)^{n+1}}{1-1/2} \right) \\
+  &= 2a^n \left(2-(1/2)^{n+1}\right)
+\end{align*}
+
+Então
+
+\begin{align*}
+  x_t &= a^tx_0 + B_0 S_{t-1} \\
+  &= a^t x_0 + B_0 a^{t-1}(1-(1/2)^n) \\
+  &= a^t x_0 + a^tB_0a^{-1}(1-(1/2)^n)
+\end{align*}
+
+E $x_0=A$ e $B_0=A/2$
+
+\begin{align*}
+  x_t &= a^tA + a^t(A/2)a^{-1}(1-(1/2)^n) \\
+  & = \frac{2a^tA + a^tAa^{-1}(1-(1/2)^n)}{2}
+\end{align*}
 
 :::
 

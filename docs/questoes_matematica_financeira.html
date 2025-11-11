@@ -134,10 +134,6 @@ window.Quarto = {
     <a class="nav-link active" href="./questoes_matematica_financeira.html" aria-current="page"> 
 <span class="menu-text">Matemática Financeira</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./questoes_macroeconomia.html"> 
-<span class="menu-text">Macroeconomia</span></a>
-  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -299,7 +295,7 @@ window.Quarto = {
 <li>Quanto maior <span class="math inline">\(r\)</span>, maior será <span class="math inline">\(R\)</span>. <select name="vf" id="vf"> <option value=""></option> <option value="Verdadeiro">Verdadeiro</option> <option value="Falso">Falso</option> </select></li>
 <li>Ao fim do período <span class="math inline">\(T/2\)</span>, o saldo devedor ainda corresponde a mais da metade da dívida inicial. <select name="vf" id="vf"> <option value=""></option> <option value="Verdadeiro">Verdadeiro</option> <option value="Falso">Falso</option> </select></li>
 </ol>
-<div class="callout callout-style-simple callout-caution no-icon callout-empty-content callout-titled" title="Resolução">
+<div class="callout callout-style-simple callout-caution no-icon callout-titled" title="Resolução">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
@@ -311,7 +307,121 @@ window.Quarto = {
 </div>
 <div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-
+<p>Escrevendo <span class="math inline">\(\{P_t\}\)</span> de forma recursiva (tomando <span class="math inline">\(P_0\)</span> como dado), temos <span class="math display">\[\begin{align*}
+  P_1 &amp;= (1+r)P_0 - R
+\end{align*}\]</span></p>
+<p><span class="math display">\[\begin{align*}
+  P_2 &amp;= (1+r)P_1 - R \\&amp;= (1+r)[(1+r)P_0-R]-R \\&amp;= (1+r)^2P_0 - R[1 + (1+r)]
+\end{align*}\]</span></p>
+<p><span class="math display">\[\begin{align*}
+  P_3 &amp;= (1+r)P_2 - R \\&amp;=(1+r)^3 - R[1 + (1+r) + (1+r)^2]
+\end{align*}\]</span></p>
+<p>Conseguimos então perceber que <span class="math display">\[\begin{align*}
+  P_t &amp;= (1+r)^tP_0 - R[1+(1+r)+(1+r)^2+\cdots+(1+r)^{t-1}]
+\end{align*}\]</span></p>
+<p>Chame <span class="math inline">\((1+r)=q\)</span>, a expressão entre colchetes acima, que é a soma parcial de uma progressão geométrica com <span class="math inline">\(n\)</span> elementos (o expoente máximo é <span class="math inline">\(n-1\)</span>) fica <span class="math display">\[\begin{align*}
+  S_{n-1} = 1 + q + q^2 + \cdots + q^{n-1}
+\end{align*}\]</span> Faça <span class="math display">\[\begin{align*}
+  S_{n-1}-qS_{n-1} &amp;= 1-q^n \\
+  S_{n-1} &amp;= \frac{1-q^n}{1-q}
+\end{align*}\]</span></p>
+<p>Substituindo <span class="math inline">\(q=(1+r)\)</span> temos <span class="math display">\[\begin{align*}
+  \frac{1-(1+r)^t}{1-(1+r)}=\frac{(1+r)^t-1}{r}
+\end{align*}\]</span></p>
+<p>Então</p>
+<p><span class="math display">\[\begin{align*}
+  P_t = (1+r)^tP_0-R\left(\frac{(1+r)^t-1}{r}\right)
+\end{align*}\]</span></p>
+<p>Sabemos que o saldo devedor é quitado no período <span class="math inline">\(t=T\)</span>, tal que <span class="math inline">\(P_T=0\)</span>. Então <span class="math display">\[\begin{align*}
+  0 = (1+r)^TP_0-R\left(\frac{(1+r)^T-1}{r}\right)
+\end{align*}\]</span></p>
+<p>Resolvendo para <span class="math inline">\(R\)</span>, temos</p>
+<p><span class="math display">\[\begin{align*}
+  R = P_0 \cdot r \cdot \left( \frac{(1+r)^T}{(1+r)^T-1}\right)
+\end{align*}\]</span></p>
+<hr>
+<blockquote class="blockquote">
+<p><em>0. Para cada <span class="math inline">\(t \in {0,1,\ldots,T}\)</span>, vale <span class="math inline">\(P_t = P_0 - tP_0/T\)</span>.</em></p>
+</blockquote>
+<p>Afirmação falsa, nós calcluamos <span class="math display">\[\begin{align*}
+  P_t = (1+r)^tP_0-R\left(\frac{(1+r)^t-1}{r}\right)
+\end{align*}\]</span></p>
+<hr>
+<blockquote class="blockquote">
+<p><em>1. Cada prestação é de <span class="math inline">\(P_0(1+r)^T/T\)</span> reais.</em></p>
+</blockquote>
+<p>Afirmação também falsa, calculamos a prestação <span class="math inline">\(R\)</span> como <span class="math display">\[\begin{align*}
+  R = P_0 \cdot r \cdot \left( \frac{(1+r)^T}{(1+r)^T-1}\right)
+\end{align*}\]</span></p>
+<hr>
+<blockquote class="blockquote">
+<p><em>2. Cada prestação supera os <span class="math inline">\(rP_0\)</span> reais.</em></p>
+</blockquote>
+<p>Essa afirmação é verdadeira. Intuitivamente, <span class="math inline">\(rP_0\)</span> é o juro acumulado sobre o principal <span class="math inline">\(P_0\)</span> entre <span class="math inline">\(t=0\)</span> e <span class="math inline">\(t=1\)</span>. Se a prestação fosse <span class="math inline">\(rP_0\)</span>, o saldo devedor <span class="math inline">\(P_t\)</span> se manteria constante no tempo e a dívida nunca seria quitada. Faça <span class="math inline">\(P_t=P_{t-1}\)</span>: <span class="math display">\[\begin{align*}
+  P &amp;= (1+r)P-R \\
+  P-P-rP &amp;= -R \\
+  R &amp;= rP
+\end{align*}\]</span></p>
+<p>Conseguimos também ver isso diretamente da expressão para <span class="math inline">\(R\)</span>. Tome <span class="math display">\[\begin{align*}
+  R = P_0 \cdot r \cdot \left( \frac{(1+r)^T}{(1+r)^T-1}\right)
+\end{align*}\]</span> Agora multiplique por <span class="math inline">\((1+r)^{-T}/(1+r)^{-T}\)</span>. Ficamos com <span class="math display">\[\begin{align*}
+  R = P_0 \cdot r \cdot \left( \frac{1}{1-(1+r)^{-T}}\right)
+\end{align*}\]</span></p>
+<p>Se <span class="math inline">\((1+r)&gt;1\)</span>, então <span class="math inline">\((1+r)^{-k}&lt;1\)</span>, para <span class="math inline">\(k=1,2,3,\dots\)</span>. Portanto <span class="math display">\[\begin{align*}
+\left( \frac{1}{1-(1+r)^{-T}}\right) &gt; 1, \text{ e } R&gt;rP_0
+\end{align*}\]</span></p>
+<hr>
+<blockquote class="blockquote">
+<p><em>3. Quanto maior <span class="math inline">\(r\)</span>, maior será <span class="math inline">\(R\)</span>.</em></p>
+</blockquote>
+<p>Afirmação verdadeira. Claro que, fixada a duração <span class="math inline">\(T\)</span>, quanto maior a taxa de juros de um financiamento, maior será a parcela necessária para quitar o saldo devedor.</p>
+<p>A rígor, deveríamos calcular <span class="math inline">\(dR/dr\)</span> e mostrar que se <span class="math inline">\(r&gt;0\)</span> e <span class="math inline">\(P_0&gt;0\)</span> então <span class="math inline">\(dR/dr&gt;0\)</span>.</p>
+<hr>
+<blockquote class="blockquote">
+<p><em>4 Ao fim do período <span class="math inline">\(T/2\)</span>, o saldo devedor ainda corresponde a mais da metade da dívida inicial.</em></p>
+</blockquote>
+<p>Esse é, de longe, o item mais difícil da questão.</p>
+<p>Se a afirmação é verdadeira, então</p>
+<p><span class="math display">\[\begin{align*}
+  P_{T/2} &gt; (1/2)P_0.
+\end{align*}\]</span></p>
+<p>Equivalentemente, se</p>
+<p><span class="math display">\[\begin{align*}
+  2\frac{P_{T/2}}{P_0}&gt;1.
+\end{align*}\]</span></p>
+<p>Ou, ainda,</p>
+<p><span class="math display">\[\begin{align*}
+  2\frac{P_{T/2}}{P_0}-1&gt;0.
+\end{align*}\]</span></p>
+<p>É a desigualdade acima que iremos julgar.</p>
+<p>Agora lembre que, porque <span class="math inline">\(P_T=0\)</span>, sabemos que <span class="math inline">\(R=P_0\cdot r \cdot (1-(1+r)^{-T})^{-1}\)</span>. Esse é o valor da prestação fixa que zera o saldo devedor <span class="math inline">\(P_t\)</span> exatamente no período <span class="math inline">\(t=T\)</span>.</p>
+<p>Substituindo na fórmula para <span class="math inline">\(P_t\)</span>, <span class="math display">\[\begin{align*}
+  P_t = (1+r)^tP_0 - P_0\cdot r \cdot \left(\frac{(1+r)^T}{(1+r)^T-1}\right)\left(\frac{(1+r)^t-1}{r}\right)
+\end{align*}\]</span></p>
+<p>Depois de algumas manipulações conseguimos escrever</p>
+<p><span class="math display">\[\begin{align*}
+  \frac{P_t}{P_0} = \frac{(1+r)^T-(1+r)^t}{(1+r)^T-1}.
+\end{align*}\]</span></p>
+<p>Fazendo <span class="math inline">\(t=T/2\)</span> e multiplicando por <span class="math inline">\(2\)</span>,</p>
+<p><span class="math display">\[\begin{align*}
+  \frac{2P_{T/2}}{P_0} = 2\left(\frac{(1+r)^T-(1+r)^{T/2}}{(1+r)^T-1}\right).
+\end{align*}\]</span></p>
+<p>Chame <span class="math inline">\((1+r)^{T/2}=x\)</span></p>
+<p><span class="math display">\[\begin{align*}
+  \frac{2P_{T/2}}{P_0} &amp;= 2\left(\frac{x^2-x}{x^2-1}\right) \\
+  &amp;= 2x \left(\frac{x-1}{(x+1)(x-1)}\right) \\
+  &amp;= 2x \left(\frac{1}{x+1}\right)
+\end{align*}\]</span></p>
+<p>Então,</p>
+<p><span class="math display">\[\begin{align*}
+  \frac{2P_{T/2}}{P_0}-1 &amp;= 2x \left(\frac{1}{x+1}\right)-1 \\
+  &amp;= \frac{2x-(x+1)}{x+1} = \frac{x-1}{x+1}
+\end{align*}\]</span></p>
+<p>Lembrando que a afirmação é verdadeira se <span class="math inline">\(\dfrac{2P_{T/2}}{P_0}-1&gt;0\)</span>, e que <span class="math inline">\(x=(1+r)^{T/2}&gt;1\)</span>. Como <span class="math inline">\(x&gt;1\)</span>, a desigualdade abaixo vale.</p>
+<p><span class="math display">\[\begin{align*}
+\frac{x-1}{x+1} &gt; 0
+\end{align*}\]</span></p>
+<p>Afirmação verdadeira.</p>
 </div>
 </div>
 </div>
@@ -328,7 +438,7 @@ window.Quarto = {
 <p>O primeiro ativo remunera a uma taxa de juros <span class="math inline">\(r&gt;0\)</span> e, devido a custos operacionais, deduz do saldo um valor <span class="math inline">\(B_t\)</span> em cada período <span class="math inline">\(t=0,1,2,\ldots\)</span>. Ainda, dada uma aplicação inicial <span class="math inline">\(x_0\)</span> igual a <span class="math inline">\(A&gt;0\)</span>, o valor no instante <span class="math inline">\(t+1\)</span> satisfaz <span class="math inline">\(x_{t+1}=(1+r)x_t-B_t\)</span>, onde <span class="math inline">\(\forall t\geq 0\)</span>, <span class="math inline">\(B_{t+1}=\left(\frac{1+r}{2}\right)B_t\)</span> e <span class="math inline">\(B_0=\frac{A}{2}\)</span>.</p>
 <p>Com respeito ao segundo ativo, uma mesma aplicação inicial <span class="math inline">\(y_0\)</span> em <span class="math inline">\(t=0\)</span> igual a <span class="math inline">\(A&gt;0\)</span> implica um valor <span class="math inline">\(y_{t+1}\)</span> no período <span class="math inline">\(t+1\)</span> que satisfaz <span class="math inline">\(y_{t+1}=(1+\bar r)y_t\)</span>, onde <span class="math inline">\(\bar r&gt;0\)</span>.</p>
 <p>Sabendo que <span class="math inline">\(\frac{1+r}{1+\bar r}=V\geq 0\)</span> e <span class="math inline">\(\lim_{t\rightarrow\infty}\frac{x_t}{y_t}=\frac{1}{2}\)</span>, determine o valor de <span class="math inline">\(V\)</span>.</p>
-<div class="callout callout-style-simple callout-caution no-icon callout-empty-content callout-titled" title="Resolução">
+<div class="callout callout-style-simple callout-caution no-icon callout-titled" title="Resolução">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
@@ -340,7 +450,90 @@ window.Quarto = {
 </div>
 <div id="callout-3" class="callout-3-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-
+<p><span class="math display">\[\begin{align*}
+  B_1 &amp;= \left(\frac{1+r}{2}\right)B_0\\
+  B_2 &amp;= \left(\frac{1+r}{2}\right)B_1 = \left(\frac{1+r}{2}\right)^2B_0
+\end{align*}\]</span></p>
+<p>Generalizando,</p>
+<p><span class="math display">\[\begin{align*}
+  B_t = \left(\frac{1+r}{2}\right)^tB_0
+\end{align*}\]</span></p>
+<p><span class="math display">\[\begin{align*}
+  x_t = (1+r)x_{t-1}-B_{t-1}
+\end{align*}\]</span></p>
+<p><span class="math display">\[\begin{align*}
+  x_t = (1+r)x_{t-1}-\left(\frac{1+r}{2}\right)^{t-1}B_0
+\end{align*}\]</span></p>
+<p>Com <span class="math inline">\((1+r)=a\)</span>, também, faça <span class="math inline">\((a/2)=q\)</span>.</p>
+<p><span class="math display">\[\begin{align*}
+  x_t = ax_{t-1}-q^{t-1}B_0
+\end{align*}\]</span></p>
+<p><span class="math display">\[\begin{align*}
+  x_1 &amp;= ax_0-q^{1-1}B_0\\
+  &amp;= ax_0-B_0
+\end{align*}\]</span></p>
+<p><span class="math display">\[\begin{align*}
+  x_2 &amp;= ax_1 - B_1 \\
+  &amp;= a(ax_0-B_0) - qB_0 \\
+  &amp;= a^2x_0 - aB_0 - qB_0
+\end{align*}\]</span></p>
+<p><span class="math display">\[\begin{align*}
+  x_3 &amp;= ax_2 - B_2 \\
+  &amp;=  a(a^2x_0-aB_0-qB_0)-q^2B_0 \\
+  &amp;= a^3x_0 - a^2B_0 - aqB_0 - q^2B_0
+\end{align*}\]</span></p>
+<p><span class="math display">\[\begin{align*}
+  x_4 &amp;= ax_3 - B_3 \\
+  &amp;= a(a^3x_0 - a^2B_0 - aqB_0 - q^2B_0) - q^3B_0 \\
+  &amp;= a^4x_0 - (a^3 + a^2q + aq^2 + q^3)B_0
+\end{align*}\]</span></p>
+<p><span class="math display">\[\begin{align*}
+  x_5 &amp;= ax_4 - B_4 \\
+  &amp;= a^5 x_0 - B_0(a^4 + a^3q + a^2q^2 + aq^3 + q^4)
+\end{align*}\]</span></p>
+<p>Perceba que a expressão entre parênteses é</p>
+<p><span class="math display">\[\begin{align*}
+  S_n = \sum_{j=1}^n a^{n-j}q^j
+\end{align*}\]</span></p>
+<p>Faça <span class="math inline">\(a^{-n}S_n\)</span>:</p>
+<p><span class="math display">\[\begin{align*}
+  a^{-n}S_n = a^{-n}\sum_{j=0}^n a^{n-j}q^j=\sum_{j=0}^n a^{-j}q^j = \sum^n_{j=0}(q/a)^j
+\end{align*}\]</span></p>
+<p><span class="math display">\[\begin{align*}
+  a^{-n}S_n &amp;= 1 + p + p^2 + \cdots + p^n \\
+  pa^{-n}S_n &amp;= p + p + p^2 + \cdots + p^n + p^{n+1}
+\end{align*}\]</span></p>
+<p>Então</p>
+<p><span class="math display">\[\begin{align*}
+  a^{-n}S_n-pa^{-n}S_n = 1-p^{n+1} \\
+  S_na^{-n}(1-p) = 1-p^{n+1}
+\end{align*}\]</span></p>
+<p><span class="math display">\[\begin{align*}
+  S_n = a^n\left(\frac{1-p^{n+1}}{1-p}\right)
+\end{align*}\]</span></p>
+<p><span class="math display">\[\begin{align*}
+  S_n = a^n\left(\frac{1-p^{n+1}}{1-p}\right)
+\end{align*}\]</span></p>
+<p>Mas <span class="math inline">\(q=a/2\)</span>, então</p>
+<p><span class="math display">\[\begin{align*}
+  p = \frac{a/2}{a/1} = 1/2
+\end{align*}\]</span></p>
+<p>E</p>
+<p><span class="math display">\[\begin{align*}
+  S_n &amp;= a^n \left( \frac{1-(1/2)^{n+1}}{1-1/2} \right) \\
+  &amp;= 2a^n \left(2-(1/2)^{n+1}\right)
+\end{align*}\]</span></p>
+<p>Então</p>
+<p><span class="math display">\[\begin{align*}
+  x_t &amp;= a^tx_0 + B_0 S_{t-1} \\
+  &amp;= a^t x_0 + B_0 a^{t-1}(1-(1/2)^n) \\
+  &amp;= a^t x_0 + a^tB_0a^{-1}(1-(1/2)^n)
+\end{align*}\]</span></p>
+<p>E <span class="math inline">\(x_0=A\)</span> e <span class="math inline">\(B_0=A/2\)</span></p>
+<p><span class="math display">\[\begin{align*}
+  x_t &amp;= a^tA + a^t(A/2)a^{-1}(1-(1/2)^n) \\
+  &amp; = \frac{2a^tA + a^tAa^{-1}(1-(1/2)^n)}{2}
+\end{align*}\]</span></p>
 </div>
 </div>
 </div>

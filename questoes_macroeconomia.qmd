@@ -79,31 +79,85 @@ E. II, III e IV.
 
 ::: {.callout-caution title="Resolução" collapse="true" appearance="minimal"}
 
-* **Reservas bancárias.** Parte dos depósitos mantida pelos bancos como **encaixe**:
-  • **Compulsórias** (exigidas pelo BC) + **excedentes** (voluntárias, por prudência).
-  Indicador: $e=\dfrac{E_T}{DV_{BC}}$ (encaixe total sobre depósitos à vista).
-* **Redesconto.** Empréstimo do **Banco Central para bancos** (última instância), a taxas de curtíssimo prazo, contra colateral. **Aumentar/diminuir a taxa de redesconto** altera o **custo da liquidez** e incentiva/desincentiva manter **reservas**, mas **não muda diretamente** a preferência do público por manter **depósitos vs. papel-moeda**.
-* **Multiplicador monetário.**
-  \begin{align}
-  a = \frac{1}{1 - d(1 - e)}, \qquad d=\frac{DV_{BC}}{MP}, \qquad MP = a,B.
-  \end{align}
-  Intuição: **$e\uparrow \Rightarrow a\downarrow$** (mais reservas, menos multiplicação); **$d\uparrow \Rightarrow a\uparrow$** (mais depósitos na composição do dinheiro).
+* [Revisão Metodológica das Estatísticas de Meios de Pagamento, BCB 2018](https://www.bcb.gov.br/content/publicacoes/notastecnicas/NT%2048_Dstat_Dimob_novembro_2018.pdf)
+
+
+Essa questão avalia o entendimento sobre os conceitos fundamentais do funcionamento do sistema de reservas fracionarias na condução da política monetária.
+
+
+\begin{align*}
+  a = \frac{MP}{B}
+\end{align*}
+
+O multiplicador monetário, $a$, é definido como a razão entre os meios de pagamento $MP$ e a base monetária $B$.
+
+- A **base monetária** $B$ é o passivo monetário do banco central (aparece explicitamente em seu balanço patrimonial). É composta pelo papel moeda emitido em poder do público, mais as "reservas bancárias". *As reservas bancárias incluem os depósitos compulsórios em espécie, não remunerados, incidentes sobre os depósitos à vista, mais as reservas livres. As reservas bancárias representam a  “conta-corrente” das instituições financeiras no Banco Central, sendo um instrumento de liquidação necessário para que sejam efetuadas as  transações monetárias entre a Autoridade Monetária e os demais agentes econômicos (sistema financeiro, governo e setor externo). (BCB 2018)*
+
+- O agregado chamado **meios de pagamento (restritos)** $MP$* é definido como sendo o passivo monetário restrito do BCB e das instituições financeiras que captam depósitos à vista, em poder dos detentores de moeda, sendo coerente com o conceito de base monetária restrita (passivo monetário do BCB). (BCB 2018)*
+
+Também é escrito
+
+\begin{align*}
+  a = \frac{1}{1-d(1-e)}.
+\end{align*}
+
+Onde: 
+
+- $d=\frac{DV_{BC}}{MP}$. Passivo monetário dos bancos comerciais tomados em proporção do passivo monetário do banco central. Em situações usuais, $DV_{BC}>MP$, tal que $d>1$.
+
+- $e=\frac{E_T}{DV_{BC}}$. Encaixes totais tomados como proporção do passivo monetário dos bancos comerciais. Aqui sempre teremos $E_T<DV_{BC}$, tal que $e<1$.
+
+
+Substituindo na fórmula acima temos
+
+\begin{align*}
+  a &= \frac{1}{1-\frac{DV_{BC}}{MP}\left(1-\frac{E_T}{DV_{BC}}\right)} \\
+  &= \frac{1}{1-\frac{DV_{BC}}{MP}\left(\frac{DV_{BC}-E_T}{DV_{BC}}\right)} \\
+  &= \frac{1}{1-\frac{DV_{BC}-E_T}{MP}}
+\end{align*}
+
+Lembrando a fórmula da soma do limite da progressão geométrica, podemos ver o multiplicador monetário como
+
+\begin{align*}
+  a = 1 + \frac{DV_{BC}-E_T}{MP} + \left(\frac{DV_{BC}-E_T}{MP}\right)^2 + \cdots
+\end{align*}
+
+Podemos interpretar $\frac{DV_{BC}-E_T}{MP}$ como a fração de cada $R\$1$, depositado no sistema bancário, que volta ao sistema bancário depois das transações de comércio. Portanto o multiplicador monetário é tão maior quanto maior for o passivo monetário dos bancos comerciais $DV_{BC}$, e tão menor quanto forem os encaixes $E_T$ (depósitos compulsórios e voluntários dos bancos comerciais no balanço patrimonial do Banco Central, *reservas bancárias* na nomenclatura do BCB 2018).
+
+Também podemos escrever
+
+\begin{align*}
+  a = 1 + d(1-e) + (d(1-e))^2 \cdots
+\end{align*}
 
 ---
 
-### Julgamento das assertivas
+> *I.  O Banco Central, ao alterar as taxas de juros das operações de redesconto e empréstimos aos bancos comerciais, está interferindo diretamente na razão $d$.*
 
-**I. Falsa.** Mudar a **taxa de redesconto** afeta **reservas e custo de liquidez** (logo, $e$ e a base via uso da janela), **não** “diretamente” $d=\dfrac{DV_{BC}}{MP}$, que reflete a **composição** do meio de pagamento determinada pela preferência do público (depósitos vs. papel-moeda).
+Uma **operação de redesconto** é quando o Banco Central empresta recursos diretamente a um banco comercial que não tem recursos disponíveis para cobrir seus requerimentos de reserva sobre seus depósitos. São empréstimos de curtíssimo prazo, com colateral em títulos públicos. 
 
-**II. Falsa.** “Ajustar o multiplicador **aumentando reservas**” eleva $e$ e **reduz $a$**:
-\begin{align}
-e\uparrow ;\Rightarrow; a\downarrow ;\Rightarrow; MP=aB \text{ cai se } B \text{ fixo.}
-\end{align}
-Em crises, a prática é **elevar $B$** e/ou **baixar compulsórios** (diminuir $e$) para **sustentar** $MP$, não o contrário.
+Uma mudança na taxa de juros das operações de redesconto afeta, então os enxaixes bancários $E_T$, não a quantidade de depósitos dos clientes nos bancos $DV_{BC}$. Afirmação falsa.
 
-**III. Verdadeira.** **Aversão ao risco ↑** → bancos guardam **mais reservas** (excedentes) → **$e\uparrow$**, **$a\downarrow$** → **contração de $MP$** (com $B$ dado). É o mecanismo típico em estresse financeiro.
+---
 
-**IV. Verdadeira.** $e=\dfrac{E_T}{DV_{BC}}$ **combina** o **percentual legal** (compulsório) **e** as **reservas voluntárias**, que refletem a prudência/relutância em recorrer ao BC.
+> *II. O multiplicador monetário, ao ser ajustado por meio do aumento das reservas dos bancos, constitui estratégia dos bancos centrais para enfrentar as crises de liquidez.*
+
+Quando o enunciado fala *"aumento das reservas dos bancos"*, interpretamos como um aumento na proporção de reservas compulsórias requeridas para cada $R\$1$ depositado no sistema bancário. Tal mudança aumentaria $E_T$ e diminuiria o multiplicador monetário $a$. Frente uma *"crise de liquidez"* a resposta seria contrária, diminuir a alíquota de reservas compulsórias. Afirmação falsa.
+
+---
+
+III. O aumento da aversão ao risco dos bancos comerciais contrai os meios de pagamento, em momentos de crises financeiras, como no caso do estouro da bolha do subprime.
+
+Afirmação verdadeira. Um aumento na percepção de risco torna os bancos mais cautelosos em promover empréstimos a empresas e famílias. Aumenta a quantidade de encaixes voluntários, reduzindo a razão $\frac{DV_{BC}-E_T}{MP}$, e portanto reduzindo o valor do multiplicador $a$. 
+
+*Comentário: Na prática, esse aumento na percepção de risco, somado a um aumento de ordens de magnitude na oferta de reservas bancárias pelo BC (aumento da base monetária $B$), levou a uma situação na qual os encaixes voluntários superaram tanto os encaixes compulsórios que o próprio sistema de reservas fracionárias foi abandonado nos EUA durante a resposta à Grande Crise Financeira. Agora a liquidez é controlada por meio da taxa de juros paga sobre os encaixes voluntários dos bancos comerciais.*
+
+
+---
+
+* IV. A razão $e$ representa o percentual fixado legalmente dos depósitos à vista — que devem ser recolhidos ao Banco Central —, além de refletir a aversão dos bancos comerciais a recorrer a auxílios do Banco Central.*
+
+Afirmação verdadeira. 
 
 :::
 
@@ -216,47 +270,6 @@ E.  Harrod-Domar; Solow; Lucas; e Romer.
 
 ::: {.callout-caution title="Resolução" collapse="true"}
 
-## Modelos de crescimento — até 3 equações por modelo (≈50 palavras cada)
-
-### (i) Harrod–Domar
-
-Modelo keynesiano com **coeficientes fixos** (sem substituição). O **investimento líquido** determina a variação do produto; a **poupança** o financia. O **ICOR** (v) liga capital e produto. A taxa “garantida” depende de (s) e (v); desvios do crescimento “natural” geram **instabilidade**. Políticas que elevam (s) ou reduzem (v) aumentam (g).
-\begin{align}
-I = sY \
-\Delta Y = \frac{1}{v} I \
-g = \frac{\Delta Y}{Y} = \frac{s}{v}
-\end{align}
-
-### (ii) Solow
-
-Neoclássico com **substituição K–L** e **retornos decrescentes**; progresso tecnológico **exógeno** (g). A dinâmica do capital por trabalho efetivo iguala **poupança** menos **depreciação ampliada**; o estado estacionário resolve investimento efetivo = depreciação. **Aumentos em (s)** elevam o **nível** de renda, não a **taxa** per capita, que é dada por (g).
-\begin{align}
-\dot{k} = s f(k) - (n + g + \delta) k \
-s f(k^*) = (n + g + \delta) k^* \
-g_y = g
-\end{align}
-
-### (iii) Romer (P&D)
-
-Crescimento **endógeno** via **ideias**: P&D expande o conhecimento (A), gerando **externalidades** e retornos agregados não decrescentes. A **alocação de trabalho em P&D** determina a taxa de crescimento; incentivos, escala e patentes elevam (g) **permanentemente**. O setor final usa (A) para produzir com produtividade crescente.
-\begin{align}
-\dot{A} = \phi L_A A \
-Y = K^{\alpha} (A L_Y)^{1-\alpha} \
-g = \frac{\dot{A}}{A} = \phi L_A
-\end{align}
-
-### (iv) Lucas (capital humano)
-
-Crescimento **endógeno** via **capital humano** (h). Agentes dedicam fração (u) do tempo ao **aprendizado**, acumulando (h); **externalidades** do capital humano sustentam crescimento sem tecnologia exógena. Políticas educacionais e incentivos a (u) elevam (g); diferenças em (u) e na eficiência de aprendizado explicam heterogeneidade internacional.
-\begin{align}
-\dot{h} = \phi u h \
-Y = K^{\alpha} \big((1-u) h L\big)^{1-\alpha} \
-g_y = \frac{\dot{h}}{h} = \phi u
-\end{align}
-
-> Mapeamento do enunciado: **Harrod–Domar; Solow; Romer; Lucas** → alternativa **A**.
-
-
 :::
 
 :::
@@ -351,6 +364,24 @@ E.  I, II e III.
   <option value="E">E</option>
 </select>
 
+::: {.callout-caution title="Resolução" collapse="true"}
+
+I. **Falsa.**
+No modelo IS-LM-BP para pequena economia aberta, com **câmbio flutuante e alta mobilidade de capitais**, a política fiscal perde eficácia.
+Um aumento de gasto público (ou redução de impostos) desloca a IS para a direita, eleva a taxa de juros doméstica acima da internacional, entra capital, há apreciação cambial e queda das exportações líquidas → a IS volta praticamente para a posição inicial. O efeito sobre o produto é muito pequeno (no limite, nulo). Logo, o aumento da mobilidade **reduz**, e não aumenta, o poder estabilizador da política fiscal.
+
+II. **Falsa.**
+Com **câmbio fixo e perfeita mobilidade de capitais**, a política fiscal é **muito eficaz**.
+A expansão fiscal desloca a IS para a direita, aumenta juros, entra capital, o que pressiona o câmbio à apreciação. Para manter o câmbio fixo, o BC compra reservas e expande a base monetária (LM para a direita), reforçando o aumento do produto. Assim, a política fiscal **não é neutra** sobre o produto; ela eleva o nível de atividade.
+
+III. **Verdadeira.**
+Com **câmbio flutuante e perfeita mobilidade de capitais**, a política **monetária** é a ferramenta eficaz.
+Uma expansão monetária desloca a LM para a direita, reduz a taxa de juros, provoca saída de capitais, depreciação cambial, aumento das exportações líquidas e novo deslocamento da IS para a direita. O novo equilíbrio tem **produto maior**.
+
+Portanto, **apenas a afirmação III está correta**.
+
+:::
+
 :::
 
 
@@ -395,12 +426,28 @@ E.  I, II e IV.
 
 ::: {.callout-caution title="Resolução" collapse="true"}
 
-**Gabarito: A (I e IV).**
+> *I.  A relação entre inflação e desemprego é negativa e expressa pelo valor de $b$. *
 
-* **I. Verdadeira.** Pela equação \(p = p^{e} - b(u-u^{n}) + v\), com \(b>0\), o coeficiente do desemprego cíclico é \(-b\): maior desemprego reduz a inflação.
-* **II. Falsa.** A curva de Phillips é relação de **oferta agregada** (dinâmica da inflação), não do lado da demanda. Ela serve para estudar inércia, efeito do hiato (ou desemprego cíclico) sobre a inflação e para previsão, mas a frase “descrever o lado da demanda” torna o item incorreto.
-* **III. Falsa.** O objetivo dos modelos de Phillips não é “medir a expectativa de inflação” a partir de inflação e desemprego; usualmente (p^{e}) é tomado de pesquisas/mercado ou modelado separadamente.
-* **IV. Verdadeira.** Em regimes de metas de inflação, expectativas de famílias e empresas afetam decisões do BC (pois \(p^{e}\) entra na dinâmica da inflação e a autoridade busca ancorá-las).
+Afirmação verdadeira. 
+
+---
+
+> *II. A curva de Phillips é usada para as seguintes finalidades: descrever o lado da demanda da economia em modelos macroeconômicos; medir o impacto do desvio do produto em relação ao seu nível potencial na taxa de inflação; medir a inércia inflacionária; e realizar previsões.*
+
+De fato, a curva de Phillips é usada para "medir o impacto do desvio do produto em relação ao seu nível potencial na taxa de inflação; medir a inércia inflacionária; e realizar previsões", mas descreve o lado da oferta em modelos macroeconômicos. Afirmação falsa.
+
+---
+
+> *III.  Os modelos de curva de Phillips têm como objetivo medir a expectativa de inflação, a partir das variáveis da equação relacionadas à inflação e ao desemprego.*
+
+A curva de Phillips não "mede" as expectativas de inflação. As expectativas de inflação são um componente determinante da dinâmica de inflação-produto descrita por esse modelo. Afirmação falsa.
+
+---
+
+> *IV. As expectativas das famílias e empresas, no Regime de Metas de Inflação, repercutem nas decisões de política monetária.*
+
+Expectativas de famílias e empresas são determinantes para a trajetória de desemprego e inflação. Nesse sentido, repercutem nas decisões de política monetária (tomadas pelo BC). Afirmação verdadeira.
+
 :::
 
 :::
@@ -427,11 +474,11 @@ Acesso em: 15 ago. 2018 (adaptado).
 
 Considerando a tendência à equalização das taxas de juros, um regime de taxa de câmbio flutuante, com livre mobilidade de capitais e expectativas racionais, avalie as asserções a seguir e a relação proposta entre elas.
 
-- I.  Se o diferencial de juros e os riscos mantêm-se inalterados, um anúncio da autoridade monetária de não realizar o programa de oferta diária de swaps afeta a cotação do dólar no período presente, caracterizando uma relação positiva entre a cotação futura e a cotação presente da moeda norte-americana.
+(I)  Se o diferencial de juros e os riscos mantêm-se inalterados, um anúncio da autoridade monetária de não realizar o programa de oferta diária de swaps afeta a cotação do dólar no período presente, caracterizando uma relação positiva entre a cotação futura e a cotação presente da moeda norte-americana.
 
 <center> **PORQUE** </center>
 
-- II. A expectativa de menor rentabilidade em dólares no futuro resulta em retirada de divisas da economia brasileira, com prejuízo para as exportações do País.
+(II) A expectativa de menor rentabilidade em dólares no futuro resulta em retirada de divisas da economia brasileira, com prejuízo para as exportações do País.
 
 A respeito dessas asserções, assinale a opção correta.
 
@@ -449,6 +496,25 @@ E.  As asserções I e II são proposições falsas.
   <option value="D">D</option>
   <option value="E">E</option>
 </select>
+
+::: {.callout-caution title="Resolução" collapse="true"}
+
+**Gabarito: letra C.**
+
+**(I) Verdadeira.**
+Com câmbio flutuante, livre mobilidade de capitais e expectativas racionais, vale a *paridade descoberta de juros*:
+
+[
+i \approx i^* + \frac{E_{t+1}^e - E_t}{E_t},
+]
+
+onde (E_t) é a cotação presente do dólar e (E_{t+1}^e) a cotação esperada. Mantidos constante o diferencial de juros e o prêmio de risco, qualquer mudança na **cotação futura esperada** (por exemplo, porque o BC anuncia que não fará mais swaps, deixando o mercado esperar um dólar mais caro no futuro) altera a cotação presente. Como um aumento de (E_{t+1}^e) leva a um aumento de (E_t), há uma **relação positiva** entre cotação futura esperada e cotação presente.
+
+**(II) Falsa.**
+Uma expectativa de **menor rentabilidade em dólares** no futuro tornaria ativos em dólar **menos atraentes**, levando investidores a *substituir dólares por outros ativos* (por exemplo, ativos em reais). Isso tenderia a **aumentar a oferta de dólares** no Brasil e **baratear** o dólar (apreciação do real), o que **prejudica as exportações** — mas o enunciado fala em “retirada de divisas da economia brasileira”, isto é, saída de dólares, o que vai na direção oposta. Logo, a afirmação como está é falsa.
+
+
+:::
 
 :::
 
@@ -485,6 +551,10 @@ E.  a curva LM será deslocada para a esquerda no processo de ajuste do setor ex
   <option value="E">E</option>
 </select>
 
+::: {.callout-caution title="Resolução" collapse="true"}
+
+:::
+
 :::
 
 ---
@@ -503,26 +573,85 @@ em que $Y =$ produto; $K =$ estoque de capital; $L =$ quantidade de trabalho.
 
 Sobre os resultados do modelo de Solow, avalie as afirmações a seguir.
 
-- I.  Quanto maior a taxa de poupança, maior será a taxa de crescimento do produto por trabalhador no estado estacionário. <input type="checkbox" unchecked>
-- II. Quanto maior a relação capital-trabalho, menor será a taxa de crescimento econômico do produto por trabalhador. <input type="checkbox" unchecked>
-- III.  Quanto maior o crescimento populacional, maior será a taxa de crescimento do produto por trabalhador no estado estacionário. <input type="checkbox" unchecked>
+(I) Quanto maior a taxa de poupança, maior será a taxa de crescimento do produto por trabalhador no estado estacionário. <input type="checkbox" unchecked>
+(II)  Quanto maior a relação capital-trabalho, menor será a taxa de crescimento econômico do produto por trabalhador. <input type="checkbox" unchecked>
+(III) Quanto maior o crescimento populacional, maior será a taxa de crescimento do produto por trabalhador no estado estacionário. <input type="checkbox" unchecked>
 
 É correto o que se afirma em
 
-A.  II, apenas.  
-B.  III, apenas.  
-C.  I e II, apenas.  
-D.  I e III, apenas.  
-E.  I, II e III.
+(A) II, apenas.  
+(B) III, apenas.  
+(C) I e II, apenas.  
+(D) I e III, apenas.  
+(E) I, II e III.
 
 <label for="resposta">Sua resposta:</label>
 <select name="resposta" id="altenativa">
+  <option value=""></option>
   <option value="A">A</option>
   <option value="B">B</option>
   <option value="C">C</option>
   <option value="D">D</option>
   <option value="E">E</option>
 </select>
+
+::: {.callout-caution title="Resolução" collapse="true"}
+
+Uma formulação usual do modelo de Solow parte do produto $Y(t)$ dada pela função de produção 
+
+\begin{align*}
+ Y(t) = F(K(t), L(t) A(t)) = K(t)^\alpha\left(A(t)L(t)\right)^{1-\alpha}, \quad 0<\alpha<1
+\end{align*}
+
+Dividindo $Y(t)$ por $L(t)A(t)$
+
+\begin{align*}
+  \frac{Y(t)}{A(t)L(t)} &= \left(\frac{K(t)}{A(t)L(t)}\right)^{\alpha}\left(\frac{A(t)L(t)}{A(t)L(t)}\right)^{1-\alpha}
+\end{align*}
+
+\begin{align*}
+  y(t) &= k(t)^\alpha
+\end{align*}
+
+- $L(t) = L(0)e^{nt}$
+- $A(t) = A(0)e^{gt}$
+
+A dinâmica do produto é completamente dada pela dinâmica do capital.
+
+A dinâmica do capital é descrita pela equação diferencial
+\begin{align*}
+   \frac{dk(t)}{dt} &= sy(t) - (n + g + \delta)k(t) \\
+  &= sk(t)^\alpha - (n + g + \delta)k(t)
+\end{align*}
+
+onde $s$ é a taxa de poupança, $n$ é a taxa de crescimento populacional, $g$ é a taxa de crescimento da tecnologia (específica ao trabalho), e $\delta$ é a taxa de depreciação do capital.
+
+No estado estacionário (quando $\dot k = 0$),
+
+\begin{align*}
+  k^* = \left(\frac{s}{n+g+\delta}\right)^{\frac{1}{1-\alpha}}
+\end{align*}
+
+---
+
+> *I.  Quanto maior a taxa de poupança, maior será a taxa de crescimento do produto por trabalhador no estado estacionário.*
+
+Afirmação falsa. No estado estacionário o crescimento do produto por trabalhador é $g$, se houver progresso tecnologico, e $0$ se não.
+
+---
+
+> *II.  Quanto maior a relação capital-trabalho, menor será a taxa de crescimento econômico do produto por trabalhador.*
+
+Afirmação verdadeira. Quanto maior for a relação capital-trabalho $k = K/L$, **menor será a taxa de crescimento do produto por trabalhador**: economias com pouco capital por trabalhador crescem mais rápido (pois o produto marginal do capital é alto); à medida que $k$ aumenta e se aproxima do estado estacionário, o crescimento de $y$ diminui devido aos rendimentos decrescentes.
+
+---
+
+> *III.  Quanto maior o crescimento populacional, maior será a taxa de crescimento do produto por trabalhador no estado estacionário.*
+> 
+Afirmação falsa. No estado estacionário o crescimento do produto por trabalhador é $g$, se houver progresso tecnologico, e $0$ se não. Independe de $n$.
+
+
+:::
 
 :::
 
@@ -563,6 +692,10 @@ E.  I, II e III.
   <option value="D">D</option>
   <option value="E">E</option>
 </select>
+
+::: {.callout-caution title="Resolução" collapse="true"}
+
+:::
 
 :::
 
@@ -626,6 +759,36 @@ E.  III e IV.
 
 ::: {.callout-caution title="Resolução" collapse="true"}
 
+> *I.  Se a decisão de contração monetária do Banco Central do Brasil for crível, a Curva de Phillips será deslocada paralelamente para baixo. *
+
+Se a contração monetária for crível, as expectativas de inflação caem. Na curva de Phillips aumentada pelas expectativas, isso aparece como uma redução de $\pi^e$, deslocando a curva de Phillips paralelamente para baixo (para qualquer nível de desemprego, a inflação esperada é menor). Afirmação verdadeira.
+
+---
+
+> *II. Para um nível de significância de 0,05, é possível inferir que há evidência de relação entre inflação e desemprego no Brasil.*
+
+Afirmação falsa. Se o $p$-valor do teste $\varepsilon=0$ contra $\varepsilon\neq 0$ foi 0,0865, não rejeitaríamos a hipótese nula ao nível de 0.05.
+
+---
+
+> *III.  Se a taxa natural de desemprego for de 4,5% ao mês, espera-se que a inflação seja 1,75% menor, se o nível de desemprego atingir 7% ao mês.*
+
+Substituindo os valores,
+
+\begin{align*}
+  \Delta \pi_t = -\varepsilon(u_t-u_n) \\
+  &= -0.7\times(7\%-4.5\%) = -1.75\%
+\end{align*}
+
+Afirmação verdadeira.
+
+---
+
+> *IV. Se o Banco Central desejar manter a taxa de inflação constante (sem variação), para uma taxa natural de desemprego de 4,5%, o nível de desemprego deve ser de 6,5%.*
+
+É a própria taxa de desemprego natural que faz com que a inflação seja constante (às vezes é chamada de NAIRU, *Non-Accelerating Inflation Rate of Unemployment*). Afirmação falsa.
+
+
 :::
 
 :::
@@ -664,6 +827,36 @@ E.  I, III e IV.
   <option value="E">E</option>
 </select>
 
+::: {.callout-caution title="Resolução" collapse="true"}
+
+No contexto da crise Grega, ao fechar os bancos e limitar os saques o objetivo do Governo era evitar uma corrida bancária. Os fundos assistenciais do BCE foram utilizados para fortalecer o caixa dos bancos.
+
+---
+
+> *I. O governo grego visava ampliar a razão papel-moeda em poder do público sobre os meios de pagamento, estimulando, com isso, o aumento do multiplicador monetário.*
+
+Afirmação falsa. O contexto é de corrida bancária e colapso do sistema financeiro. O objetivo não era uma política monetária expansionista.
+
+---
+
+> *II. O governo grego pretendia reduzir o acesso do público aos meios de pagamento e, com isso, diminuir o nível geral de preços.*
+
+Afirmação falsa. Se algo, ao evitar a corrida bancária, o acesso do público a meios de pagamento aumenta no médio prazo. Também não havia preocupação com inflação alta.
+
+---
+
+> *III. O governo grego objetivava manter o fluxo de liquidez do mercado interbancário, restabelecendo, com isso, os níveis de reservas bancárias.*
+
+Afirmação verdadeira. Foi o destino dos recursos emergenciais do BCE. O intúito é aumentar a percepção de segurança dos clientes dos bancos comerciais, evitando uma corrida bancária.
+
+---
+
+> *IV. O governo grego procurava evitar o colapso do multiplicador monetário, ao estabilizar a razão depósitos à vista dos bancos comerciais sobre os meios de pagamento.*
+
+Afirmação verdadeira. O multiplicador monetário pode ser visto como $a=MP/B$, onde $MP$ são os meios de pagamento e $B$ é a base monetária. Ao evitar a redução significativa dos depósitos no sistema bancária, evita-se também uma queda no multiplicador.
+
+:::
+
 :::
 
 ---
@@ -700,6 +893,10 @@ Considerando esse contexto, avalie as afirmações a seguir.
   <option value="D">D</option>
   <option value="E">E</option>
 </select>
+
+::: {.callout-caution title="Resolução" collapse="true"}
+
+:::
 
 :::
 

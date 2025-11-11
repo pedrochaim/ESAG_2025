@@ -134,10 +134,6 @@ window.Quarto = {
     <a class="nav-link" href="./questoes_matematica_financeira.html"> 
 <span class="menu-text">Matemática Financeira</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./questoes_macroeconomia.html"> 
-<span class="menu-text">Macroeconomia</span></a>
-  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -684,14 +680,15 @@ E(X) = 0.25\times 0 + 0.55 \times 0 + 0.65 \times 0.5 + 0.75 \times 0.45 + 0.9 \
 <blockquote class="blockquote">
 <p>União e intersecção de eventos em um espaço amostral.</p>
 </blockquote>
-<p><strong>Dados três eventos aleatórios</strong> <span class="math inline">\(A=\{\text{o preço da gasolina subir}\}\)</span>, <span class="math inline">\(B=\{\text{o real desvalorizar}\}\)</span> e <span class="math inline">\(C=\{\text{a taxa Selic subir}\}\)</span>, a interpretação da igualdade entre tais elementos é:</p>
+<p>Dados três eventos aleatórios <span class="math inline">\(A=\{\text{o preço da gasolina subir}\}\)</span>, <span class="math inline">\(B=\{\text{o real desvalorizar}\}\)</span> e <span class="math inline">\(C=\{\text{a taxa Selic subir}\}\)</span>, a interpretação da igualdade entre tais elementos é:</p>
 <ol type="A">
-<li><p><span class="math inline">\(A \cup B \cup C = A \cap B \cap C\)</span> estabelece que a ocorrência de qualquer um desses eventos implica a ocorrência dos demais.</p></li>
-<li><p><span class="math inline">\(A \cup B \cup C = A \cup B\)</span> estabelece que o preço da gasolina não sobe quando a taxa Selic sobe.</p></li>
-<li><p><span class="math inline">\(A \cap B \cap C = A\)</span> estabelece que o preço da gasolina não sobe quando o real desvaloriza e a taxa Selic sobe.</p></li>
-<li><p><span class="math inline">\(A \cup B \cup C = A\)</span> estabelece que o preço da gasolina nunca sobe quando ocorre uma desvalorização do real ou uma alta da taxa Selic.</p></li>
-<li><p><span class="math inline">\(A \cap B \cap C = \emptyset\)</span> estabelece que uma subida no preço da gasolina e uma desvalorização do real não podem ocorrer conjuntamente.</p></li>
+<li><span class="math inline">\(A \cup B \cup C = A \cap B \cap C\)</span> estabelece que a ocorrência de qualquer um desses eventos implica a ocorrência dos demais.</li>
+<li><span class="math inline">\(A \cup B \cup C = A \cup B\)</span> estabelece que o preço da gasolina não sobe quando a taxa Selic sobe.</li>
+<li><span class="math inline">\(A \cap B \cap C = A\)</span> estabelece que o preço da gasolina não sobe quando o real desvaloriza e a taxa Selic sobe.</li>
+<li><span class="math inline">\(A \cup B \cup C = A\)</span> estabelece que o preço da gasolina nunca sobe quando ocorre uma desvalorização do real ou uma alta da taxa Selic.</li>
+<li><span class="math inline">\(A \cap B \cap C = \emptyset\)</span> estabelece que uma subida no preço da gasolina e uma desvalorização do real não podem ocorrer conjuntamente.</li>
 </ol>
+<p><label for="resposta">Sua resposta:</label> <select name="resposta" id="altenativa"> <option value=""></option> <option value="A">A</option> <option value="B">B</option> <option value="C">C</option> <option value="D">D</option> <option value="E">E</option> </select></p>
 <div class="callout callout-style-simple callout-caution no-icon callout-titled" title="Resolução">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -706,6 +703,28 @@ E(X) = 0.25\times 0 + 0.55 \times 0 + 0.65 \times 0.5 + 0.75 \times 0.45 + 0.9 \
 <div class="callout-body-container callout-body">
 <p>Apenas uma das afirmativas acima é correta. Vamos julgar cada uma.</p>
 <hr>
+<blockquote class="blockquote">
+<p><em>A. <span class="math inline">\(A \cup B \cup C = A \cap B \cap C\)</span> estabelece que a ocorrência de qualquer um desses eventos implica a ocorrência dos demais.</em></p>
+</blockquote>
+<p>Essa afirmação é verdadeira.</p>
+<hr>
+<blockquote class="blockquote">
+<p><em>B. <span class="math inline">\(A \cup B \cup C = A \cup B\)</span> estabelece que o preço da gasolina não sobe quando a taxa Selic sobe.</em></p>
+</blockquote>
+<p>Dizer que <span class="math inline">\(A \cup B \cup C = A \cup B\)</span> implica que <span class="math inline">\(C\subseteq (A\cup B)\)</span>, ou seja, <span class="math inline">\(C\)</span> é contido na união entre <span class="math inline">\(A\cup B\)</span>. Em termos do problema: Se acontecer pelo menos um entre <span class="math inline">\(A\)</span> e <span class="math inline">\(B\)</span>, então é possível (mas não garantido) que <span class="math inline">\(C\)</span> também aconteça.</p>
+<hr>
+<blockquote class="blockquote">
+<p><em>C. <span class="math inline">\(A \cap B \cap C = A\)</span> estabelece que o preço da gasolina não sobe quando o real desvaloriza e a taxa Selic sobe.</em></p>
+</blockquote>
+<p>É exatamente o contrário: se <span class="math inline">\(B\)</span> e <span class="math inline">\(C\)</span> ocorrem simultaneamente, então garantimos que <span class="math inline">\(A\)</span> ocorre.</p>
+<hr>
+<blockquote class="blockquote">
+<p><em>D. <span class="math inline">\(A \cup B \cup C = A\)</span> estabelece que o preço da gasolina nunca sobe quando ocorre uma desvalorização do real ou uma alta da taxa Selic.</em></p>
+</blockquote>
+<p>Dizer <span class="math inline">\(A \cup B \cup C = A\)</span> implica que <span class="math inline">\((B\cup C)\subset A\)</span>. Ou seja, sempre que ou acontece <span class="math inline">\(B\)</span> ou acontece <span class="math inline">\(C\)</span>, ou ambos, também acontece <span class="math inline">\(A\)</span>.</p>
+<hr>
+<p><em>E. <span class="math inline">\(A \cap B \cap C = \emptyset\)</span> estabelece que uma subida no preço da gasolina e uma desvalorização do real não podem ocorrer conjuntamente.</em></p>
+<p>Falso. <span class="math inline">\(A \cap B \cap C = \emptyset\)</span> proíbe o acontecimento conjunto de <span class="math inline">\(A\)</span>, <span class="math inline">\(B\)</span>, e <span class="math inline">\(C\)</span>, mas não de cada um dos pares de eventos.</p>
 </div>
 </div>
 </div>

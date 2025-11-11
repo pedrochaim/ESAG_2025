@@ -134,10 +134,6 @@ window.Quarto = {
     <a class="nav-link" href="./questoes_matematica_financeira.html"> 
 <span class="menu-text">Matemática Financeira</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link active" href="./questoes_macroeconomia.html" aria-current="page"> 
-<span class="menu-text">Macroeconomia</span></a>
-  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -245,7 +241,7 @@ window.Quarto = {
 </ul>
 <hr>
 <section id="questão-13-enade-2022-economia" class="level3">
-<h3 class="anchored">Questão 13 (ENADE 2022 – Economia)</h3>
+<h3 class="anchored" data-anchor-id="questão-13-enade-2022-economia">Questão 13 (ENADE 2022 – Economia)</h3>
 <div id="exr-enade-2022-Q13" class="theorem exercise">
 <p><span class="theorem-title"><strong>Exercício 1</strong></span> &nbsp;</p>
 <blockquote class="blockquote">
@@ -286,29 +282,68 @@ E. II, III e IV.</p>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<section id="gabarito-comentado-multiplicador-monetário-revisão-expressa" class="level2 callout-body-container callout-body">
-<h2 class="anchored" data-anchor-id="gabarito-comentado-multiplicador-monetário-revisão-expressa">Gabarito comentado — Multiplicador monetário (revisão expressa)</h2>
-<section id="conceitos-chave-bem-rápido" class="level3">
-<h3 class="anchored" data-anchor-id="conceitos-chave-bem-rápido">Conceitos-chave (bem rápido)</h3>
+<div class="callout-body-container callout-body">
 <ul>
-<li><strong>Reservas bancárias.</strong> Parte dos depósitos mantida pelos bancos como <strong>encaixe</strong>: • <strong>Compulsórias</strong> (exigidas pelo BC) + <strong>excedentes</strong> (voluntárias, por prudência). Indicador: <span class="math inline">\(e=\dfrac{E_T}{DV_{BC}}\)</span> (encaixe total sobre depósitos à vista).</li>
-<li><strong>Redesconto.</strong> Empréstimo do <strong>Banco Central para bancos</strong> (última instância), a taxas de curtíssimo prazo, contra colateral. <strong>Aumentar/diminuir a taxa de redesconto</strong> altera o <strong>custo da liquidez</strong> e incentiva/desincentiva manter <strong>reservas</strong>, mas <strong>não muda diretamente</strong> a preferência do público por manter <strong>depósitos vs.&nbsp;papel-moeda</strong>.</li>
-<li><strong>Multiplicador monetário.</strong> <span class="math display">\[\begin{align}
-a = \frac{1}{1 - d(1 - e)}, \qquad d=\frac{DV_{BC}}{MP}, \qquad MP = a,B.
-\end{align}\]</span> Intuição: <strong><span class="math inline">\(e\uparrow \Rightarrow a\downarrow\)</span></strong> (mais reservas, menos multiplicação); <strong><span class="math inline">\(d\uparrow \Rightarrow a\uparrow\)</span></strong> (mais depósitos na composição do dinheiro).</li>
+<li><a href="https://www.bcb.gov.br/content/publicacoes/notastecnicas/NT%2048_Dstat_Dimob_novembro_2018.pdf">Revisão Metodológica das Estatísticas de Meios de Pagamento, BCB 2018</a></li>
 </ul>
+<p>Essa questão avalia o entendimento sobre os conceitos fundamentais do funcionamento do sistema de reservas fracionarias na condução da política monetária.</p>
+<p><span class="math display">\[\begin{align*}
+  a = \frac{MP}{B}
+\end{align*}\]</span></p>
+<p>O multiplicador monetário, <span class="math inline">\(a\)</span>, é definido como a razão entre os meios de pagamento <span class="math inline">\(MP\)</span> e a base monetária <span class="math inline">\(B\)</span>.</p>
+<ul>
+<li><p>A <strong>base monetária</strong> <span class="math inline">\(B\)</span> é o passivo monetário do banco central (aparece explicitamente em seu balanço patrimonial). É composta pelo papel moeda emitido em poder do público, mais as “reservas bancárias”. <em>As reservas bancárias incluem os depósitos compulsórios em espécie, não remunerados, incidentes sobre os depósitos à vista, mais as reservas livres. As reservas bancárias representam a “conta-corrente” das instituições financeiras no Banco Central, sendo um instrumento de liquidação necessário para que sejam efetuadas as transações monetárias entre a Autoridade Monetária e os demais agentes econômicos (sistema financeiro, governo e setor externo). (BCB 2018)</em></p></li>
+<li><p>O agregado chamado <strong>meios de pagamento (restritos)</strong> <span class="math inline">\(MP\)</span>* é definido como sendo o passivo monetário restrito do BCB e das instituições financeiras que captam depósitos à vista, em poder dos detentores de moeda, sendo coerente com o conceito de base monetária restrita (passivo monetário do BCB). (BCB 2018)*</p></li>
+</ul>
+<p>Também é escrito</p>
+<p><span class="math display">\[\begin{align*}
+  a = \frac{1}{1-d(1-e)}.
+\end{align*}\]</span></p>
+<p>Onde:</p>
+<ul>
+<li><p><span class="math inline">\(d=\frac{DV_{BC}}{MP}\)</span>. Passivo monetário dos bancos comerciais tomados em proporção do passivo monetário do banco central. Em situações usuais, <span class="math inline">\(DV_{BC}&gt;MP\)</span>, tal que <span class="math inline">\(d&gt;1\)</span>.</p></li>
+<li><p><span class="math inline">\(e=\frac{E_T}{DV_{BC}}\)</span>. Encaixes totais tomados como proporção do passivo monetário dos bancos comerciais. Aqui sempre teremos <span class="math inline">\(E_T&lt;DV_{BC}\)</span>, tal que <span class="math inline">\(e&lt;1\)</span>.</p></li>
+</ul>
+<p>Substituindo na fórmula acima temos</p>
+<p><span class="math display">\[\begin{align*}
+  a &amp;= \frac{1}{1-\frac{DV_{BC}}{MP}\left(1-\frac{E_T}{DV_{BC}}\right)} \\
+  &amp;= \frac{1}{1-\frac{DV_{BC}}{MP}\left(\frac{DV_{BC}-E_T}{DV_{BC}}\right)} \\
+  &amp;= \frac{1}{1-\frac{DV_{BC}-E_T}{MP}}
+\end{align*}\]</span></p>
+<p>Lembrando a fórmula da soma do limite da progressão geométrica, podemos ver o multiplicador monetário como</p>
+<p><span class="math display">\[\begin{align*}
+  a = 1 + \frac{DV_{BC}-E_T}{MP} + \left(\frac{DV_{BC}-E_T}{MP}\right)^2 + \cdots
+\end{align*}\]</span></p>
+<p>Podemos interpretar <span class="math inline">\(\frac{DV_{BC}-E_T}{MP}\)</span> como a fração de cada <span class="math inline">\(R\$1\)</span>, depositado no sistema bancário, que volta ao sistema bancário depois das transações de comércio. Portanto o multiplicador monetário é tão maior quanto maior for o passivo monetário dos bancos comerciais <span class="math inline">\(DV_{BC}\)</span>, e tão menor quanto forem os encaixes <span class="math inline">\(E_T\)</span> (depósitos compulsórios e voluntários dos bancos comerciais no balanço patrimonial do Banco Central, <em>reservas bancárias</em> na nomenclatura do BCB 2018).</p>
+<p>Também podemos escrever</p>
+<p><span class="math display">\[\begin{align*}
+  a = 1 + d(1-e) + (d(1-e))^2 \cdots
+\end{align*}\]</span></p>
 <hr>
-</section>
-<section id="julgamento-das-assertivas" class="level3">
-<h3 class="anchored" data-anchor-id="julgamento-das-assertivas">Julgamento das assertivas</h3>
-<p><strong>I. Falsa.</strong> Mudar a <strong>taxa de redesconto</strong> afeta <strong>reservas e custo de liquidez</strong> (logo, <span class="math inline">\(e\)</span> e a base via uso da janela), <strong>não</strong> “diretamente” <span class="math inline">\(d=\dfrac{DV_{BC}}{MP}\)</span>, que reflete a <strong>composição</strong> do meio de pagamento determinada pela preferência do público (depósitos vs.&nbsp;papel-moeda).</p>
-<p><strong>II. Falsa.</strong> “Ajustar o multiplicador <strong>aumentando reservas</strong>” eleva <span class="math inline">\(e\)</span> e <strong>reduz <span class="math inline">\(a\)</span></strong>: <span class="math display">\[\begin{align}
-e\uparrow ;\Rightarrow; a\downarrow ;\Rightarrow; MP=aB \text{ cai se } B \text{ fixo.}
-\end{align}\]</span> Em crises, a prática é <strong>elevar <span class="math inline">\(B\)</span></strong> e/ou <strong>baixar compulsórios</strong> (diminuir <span class="math inline">\(e\)</span>) para <strong>sustentar</strong> <span class="math inline">\(MP\)</span>, não o contrário.</p>
-<p><strong>III. Verdadeira.</strong> <strong>Aversão ao risco ↑</strong> → bancos guardam <strong>mais reservas</strong> (excedentes) → <strong><span class="math inline">\(e\uparrow\)</span></strong>, <strong><span class="math inline">\(a\downarrow\)</span></strong> → <strong>contração de <span class="math inline">\(MP\)</span></strong> (com <span class="math inline">\(B\)</span> dado). É o mecanismo típico em estresse financeiro.</p>
-<p><strong>IV. Verdadeira.</strong> <span class="math inline">\(e=\dfrac{E_T}{DV_{BC}}\)</span> <strong>combina</strong> o <strong>percentual legal</strong> (compulsório) <strong>e</strong> as <strong>reservas voluntárias</strong>, que refletem a prudência/relutância em recorrer ao BC.</p>
-</section>
-</section>
+<blockquote class="blockquote">
+<p><em>I. O Banco Central, ao alterar as taxas de juros das operações de redesconto e empréstimos aos bancos comerciais, está interferindo diretamente na razão <span class="math inline">\(d\)</span>.</em></p>
+</blockquote>
+<p>Uma <strong>operação de redesconto</strong> é quando o Banco Central empresta recursos diretamente a um banco comercial que não tem recursos disponíveis para cobrir seus requerimentos de reserva sobre seus depósitos. São empréstimos de curtíssimo prazo, com colateral em títulos públicos.</p>
+<p>Uma mudança na taxa de juros das operações de redesconto afeta, então os enxaixes bancários <span class="math inline">\(E_T\)</span>, não a quantidade de depósitos dos clientes nos bancos <span class="math inline">\(DV_{BC}\)</span>. Afirmação falsa.</p>
+<hr>
+<blockquote class="blockquote">
+<p><em>II. O multiplicador monetário, ao ser ajustado por meio do aumento das reservas dos bancos, constitui estratégia dos bancos centrais para enfrentar as crises de liquidez.</em></p>
+</blockquote>
+<p>Quando o enunciado fala <em>“aumento das reservas dos bancos”</em>, interpretamos como um aumento na proporção de reservas compulsórias requeridas para cada <span class="math inline">\(R\$1\)</span> depositado no sistema bancário. Tal mudança aumentaria <span class="math inline">\(E_T\)</span> e diminuiria o multiplicador monetário <span class="math inline">\(a\)</span>. Frente uma <em>“crise de liquidez”</em> a resposta seria contrária, diminuir a alíquota de reservas compulsórias. Afirmação falsa.</p>
+<hr>
+<ol start="3" type="I">
+<li>O aumento da aversão ao risco dos bancos comerciais contrai os meios de pagamento, em momentos de crises financeiras, como no caso do estouro da bolha do subprime.</li>
+</ol>
+<p>Afirmação verdadeira. Um aumento na percepção de risco torna os bancos mais cautelosos em promover empréstimos a empresas e famílias. Aumenta a quantidade de encaixes voluntários, reduzindo a razão <span class="math inline">\(\frac{DV_{BC}-E_T}{MP}\)</span>, e portanto reduzindo o valor do multiplicador <span class="math inline">\(a\)</span>.</p>
+<p><em>Comentário: Na prática, esse aumento na percepção de risco, somado a um aumento de ordens de magnitude na oferta de reservas bancárias pelo BC (aumento da base monetária <span class="math inline">\(B\)</span>), levou a uma situação na qual os encaixes voluntários superaram tanto os encaixes compulsórios que o próprio sistema de reservas fracionárias foi abandonado nos EUA durante a resposta à Grande Crise Financeira. Agora a liquidez é controlada por meio da taxa de juros paga sobre os encaixes voluntários dos bancos comerciais.</em></p>
+<hr>
+<ul>
+<li><ol start="4" type="I">
+<li>A razão <span class="math inline">\(e\)</span> representa o percentual fixado legalmente dos depósitos à vista — que devem ser recolhidos ao Banco Central —, além de refletir a aversão dos bancos comerciais a recorrer a auxílios do Banco Central.*</li>
+</ol></li>
+</ul>
+<p>Afirmação verdadeira.</p>
+</div>
 </div>
 </div>
 </div>
@@ -386,7 +421,7 @@ e\uparrow ;\Rightarrow; a\downarrow ;\Rightarrow; MP=aB \text{ cai se } B \text{
 <hr>
 </section>
 <section id="questão-20-enade-2022-economia" class="level3">
-<h3 class="anchored">Questão 20 (ENADE 2022 – Economia)</h3>
+<h3 class="anchored" data-anchor-id="questão-20-enade-2022-economia">Questão 20 (ENADE 2022 – Economia)</h3>
 <div id="exr-enade-2022-Q20" class="theorem exercise">
 <p><span class="theorem-title"><strong>Exercício 3</strong></span> &nbsp;</p>
 <blockquote class="blockquote">
@@ -402,7 +437,7 @@ e\uparrow ;\Rightarrow; a\downarrow ;\Rightarrow; MP=aB \text{ cai se } B \text{
 <li>Harrod-Domar; Solow; Lucas; e Romer.</li>
 </ol>
 <p><label for="resposta">Sua resposta:</label> <select name="resposta" id="altenativa"> <option value="A">A</option> <option value="B">B</option> <option value="C">C</option> <option value="D">D</option> <option value="E">E</option> </select></p>
-<div class="callout callout-style-default callout-caution callout-titled" title="Resolução">
+<div class="callout callout-style-default callout-caution callout-empty-content callout-titled" title="Resolução">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -413,48 +448,9 @@ e\uparrow ;\Rightarrow; a\downarrow ;\Rightarrow; MP=aB \text{ cai se } B \text{
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-3" class="callout-3-contents callout-collapse collapse">
-<section id="modelos-de-crescimento-até-3-equações-por-modelo-50-palavras-cada" class="level2 callout-body-container callout-body">
-<h2 class="anchored" data-anchor-id="modelos-de-crescimento-até-3-equações-por-modelo-50-palavras-cada">Modelos de crescimento — até 3 equações por modelo (≈50 palavras cada)</h2>
-<section id="i-harroddomar" class="level3">
-<h3 class="anchored" data-anchor-id="i-harroddomar">(i) Harrod–Domar</h3>
-<p>Modelo keynesiano com <strong>coeficientes fixos</strong> (sem substituição). O <strong>investimento líquido</strong> determina a variação do produto; a <strong>poupança</strong> o financia. O <strong>ICOR</strong> (v) liga capital e produto. A taxa “garantida” depende de (s) e (v); desvios do crescimento “natural” geram <strong>instabilidade</strong>. Políticas que elevam (s) ou reduzem (v) aumentam (g). <span class="math display">\[\begin{align}
-I = sY \
-\Delta Y = \frac{1}{v} I \
-g = \frac{\Delta Y}{Y} = \frac{s}{v}
-\end{align}\frac{1}{v}\]</span> I<br>
-g = = \end{align}</p>
-</section>
-<section id="ii-solow" class="level3">
-<h3 class="anchored" data-anchor-id="ii-solow">(ii) Solow</h3>
-<p>Neoclássico com <strong>substituição K–L</strong> e <strong>retornos decrescentes</strong>; progresso tecnológico <strong>exógeno</strong> (g). A dinâmica do capital por trabalho efetivo iguala <strong>poupança</strong> menos <strong>depreciação ampliada</strong>; o estado estacionário resolve investimento efetivo = depreciação. <strong>Aumentos em (s)</strong> elevam o <strong>nível</strong> de renda, não a <strong>taxa</strong> per capita, que é dada por (g). <span class="math display">\[\begin{align}
-\dot{k} = s f(k) - (n + g + \delta) k \
-s f(k^*) = (n + g + \delta) k^* \
-g_y = g
-\end{align}\]</span>(n + g + ) k^*<br>
-g_y = g \end{align}</p>
-</section>
-<section id="iii-romer-pd" class="level3">
-<h3 class="anchored" data-anchor-id="iii-romer-pd">(iii) Romer (P&amp;D)</h3>
-<p>Crescimento <strong>endógeno</strong> via <strong>ideias</strong>: P&amp;D expande o conhecimento (A), gerando <strong>externalidades</strong> e retornos agregados não decrescentes. A <strong>alocação de trabalho em P&amp;D</strong> determina a taxa de crescimento; incentivos, escala e patentes elevam (g) <strong>permanentemente</strong>. O setor final usa (A) para produzir com produtividade crescente. <span class="math display">\[\begin{align}
-\dot{A} = \phi L_A A \
-Y = K^{\alpha} (A L_Y)^{1-\alpha} \
-g = \frac{\dot{A}}{A} = \phi L_A
-\end{align}\]</span>ha} (A L_Y)^{1-}<br>
-g = = L_A \end{align}</p>
-</section>
-<section id="iv-lucas-capital-humano" class="level3">
-<h3 class="anchored" data-anchor-id="iv-lucas-capital-humano">(iv) Lucas (capital humano)</h3>
-<p>Crescimento <strong>endógeno</strong> via <strong>capital humano</strong> (h). Agentes dedicam fração (u) do tempo ao <strong>aprendizado</strong>, acumulando (h); <strong>externalidades</strong> do capital humano sustentam crescimento sem tecnologia exógena. Políticas educacionais e incentivos a (u) elevam (g); diferenças em (u) e na eficiência de aprendizado explicam heterogeneidade internacional. <span class="math display">\[\begin{align}
-\dot{h} = \phi u h \
-Y = K^{\alpha} \big((1-u) h L\big)^{1-\alpha} \
-g_y = \frac{\dot{h}}{h} = \phi u
-\end{align}\]</span>ha} ((1-u) h L)^{1-}<br>
-g_y = = u \end{align}</p>
-<blockquote class="blockquote">
-<p>Mapeamento do enunciado: <strong>Harrod–Domar; Solow; Romer; Lucas</strong> → alternativa <strong>A</strong>.</p>
-</blockquote>
-</section>
-</section>
+<div class="callout-body-container callout-body">
+
+</div>
 </div>
 </div>
 </div>
@@ -561,6 +557,27 @@ g_y = = u \end{align}</p>
 <li>I, II e III.</li>
 </ol>
 <p><label for="resposta">Sua resposta:</label> <select name="resposta" id="altenativa"> <option value="A">A</option> <option value="B">B</option> <option value="C">C</option> <option value="D">D</option> <option value="E">E</option> </select></p>
+<div class="callout callout-style-default callout-caution callout-titled" title="Resolução">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Cuidado</span>Resolução
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>I. <strong>Falsa.</strong> No modelo IS-LM-BP para pequena economia aberta, com <strong>câmbio flutuante e alta mobilidade de capitais</strong>, a política fiscal perde eficácia. Um aumento de gasto público (ou redução de impostos) desloca a IS para a direita, eleva a taxa de juros doméstica acima da internacional, entra capital, há apreciação cambial e queda das exportações líquidas → a IS volta praticamente para a posição inicial. O efeito sobre o produto é muito pequeno (no limite, nulo). Logo, o aumento da mobilidade <strong>reduz</strong>, e não aumenta, o poder estabilizador da política fiscal.</p>
+<ol start="2" type="I">
+<li><p><strong>Falsa.</strong> Com <strong>câmbio fixo e perfeita mobilidade de capitais</strong>, a política fiscal é <strong>muito eficaz</strong>. A expansão fiscal desloca a IS para a direita, aumenta juros, entra capital, o que pressiona o câmbio à apreciação. Para manter o câmbio fixo, o BC compra reservas e expande a base monetária (LM para a direita), reforçando o aumento do produto. Assim, a política fiscal <strong>não é neutra</strong> sobre o produto; ela eleva o nível de atividade.</p></li>
+<li><p><strong>Verdadeira.</strong> Com <strong>câmbio flutuante e perfeita mobilidade de capitais</strong>, a política <strong>monetária</strong> é a ferramenta eficaz. Uma expansão monetária desloca a LM para a direita, reduz a taxa de juros, provoca saída de capitais, depreciação cambial, aumento das exportações líquidas e novo deslocamento da IS para a direita. O novo equilíbrio tem <strong>produto maior</strong>.</p></li>
+</ol>
+<p>Portanto, <strong>apenas a afirmação III está correta</strong>.</p>
+</div>
+</div>
+</div>
 </div>
 </section>
 <section id="questão-35-enade-2022-economia" class="level3">
@@ -602,8 +619,8 @@ p = p^{e} - b(u - u^{n}) + v
 <li>I, II e IV.</li>
 </ol>
 <p><label for="resposta">Sua resposta:</label> <select name="resposta" id="altenativa"> <option value=""></option> <option value="A">A</option> <option value="B">B</option> <option value="C">C</option> <option value="D">D</option> <option value="E">E</option> </select></p>
-<div class="callout callout-style-default callout-caution callout-titled" title="Resolução">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout callout-style-default callout-caution callout-empty-content callout-titled" title="Resolução">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -612,15 +629,9 @@ p = p^{e} - b(u - u^{n}) + v
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><strong>Gabarito: A (I e IV).</strong></p>
-<ul>
-<li><strong>I. Verdadeira.</strong> Pela equação (p = p^{e} - b(u-u^{n}) + v), com (b&gt;0), o coeficiente do desemprego cíclico é (-b): maior desemprego reduz a inflação.</li>
-<li><strong>II. Falsa.</strong> A curva de Phillips é relação de <strong>oferta agregada</strong> (dinâmica da inflação), não do lado da demanda. Ela serve para estudar inércia, efeito do hiato (ou desemprego cíclico) sobre a inflação e para previsão, mas a frase “descrever o lado da demanda” torna o item incorreto.</li>
-<li><strong>III. Falsa.</strong> O objetivo dos modelos de Phillips não é “medir a expectativa de inflação” a partir de inflação e desemprego; usualmente (p^{e}) é tomado de pesquisas/mercado ou modelado separadamente.</li>
-<li><strong>IV. Verdadeira.</strong> Em regimes de metas de inflação, expectativas de famílias e empresas afetam decisões do BC (pois (p^{e}) entra na dinâmica da inflação e a autoridade busca ancorá-las).</li>
-</ul>
+
 </div>
 </div>
 </div>
@@ -645,19 +656,15 @@ p = p^{e} - b(u - u^{n}) + v
 <p>Se a saída de dólares for superior ao ingresso de recursos no País por vários meses seguidos, a retirada consecutiva de divisas afetará o preço do dólar. Caso o Banco Central decida evitar a flutuação no preço da moeda estrangeira, poderia realizar operações de swap cambial, que funcionam como uma venda futura de dólares, ou mesmo operar no mercado à vista com leilões de moeda estrangeira.</p>
 <p>Disponível em: <a href="http://www.g1.globo.com" class="uri">http://www.g1.globo.com</a>. Acesso em: 15 ago. 2018 (adaptado).</p>
 <p>Considerando a tendência à equalização das taxas de juros, um regime de taxa de câmbio flutuante, com livre mobilidade de capitais e expectativas racionais, avalie as asserções a seguir e a relação proposta entre elas.</p>
-<ul>
-<li><ol type="I">
+<ol type="I">
 <li>Se o diferencial de juros e os riscos mantêm-se inalterados, um anúncio da autoridade monetária de não realizar o programa de oferta diária de swaps afeta a cotação do dólar no período presente, caracterizando uma relação positiva entre a cotação futura e a cotação presente da moeda norte-americana.</li>
-</ol></li>
-</ul>
+</ol>
 <center>
 <strong>PORQUE</strong>
 </center>
-<ul>
-<li><ol start="2" type="I">
+<ol start="2" type="I">
 <li>A expectativa de menor rentabilidade em dólares no futuro resulta em retirada de divisas da economia brasileira, com prejuízo para as exportações do País.</li>
-</ol></li>
-</ul>
+</ol>
 <p>A respeito dessas asserções, assinale a opção correta.</p>
 <ol type="A">
 <li>As asserções I e II são proposições verdadeiras, e a II é uma justificativa correta da I.</li>
@@ -667,6 +674,26 @@ p = p^{e} - b(u - u^{n}) + v
 <li>As asserções I e II são proposições falsas.</li>
 </ol>
 <p><label for="resposta">Sua resposta:</label> <select name="resposta" id="altenativa"> <option value="A">A</option> <option value="B">B</option> <option value="C">C</option> <option value="D">D</option> <option value="E">E</option> </select></p>
+<div class="callout callout-style-default callout-caution callout-titled" title="Resolução">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Cuidado</span>Resolução
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Gabarito: letra C.</strong></p>
+<p><strong>(I) Verdadeira.</strong> Com câmbio flutuante, livre mobilidade de capitais e expectativas racionais, vale a <em>paridade descoberta de juros</em>:</p>
+<p>[ i i^* + ,]</p>
+<p>onde (E_t) é a cotação presente do dólar e (E_{t+1}^e) a cotação esperada. Mantidos constante o diferencial de juros e o prêmio de risco, qualquer mudança na <strong>cotação futura esperada</strong> (por exemplo, porque o BC anuncia que não fará mais swaps, deixando o mercado esperar um dólar mais caro no futuro) altera a cotação presente. Como um aumento de (E_{t+1}^e) leva a um aumento de (E_t), há uma <strong>relação positiva</strong> entre cotação futura esperada e cotação presente.</p>
+<p><strong>(II) Falsa.</strong> Uma expectativa de <strong>menor rentabilidade em dólares</strong> no futuro tornaria ativos em dólar <strong>menos atraentes</strong>, levando investidores a <em>substituir dólares por outros ativos</em> (por exemplo, ativos em reais). Isso tenderia a <strong>aumentar a oferta de dólares</strong> no Brasil e <strong>baratear</strong> o dólar (apreciação do real), o que <strong>prejudica as exportações</strong> — mas o enunciado fala em “retirada de divisas da economia brasileira”, isto é, saída de dólares, o que vai na direção oposta. Logo, a afirmação como está é falsa.</p>
+</div>
+</div>
+</div>
 </div>
 </section>
 <section id="questão-10-enade-2018-economia" class="level3">
@@ -699,6 +726,22 @@ p = p^{e} - b(u - u^{n}) + v
 <li>a curva LM será deslocada para a esquerda no processo de ajuste do setor externo.</li>
 </ol>
 <p><label for="resposta">Sua resposta:</label> <select name="resposta" id="altenativa"> <option value="A">A</option> <option value="B">B</option> <option value="C">C</option> <option value="D">D</option> <option value="E">E</option> </select></p>
+<div class="callout callout-style-default callout-caution callout-empty-content callout-titled" title="Resolução">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Cuidado</span>Resolução
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
+</div>
 </div>
 <hr>
 </section>
@@ -713,17 +756,11 @@ p = p^{e} - b(u - u^{n}) + v
 Y = f(K, L)
 \end{align}\]</span> em que <span class="math inline">\(Y =\)</span> produto; <span class="math inline">\(K =\)</span> estoque de capital; <span class="math inline">\(L =\)</span> quantidade de trabalho.</p>
 <p>Sobre os resultados do modelo de Solow, avalie as afirmações a seguir.</p>
-<ul>
-<li><ol type="I">
+<ol type="I">
 <li>Quanto maior a taxa de poupança, maior será a taxa de crescimento do produto por trabalhador no estado estacionário. <input type="checkbox" unchecked=""></li>
-</ol></li>
-<li><ol start="2" type="I">
 <li>Quanto maior a relação capital-trabalho, menor será a taxa de crescimento econômico do produto por trabalhador. <input type="checkbox" unchecked=""></li>
-</ol></li>
-<li><ol start="3" type="I">
 <li>Quanto maior o crescimento populacional, maior será a taxa de crescimento do produto por trabalhador no estado estacionário. <input type="checkbox" unchecked=""></li>
-</ol></li>
-</ul>
+</ol>
 <p>É correto o que se afirma em</p>
 <ol type="A">
 <li>II, apenas.<br>
@@ -736,7 +773,62 @@ Y = f(K, L)
 </li>
 <li>I, II e III.</li>
 </ol>
-<p><label for="resposta">Sua resposta:</label> <select name="resposta" id="altenativa"> <option value="A">A</option> <option value="B">B</option> <option value="C">C</option> <option value="D">D</option> <option value="E">E</option> </select></p>
+<p><label for="resposta">Sua resposta:</label> <select name="resposta" id="altenativa"> <option value=""></option> <option value="A">A</option> <option value="B">B</option> <option value="C">C</option> <option value="D">D</option> <option value="E">E</option> </select></p>
+<div class="callout callout-style-default callout-caution callout-titled" title="Resolução">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Cuidado</span>Resolução
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Uma formulação usual do modelo de Solow parte do produto <span class="math inline">\(Y(t)\)</span> dada pela função de produção</p>
+<p><span class="math display">\[\begin{align*}
+Y(t) = F(K(t), L(t) A(t)) = K(t)^\alpha\left(A(t)L(t)\right)^{1-\alpha}, \quad 0&lt;\alpha&lt;1
+\end{align*}\]</span></p>
+<p>Dividindo <span class="math inline">\(Y(t)\)</span> por <span class="math inline">\(L(t)A(t)\)</span></p>
+<p><span class="math display">\[\begin{align*}
+  \frac{Y(t)}{A(t)L(t)} &amp;= \left(\frac{K(t)}{A(t)L(t)}\right)^{\alpha}\left(\frac{A(t)L(t)}{A(t)L(t)}\right)^{1-\alpha}
+\end{align*}\]</span></p>
+<p><span class="math display">\[\begin{align*}
+  y(t) &amp;= k(t)^\alpha
+\end{align*}\]</span></p>
+<ul>
+<li><span class="math inline">\(L(t) = L(0)e^{nt}\)</span></li>
+<li><span class="math inline">\(A(t) = A(0)e^{gt}\)</span></li>
+</ul>
+<p>A dinâmica do produto é completamente dada pela dinâmica do capital.</p>
+<p>A dinâmica do capital é descrita pela equação diferencial <span class="math display">\[\begin{align*}
+   \frac{dk(t)}{dt} &amp;= sy(t) - (n + g + \delta)k(t) \\
+  &amp;= sk(t)^\alpha - (n + g + \delta)k(t)
+\end{align*}\]</span></p>
+<p>onde <span class="math inline">\(s\)</span> é a taxa de poupança, <span class="math inline">\(n\)</span> é a taxa de crescimento populacional, <span class="math inline">\(g\)</span> é a taxa de crescimento da tecnologia (específica ao trabalho), e <span class="math inline">\(\delta\)</span> é a taxa de depreciação do capital.</p>
+<p>No estado estacionário (quando <span class="math inline">\(\dot k = 0\)</span>),</p>
+<p><span class="math display">\[\begin{align*}
+  k^* = \left(\frac{s}{n+g+\delta}\right)^{\frac{1}{1-\alpha}}
+\end{align*}\]</span></p>
+<hr>
+<blockquote class="blockquote">
+<p><em>I. Quanto maior a taxa de poupança, maior será a taxa de crescimento do produto por trabalhador no estado estacionário.</em></p>
+</blockquote>
+<p>Afirmação falsa. No estado estacionário o crescimento do produto por trabalhador é <span class="math inline">\(g\)</span>, se houver progresso tecnologico, e <span class="math inline">\(0\)</span> se não.</p>
+<hr>
+<blockquote class="blockquote">
+<p><em>II. Quanto maior a relação capital-trabalho, menor será a taxa de crescimento econômico do produto por trabalhador.</em></p>
+</blockquote>
+<p>Afirmação verdadeira. Quanto maior for a relação capital-trabalho <span class="math inline">\(k = K/L\)</span>, <strong>menor será a taxa de crescimento do produto por trabalhador</strong>: economias com pouco capital por trabalhador crescem mais rápido (pois o produto marginal do capital é alto); à medida que <span class="math inline">\(k\)</span> aumenta e se aproxima do estado estacionário, o crescimento de <span class="math inline">\(y\)</span> diminui devido aos rendimentos decrescentes.</p>
+<hr>
+<blockquote class="blockquote">
+<p><em>III. Quanto maior o crescimento populacional, maior será a taxa de crescimento do produto por trabalhador no estado estacionário.</em></p>
+<p>Afirmação falsa. No estado estacionário o crescimento do produto por trabalhador é <span class="math inline">\(g\)</span>, se houver progresso tecnologico, e <span class="math inline">\(0\)</span> se não. Independe de <span class="math inline">\(n\)</span>.</p>
+</blockquote>
+</div>
+</div>
+</div>
 </div>
 <hr>
 </section>
@@ -775,6 +867,22 @@ Y = f(K, L)
 <li>I, II e III.</li>
 </ol>
 <p><label for="resposta">Sua resposta:</label> <select name="resposta" id="altenativa"> <option value=""></option> <option value="A">A</option> <option value="B">B</option> <option value="C">C</option> <option value="D">D</option> <option value="E">E</option> </select></p>
+<div class="callout callout-style-default callout-caution callout-empty-content callout-titled" title="Resolução">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Cuidado</span>Resolução
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-10" class="callout-10-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
+</div>
 </div>
 <hr>
 </section>
@@ -833,8 +941,8 @@ Y = f(K, L)
 <li>III e IV.</li>
 </ol>
 <p><label for="resposta">Sua resposta:</label> <select name="resposta" id="altenativa"> <option value=""></option> <option value="A">A</option> <option value="B">B</option> <option value="C">C</option> <option value="D">D</option> <option value="E">E</option> </select></p>
-<div class="callout callout-style-default callout-caution callout-empty-content callout-titled" title="Resolução">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout callout-style-default callout-caution callout-titled" title="Resolução">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -843,9 +951,23 @@ Y = f(K, L)
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div id="callout-11" class="callout-11-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-
+<blockquote class="blockquote">
+<p><em>I. Se a decisão de contração monetária do Banco Central do Brasil for crível, a Curva de Phillips será deslocada paralelamente para baixo. </em></p>
+</blockquote>
+<hr>
+<blockquote class="blockquote">
+<p><em>II. Para um nível de significância de 0,05, é possível inferir que há evidência de relação entre inflação e desemprego no Brasil.</em></p>
+</blockquote>
+<hr>
+<blockquote class="blockquote">
+<p><em>III. Se a taxa natural de desemprego for de 4,5% ao mês, espera-se que a inflação seja 1,75% menor, se o nível de desemprego atingir 7% ao mês.</em></p>
+</blockquote>
+<hr>
+<blockquote class="blockquote">
+<p><em>IV. Se o Banco Central desejar manter a taxa de inflação constante (sem variação), para uma taxa natural de desemprego de 4,5%, o nível de desemprego deve ser de 6,5%.</em></p>
+</blockquote>
 </div>
 </div>
 </div>
@@ -884,6 +1006,42 @@ Y = f(K, L)
 <li>I, III e IV.</li>
 </ol>
 <p><label for="resposta">Sua resposta:</label> <select name="resposta" id="altenativa"> <option value="A">A</option> <option value="B">B</option> <option value="C">C</option> <option value="D">D</option> <option value="E">E</option> </select></p>
+<div class="callout callout-style-default callout-caution callout-titled" title="Resolução">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Cuidado</span>Resolução
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-12" class="callout-12-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>No contexto da crise Grega, ao fechar os bancos e limitar os saques o objetivo do Governo era evitar uma corrida bancária. Os fundos assistenciais do BCE foram utilizados para fortalecer o caixa dos bancos.</p>
+<hr>
+<blockquote class="blockquote">
+<p><em>I. O governo grego visava ampliar a razão papel-moeda em poder do público sobre os meios de pagamento, estimulando, com isso, o aumento do multiplicador monetário.</em></p>
+</blockquote>
+<p>Afirmação falsa. O contexto é de corrida bancária e colapso do sistema financeiro. O objetivo não era uma política monetária expansionista.</p>
+<hr>
+<blockquote class="blockquote">
+<p><em>II. O governo grego pretendia reduzir o acesso do público aos meios de pagamento e, com isso, diminuir o nível geral de preços.</em></p>
+</blockquote>
+<p>Afirmação falsa. Se algo, ao evitar a corrida bancária, o acesso do público a meios de pagamento aumenta no médio prazo. Também não havia preocupação com inflação alta.</p>
+<hr>
+<blockquote class="blockquote">
+<p><em>III. O governo grego objetivava manter o fluxo de liquidez do mercado interbancário, restabelecendo, com isso, os níveis de reservas bancárias.</em></p>
+</blockquote>
+<p>Afirmação verdadeira. Foi o destino dos recursos emergenciais do BCE.</p>
+<hr>
+<blockquote class="blockquote">
+<p><em>IV. O governo grego procurava evitar o colapso do multiplicador monetário, ao estabilizar a razão depósitos à vista dos bancos comerciais sobre os meios de pagamento.</em></p>
+</blockquote>
+<p>Afirmação verdadeira. O multiplicador monetário pode ser visto como <span class="math inline">\(a=MP/B\)</span>, onde <span class="math inline">\(MP\)</span> são os meios de pagamento e <span class="math inline">\(B\)</span> é a base monetária. Ao evitar a redução significativa dos depósitos no sistema bancária, evita-se também uma queda no multiplicador.</p>
+</div>
+</div>
+</div>
 </div>
 <hr>
 </section>
@@ -922,6 +1080,22 @@ Y = f(K, L)
 <li>II, IV e V.</li>
 </ol>
 <p><label for="resposta">Sua resposta:</label> <select name="resposta" id="altenativa"> <option value="A">A</option> <option value="B">B</option> <option value="C">C</option> <option value="D">D</option> <option value="E">E</option> </select></p>
+<div class="callout callout-style-default callout-caution callout-empty-content callout-titled" title="Resolução">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Cuidado</span>Resolução
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-13" class="callout-13-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
+</div>
 </div>
 <hr>
 </section>
