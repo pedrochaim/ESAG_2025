@@ -270,6 +270,33 @@ E.  Harrod-Domar; Solow; Lucas; e Romer.
 
 ::: {.callout-caution title="Resolução" collapse="true"}
 
+---
+
+> *(i) O primeiro modelo específico de crescimento surgiu na década de 1930; neste primeiro modelo, de tradição keynesiana, tem-se o investimento líquido como a chave para o crescimento econômico, porém não se define como obtê-lo.*
+
+Modelo Harrod-Domar.
+
+---
+
+> *(ii) Posteriormente, foi formulado um modelo que trouxe mudanças para a análise do crescimento, permitindo a substituição de capital por trabalho e introduzindo a contabilidade do crescimento e a análise de produtividade total dos fatores; neste modelo, no entanto, há uma limitação: o motor do crescimento é exógeno.*
+
+Modelo de Solow.
+
+---
+
+Ambos os modelos de Lucas e Romer tratam o crescimento como endógeno. No modelo de Romer o canal é o gasto em pesquisa e desenvolvimento (e a não rivalidade desses bens), enquanto no modelo de Lucas o canal é o investimento em capital humano.
+
+> *(iii) os gastos em pesquisa e desenvolvimento*
+
+Modelo de Romer.
+
+---
+
+> *(iv) os gastos com capital humano como fatores-chave para o crescimento econômico.*
+
+Modelo de Lucas.
+
+
 :::
 
 :::
@@ -610,7 +637,7 @@ E.  a curva LM será deslocada para a esquerda no processo de ajuste do setor ex
 
 ::: {.callout-caution title="Resolução" collapse="true"}
 
-**Modelo IS–LM–BP (Mundell–Fleming) – resumo**
+**Modelo IS–LM–BP (Mundell–Fleming)**
 
 O modelo **IS–LM–BP** descreve o curto prazo em uma economia aberta, com preços rígidos, combinando:
 
@@ -667,6 +694,8 @@ O gráfico a seguir apresenta uma **pequena economia aberta do modelo IS-LM-BP**
 Considere que foi adotada uma **política monetária expansionista**, levando a economia para um **novo equilíbrio interno e externo**.
 
 ---
+
+**Estática comparativa**
 
 A política monetária expansionista **desloca a LM para a direita** (maior oferta real de moeda, juros menores).
 
@@ -812,9 +841,8 @@ Afirmação verdadeira. Quanto maior for a relação capital-trabalho $k = K/L$,
 ---
 
 > *III.  Quanto maior o crescimento populacional, maior será a taxa de crescimento do produto por trabalhador no estado estacionário.*
-> 
+ 
 Afirmação falsa. No estado estacionário o crescimento do produto por trabalhador é $g$, se houver progresso tecnologico, e $0$ se não. Independe de $n$.
-
 
 :::
 
@@ -867,6 +895,8 @@ Afirmação verdadeira. A contração monetária (talvez via venda de títulos p
 ---
 
 > *II. A expansão monetária reduz a taxa de juros e sua eficácia está diretamente relacionada à propensão marginal a poupar.*
+
+De fato, *A expansão monetária reduz a taxa de juros*, mas sua eficácia não está diretamente relacionada à propensão marginar a poupar (ou, equivalentemente propensão marginal a consumir). É a eficácia da política fiscal que depende dessa propensão ao consumo.
 
 ---
 
@@ -960,7 +990,7 @@ Se a contração monetária for crível, as expectativas de inflação caem. Na 
 
 > *II. Para um nível de significância de 0,05, é possível inferir que há evidência de relação entre inflação e desemprego no Brasil.*
 
-Afirmação falsa. Se o $p$-valor do teste $\varepsilon=0$ contra $\varepsilon\neq 0$ foi 0,0865, não rejeitaríamos a hipótese nula ao nível de 0.05.
+Afirmação falsa. Se o $p$-valor do teste $\varepsilon=0$ contra $\varepsilon\neq 0$ foi 0,0865, não rejeitaríamos a hipótese nula ao nível de 5\%.
 
 ---
 
@@ -969,7 +999,7 @@ Afirmação falsa. Se o $p$-valor do teste $\varepsilon=0$ contra $\varepsilon\n
 Substituindo os valores,
 
 \begin{align*}
-  \Delta \pi_t = -\varepsilon(u_t-u_n) \\
+  \Delta \pi_t &= -\varepsilon(u_t-u_n) \\
   &= -0.7\times(7\%-4.5\%) = -1.75\%
 \end{align*}
 
@@ -1088,6 +1118,38 @@ Considerando esse contexto, avalie as afirmações a seguir.
 </select>
 
 ::: {.callout-caution title="Resolução" collapse="true"}
+
+> *I.  De acordo com o modelo de crescimento de Solow, países mais pobres deveriam crescer a uma taxa superior à taxa de crescimento de países mais ricos.*
+
+No modelo de Solow, países com menor capital por trabalhador ($k$) têm produto marginal do capital mais alto. Assim, dadas as mesmas taxas de poupança, crescimento populacional e progresso tecnológico, países mais pobres tendem a crescer mais rápido até se aproximarem de seu estado estacionário (convergência condicional). Afirmação verdadeira.
+
+---
+
+> *II. De acordo com o modelo de crescimento de Solow, uma explicação para o diferencial de nível de renda per capita, no longo prazo, seria a diferença nas taxas de poupança dos países.* 
+
+No estado estacionário do Solow, o nível de capital por trabalhador $k^*$ e, portanto, o nível de renda por trabalhador $y^ = f(k^)$, depende da taxa de poupança $s$ (além de $n$, $g$ e $\delta$). Países com maior $s$ têm maior $k^*$ e, logo, maior nível de renda per capita de longo prazo. Afirmação verdadeira.
+
+\begin{align*}
+  k^* = \left(\frac{s}{n+g+\delta}\right)^{\frac{1}{1-\alpha}}
+\end{align}
+
+---
+
+> *III.  De acordo com o modelo de crescimento de Solow, uma explicação para a diferença nas taxas de crescimento da renda per capita, no longo prazo, seria a diferença nas taxas de poupança dos países.*
+
+No Solow com progresso tecnológico exógeno $g$, a taxa de crescimento de longo prazo da renda per capita é igual a $g$, independente da taxa de poupança. A poupança afeta o nível de renda (via $k^*$) e a taxa de crescimento apenas na fase de transição, não no longo prazo. Afirmativa falsa.
+
+---
+
+> *IV. De acordo com o modelo de crescimento de Solow, o crescimento contínuo do volume de investimento por trabalhador contribui para a determinação da taxa de crescimento da renda per capita.* 
+
+No longo prazo, no Solow, o crescimento da renda per capita é determinado pelo progresso tecnológico exógeno, não pelo aumento contínuo do investimento por trabalhador. O investimento é necessário para sustentar o nível de capital por trabalhador no estado estacionário, mas não determina a taxa de crescimento per capita de longo prazo. Afirmativa falsa.
+
+---
+
+> *V.  De acordo com os modelos de crescimento endógeno, algumas explicações para o diferencial de renda per capita podem ser encontradas em variáveis como capital humano e investimento em pesquisa e desenvolvimento.* 
+
+Afirmativa correta. Descreve o mecanismo dos modelos de Lucas e Romer.
 
 :::
 
