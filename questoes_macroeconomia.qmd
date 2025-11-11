@@ -1127,7 +1127,7 @@ No modelo de Solow, países com menor capital por trabalhador ($k$) têm produto
 
 > *II. De acordo com o modelo de crescimento de Solow, uma explicação para o diferencial de nível de renda per capita, no longo prazo, seria a diferença nas taxas de poupança dos países.* 
 
-No estado estacionário do Solow, o nível de capital por trabalhador $k^*$ e, portanto, o nível de renda por trabalhador $y^ = f(k^)$, depende da taxa de poupança $s$ (além de $n$, $g$ e $\delta$). Países com maior $s$ têm maior $k^*$ e, logo, maior nível de renda per capita de longo prazo. Afirmação verdadeira.
+No estado estacionário do Solow, o nível de capital por trabalhador $k^*$ e, portanto, o nível de renda por trabalhador $y^ = f(k^)$, depende da taxa de poupança $s$ (além de $n$, $g$ e $\delta$). Então países com maior $s$ têm maior $k^*$ e, logo, maior nível de renda per capita de longo prazo. Afirmação verdadeira.
 
 \begin{align*}
   k^* = \left(\frac{s}{n+g+\delta}\right)^{\frac{1}{1-\alpha}}.
